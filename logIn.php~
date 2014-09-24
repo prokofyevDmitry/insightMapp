@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+    
+             
+    
+<link rel="stylesheet" href="HomeStyle.css"/>
+    
+<meta charset='utf-8'/>   
+    
+</head>
+
+    
+<body>
+      <header
+
+
+<form class="signInPage">
+
+<h1>Sign In <br></h1>
+    <label for="name"> Votre Nom:   <input  type="text" action="signInlog.php" id="name" class="signinINPUTS">
+    <label for="forename"> Votre Prénom </label>
+    
+    
+</form>
+
+            <?php include("parts/search.php"); ?>
+      </header>
+    
+    
+    
+    
+    
+    <section>
+      <nav class="side">
+        
+   <?php include("parts/sideList.php"); ?>           
+        </nav>
+        
+        
+        
+        <?php include("parts/sideFooter.php") ;?>
+        
+        
+        
+      
+    </section>
+      
+        
+  <footer > 
+    
+      
+      
+    </footer>
+ 
+ <?php //include("parts/map.php"); ?>
+    
+</body>    
+    
+
+
+
+</html>
+
+
+
+
+
+
+Un petit message pour toi my frend :) 

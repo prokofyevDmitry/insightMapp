@@ -1,0 +1,73 @@
+@CHARSET "UTF-8";
+
+body
+{
+		position:relative;
+		left: 28%;
+		background-color:#EBF5FF;
+		text-align:center;
+		
+	
+}
+
+a
+{
+	text-decoration: none;
+	color: inherit;
+	
+}
+
+nav
+{
+	margin: 0px 0px 10px 0px;
+	padding: 5px 5px 5px 5px;
+	width: 40%;
+	background-color:#4E5A66;
+	border-radius:5px;
+	
+}
+
+
+.title
+{ 
+	
+	padding: 5px 5px 5px 5px;
+	background-color:#4E5A66;
+	color: white;
+	
+}
+
+.message
+{
+	padding: 5px 5px 5px 5px;
+	background-color: #99CCFF;
+	
+}
+
+.comment
+{
+	margin: 10px 0px 10px 0px;
+	display:block;
+	background-color: #C2E0FF;
+	
+}
+
+.com_login
+{
+	
+	}
+
+.com
+{
+	
+}
+
+input,textarea
+{
+	display: block;
+	width: 40%;
+	background-color:inherit;
+	border: solid 3px #D8E0E8;
+	margin:3px 0px 0px 0px;
+	border-radius: 4px;
+}

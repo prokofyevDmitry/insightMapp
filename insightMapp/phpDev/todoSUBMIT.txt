@@ -1,0 +1,18 @@
+Faires les testes de retour d'information                                                                                   OK
+Effacer l'erreur de la reconnaissance de la variable line 29                                                                KO
+    -L'erreur est du au fait que en déclanrant un variable : $var= null; elle n'est pas détecté par isset
+
+
+Faire en sorte que les éléments retournées soit réel.                                                                       OK
+
+
+LISTER LES QUESTIONS D'INSCRIPTION                                                                                          OK
+ECRIRE LE CODE HTML DE FORM_INSCRIPTION                                                                                     KO
+ECRIRE LE CODE PHP FORM_INSCRUPTION                                                                                         KO
+    
+AJOUTER LES FORMULAIRES MANQUANTS                                                                                           KO
+
+ECRIRE LA VERIF DE FORM_INSCRIPTION                                                                                         KO
+FAIRE UN SYSTEM ENTRE VALUE (PERMANENT) ET PLACEHOLDER(TEMP)                                                                semiOK
+
+

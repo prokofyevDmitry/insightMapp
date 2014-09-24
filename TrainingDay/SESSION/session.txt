@@ -1,0 +1,14 @@
+ Les sessions
+
+  Lors de la connexion, l'utilisateur obtient un id: PHPSESSID
+  (on le passe de page à page avec un cookie)
+ 
+  Initialisation d'une variable session:
+  $_SESSION['nom'] = 'sylvain';
+  Cette variable pourra être retrouvé sur les autres pages. 
+
+  session_start() sur toutes les pages, avant le DOCTYPE
+      Après ça on a acces au variables de session. 
+
+  
+  

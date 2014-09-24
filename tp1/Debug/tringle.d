@@ -1,0 +1,1 @@
+tringle.d: ../tringle.c

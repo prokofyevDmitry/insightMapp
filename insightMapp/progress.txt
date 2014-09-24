@@ -1,0 +1,6 @@
+27/08
+	Dans la homePage: il y a un probleme avec l'affichage de logo
+	scriptLeaf: Comment faire apparaitre un popup avec une photo dedans? 
+	
+	Pour la suite on reprendra le php. 
+	
