@@ -8,6 +8,12 @@
 <link rel="stylesheet" href="CSStyle/leaf.css"/>
 <?php include ("parts/mapLeafInc.php");?>
 <?php 
+// on inclut ici les fonctions utilisées lors des tests. 
+
+include 'model/bd_connexion.php';
+include 'model/champ_query.php';
+
+
 ?>
 
 </head>
@@ -19,6 +25,7 @@
             <?php include("parts/search.php"); ?>
     </header>
     <section>
+    
       	<form  class="login" action="parts/login_test.php" method="post">
 <input name="login" placeholder="login" type="text"/>
 <input name="password" placeholder="password" type="password"/>
