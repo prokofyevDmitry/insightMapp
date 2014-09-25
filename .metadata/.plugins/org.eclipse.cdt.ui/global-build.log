@@ -1,0 +1,61 @@
+13:02:46 **** Build of configuration Debug for project tp1 ****
+make all 
+Building file: ../src/test.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/test.d" -MT"src/test.d" -o "src/test.o" "../src/test.c"
+../src/test.c: In function ‘main’:
+../src/test.c:16:10: warning: multi-character character constant [-Wmultichar]
+   printf('ok');
+          ^
+../src/test.c:16:3: warning: passing argument 1 of ‘printf’ makes pointer from integer without a cast [enabled by default]
+   printf('ok');
+   ^
+In file included from ../src/test.c:10:0:
+/usr/include/stdio.h:362:12: note: expected ‘const char * __restrict__’ but argument is of type ‘int’
+ extern int printf (const char *__restrict __format, ...);
+            ^
+../src/test.c:16:3: warning: format not a string literal and no format arguments [-Wformat-security]
+   printf('ok');
+   ^
+../src/test.c:17:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/test.c
+ 
+Building file: ../tringle.c
+Invoking: Cross GCC Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"tringle.d" -MT"tringle.d" -o "tringle.o" "../tringle.c"
+../tringle.c: In function ‘main’:
+../tringle.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../tringle.c
+ 
+Building target: tp1
+Invoking: Cross GCC Linker
+gcc  -o "tp1"  ./src/test.o  ./tringle.o   
+./tringle.o: In function `main':
+/opt/lampp/htdocs/tests/tp1/Debug/../tringle.c:12: multiple definition of `main'
+./src/test.o:/opt/lampp/htdocs/tests/tp1/Debug/../src/test.c:13: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [tp1] Error 1
+13:07:06 **** Incremental Build of configuration Debug for project tp1 ****
+make all 
+Building target: tp1
+Invoking: Cross GCC Linker
+gcc  -o "tp1"  ./src/test.o  ./tringle.o   
+./tringle.o: In function `main':
+/opt/lampp/htdocs/tests/tp1/Debug/../tringle.c:12: multiple definition of `main'
+./src/test.o:/opt/lampp/htdocs/tests/tp1/Debug/../src/test.c:13: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [tp1] Error 1
+13:07:45 **** Incremental Build of configuration Debug for project tp1 ****
+make all 
+Building target: tp1
+Invoking: Cross GCC Linker
+gcc  -o "tp1"  ./src/test.o  ./tringle.o   
+./tringle.o: In function `main':
+/opt/lampp/htdocs/tests/tp1/Debug/../tringle.c:12: multiple definition of `main'
+./src/test.o:/opt/lampp/htdocs/tests/tp1/Debug/../src/test.c:13: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [tp1] Error 1

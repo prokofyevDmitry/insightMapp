@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+
+
+@font-face{
+     font-family:'CaviarDreams';
+            src:url('../fonts/CaviarDreams.ttf');
+    
+}
+@font-face{
+        font-family:'QuicksideBook';
+            src:url('../fonts/Quicksand-Regular.otf');
+}
+
+@font-face{
+        font-family:'QuicksideBook';
+            src:url('../fonts/Quicksand-Regular.otf');
+}
+
+
+@font-face{
+ 
+    font-family:'Muli';
+    src:url('../fonts/Muli-Regular.ttf');
+    
+}
+
+
+
+.signIn
+ {
+ background-color:white;
+ 
+ }
+ 
+ form[class="signIn"] input
+ {
+ font-family: Muli;
+ width: 15%;
+ margin: 10px;
+ border: none;
+ display:block;
+ 
+ }
+ 
+.signIn:focus
+{
+    text-decoration:none;
+    border: none;
+    outline: 0;
+}

@@ -1,0 +1,392 @@
+
+@font-face{
+     font-family:'CaviarDreams';
+            src:url('../fonts/CaviarDreams.ttf');
+    
+}
+@font-face{
+        font-family:'QuicksideBook';
+            src:url('../fonts/Quicksand-Regular.otf');
+}
+
+@font-face{
+        font-family:'QuicksideBook';
+            src:url('../fonts/Quicksand-Regular.otf');
+}
+
+
+@font-face{
+ 
+    font-family:'Muli';
+    src:url('../fonts/Muli-Regular.ttf');
+    
+}
+
+
+
+
+
+
+
+
+body
+{
+ background-color: rgba(31,192,202,1);      
+}
+
+
+
+/* #################### HEADER ############*/
+
+header
+{   
+    font-family: sans-serif;
+    z-index: 6;
+    position: fixed;
+    top:15px;
+}
+
+
+
+
+
+
+
+div[class="logo"] a
+{
+    position: relative;
+ display:block; 
+ background-color: rgba(255,255,255,0.75);
+ width:90px;
+ margin-top:4px;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 7px;
+    top:-87px;
+    left: 90px;
+
+}
+
+.allSubmit
+{
+    
+    background-color: black;
+    opacity: 0.75;
+     position: absolute; 
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    height: 100%;
+   z-index: 40;
+   align-content:center;
+}
+
+.submitForm
+{
+position: absolute;
+top:25%;
+left: 45%;
+
+    background-color: white;
+   
+}
+
+form[class="submitForm"] input
+{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-top: 10px;
+    display: block;
+}
+
+.signIn
+{
+    color:#4d4d4d;
+}
+
+
+
+
+
+
+.Upload { /* Lien upload Partie Logo*/
+    color:#20c0c9;
+}
+
+
+
+
+
+
+.IMlogo /* Logo SVG de insight*/
+{
+position:relative;  
+top:0.5px;a
+left:0.5px;
+}
+
+.logo
+{
+    align-content: center;
+    left:84px;
+    width: 200px;
+    height: 92px;
+    border-radius: 11px 11px 11px 11px / 13px 13px 13px 13px;
+    background-color: #3fd1d7;
+    border:solid rgba(255,255,255,0.71); 
+    
+    
+}
+
+
+
+
+
+/*  ############ SEARCH BAR ############## */
+
+.searchPlace
+{
+  position:relative;
+  top:-20px;
+  left: -5px;
+  font-family:Muli;
+  width:358px;
+    opacity:0.75;
+    text-decoration: big;
+    border-radius: 14px 14px 14px 14px / 14px 14px 14px 14px;
+    padding:5px;
+  border:solid rgba(255,255,255,0.71); 
+      
+}
+
+
+.search
+{
+    justify-content: center;
+ position:fixed;
+ 
+ height: 25px;
+    width: 358px;
+    right:14px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    top:25px;
+    border-radius: 14px 14px 14px 14px / 14px 14px 14px 14px;
+    
+    
+}
+
+
+
+
+
+header,nav[class="side"] /*color officiel*/ 
+{
+    background-color:rgba(236,252,255,0.9);
+        opacity: 246;
+       border-radius: 16.512px;
+  box-shadow: rgba(0,0,0,0.2) 2px 2px 2px 2px;
+ 
+}
+
+footer
+{
+     background-color:rgba(236,252,255,0.6);
+    
+    z-index: 10;    
+    display: inline-block;
+    position: fixed;
+    height: 90px;
+    bottom:0px;
+    left:0px;
+   width:100%;
+   
+}
+
+
+
+
+
+/* ############### MAIN SIDE ############## */
+
+
+nav[class="sideList"] a
+{
+  font-family:Muli;
+    display: inline; 
+    position: relative;
+    top:10px;
+    text-decoration: none;
+    color: #8e8080;
+    
+    
+}
+
+
+nav[class="sideList"] a:hover
+{
+    color:black;
+}
+
+.Popular
+{
+    margin-left: 10px;
+}
+.Followed
+{
+    margin-right: 10px;
+    margin-left: 10px; 
+}
+
+
+
+.side
+    {
+    font-family: Muli;
+    z-index: 7;
+           display: inline-block; 
+    position:fixed;width: 358px;
+    height: 60%;
+    top: 80px;
+    right: 15px;
+    margin-top: 15px;
+    align-content:center;
+      
+    }
+
+
+.sideList /* Le menu des layers*/
+{
+    
+    text-align: center;
+    font-family: CaviarDreams;
+    font-weight: 900;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    border-radius: 10.512px;
+    height: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 358px;
+}
+
+
+.sideFooter
+{
+ background-color: rgba(255, 255, 255, 1);
+border-radius: 16.512px;
+    padding: 5px 5px 5px 5px;
+    position:relative;
+    left: 0.5 px;
+    top: 8px;width: 348px;
+    height: 84%;
+    
+    
+}
+
+
+/* further information higher*/
+
+
+.logo /* insightmapp header logo*/
+{
+    position: absolute;
+    top:10px;
+    left:10px;
+    z-index: 2;
+}
+
+
+
+
+
+
+/* ############ BACKGROUND MAP ################*/
+.map
+{
+ position: absolute; 
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+
+/*$$$$$$$$$$ LogIn page Style $$$$$$$$$$$  */
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.login
+{
+	background-color:rgba(102,102,102,0.5);
+	
+     display: inline-block;
+     alignment-baseline: central;
+     position: absolute;
+     left: 30%;
+     top:10%
+     width:500px;
+     height:300px;
+	 z-index:49 ;
+	 margin:15px 15px 15px 15px;
+	 
+	
+}
+form[class="login"] input 
+{ position: relative;
+left:15%;
+top:10%;
+display:block;
+margin: 15px;    
+  border:solid 1px rgba(255,255,255,1);
+     border-radius:10.512px;
+     height:30px;
+     width: 350px;
+     font-family:Muli;
+	padding: 3px;
+	text-align:center;
+	background-color:white;
+}
+
+form[class="login"] input:active 
+{
+    outline:none;
+}
+
+.linkSignup
+{
+	text-decoration:none;
+	font-family:Muli;
+	color: white;
+	font-size: 17px;
+	position:relative;
+	left:19%;
+top:10%;
+    width: 400px;
+
+    font-weight: bold;
+}
+
+.linkSignup:focus
+{
+    text-decoration:none;
+    border:none;
+    outline: none;
+}
+
+.backlink
+{
+   position: absolute; 
+    top: 0;
+    right: 0;
+    width:100%;
+    height: 100%;
+}

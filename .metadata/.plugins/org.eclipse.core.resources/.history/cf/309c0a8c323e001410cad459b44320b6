@@ -1,0 +1,13 @@
+<?php
+
+
+/*PARAM: NOM PRENOM MAIL PASSWORD CONFIRM_PASSWORD
+ */
+
+function validation_input($post) // on utilisa l'array $_POST
+{
+	
+	// nom
+	// prénom
+	
+}

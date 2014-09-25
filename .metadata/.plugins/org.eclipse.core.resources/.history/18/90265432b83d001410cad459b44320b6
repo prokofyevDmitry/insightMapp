@@ -1,0 +1,42 @@
+<?php // ici nous alons reboucler sur la meme page d'aceuille dans le cas ou certains données ne sont pas bonnes
+ session_start();
+ $result = array(0,0,0);
+include 'test_Input.php';
+include '../control/cryptage.php';
+include '../model/db_connexion.php';
+
+db_connexion('insightmapp','root','');
+
+
+
+if(isset($_POST['submit_signin']))
+{
+	// verification de la validité des parametres passées en paramettre:
+	/* TODO 
+	 creer une fonction qui permet de faire des test sur les variables, du genre:
+	 test_input($var, 'mail'), syntaxe générale: test_input($var, 'type d'entrée'); 
+	ne pas oublier htmlsecialcaracter.
+	*/
+	
+ // les resultats temporaires
+$test = true;
+ $result[0]=test_input($_POST['nom'], 'nom');
+ $result[1]=test_input($_POST['prenom'], 'prenom');
+ $result[2]=test_input($_POST['mail'], 'mail');
+}
+else
+{ 
+include '../vue/user_signin_form.php'; 
+}
+if(($result[0]+$result[1]+$result[2])==0 AND isset($test)) // on récupére que des 0, donc tout les éléments on était validées;
+	
+	echo 'ok'; //TODO SYSTHEME D4ECRITURE DANS LA BASE DE DONNES ici se fera l'écriture dans la base de donnée d'un nouvel utilisateut
+else
+{
+	include '../vue/user_signin_form.php';
+	if($result[0]==1) echo'<p class="signin_warning">Entrez un nom valide<p>';
+	if($result[1]==1) echo'<p class="signin_warning">Entrez un prénom valide<p>';
+	if($result[2]==1) echo'<p class="signin_warning">Entrez une adresse valide<p>';
+}
+}
+?>

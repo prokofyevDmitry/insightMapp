@@ -1,0 +1,13 @@
+13:07:45 **** Incremental Build of configuration Debug for project tp1 ****
+make all 
+Building target: tp1
+Invoking: Cross GCC Linker
+gcc  -o "tp1"  ./src/test.o  ./tringle.o   
+./tringle.o: In function `main':
+/opt/lampp/htdocs/tests/tp1/Debug/../tringle.c:12: multiple definition of `main'
+./src/test.o:/opt/lampp/htdocs/tests/tp1/Debug/../src/test.c:13: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [tp1] Error 1
+
+13:07:45 Build Finished (took 195ms)
+

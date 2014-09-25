@@ -1,0 +1,58 @@
+<?php // ici nous alons reboucler sur la meme page d'aceuille dans le cas ou certains données ne sont pas bonnes
+
+/* TODO Débuger la connexion à la base de donnée et verifier la bonne verification des mails
+ * 
+ * 
+ */
+
+session_start();
+ $result = array(0,0,0);
+$chart_name = 'users';
+ include '../control/test_Input.php';
+include '../control/cryptage.php';
+include '../model/bd_connexion.php';
+include '../model/champ_query.php';
+
+$bdd = db_connexion('insightmapp','root',''); // connexion base de données. 
+
+
+if(isset($_POST['submit_signin']))
+{
+	// verification de la validité des parametres passées en paramettre:
+	/* TODO 
+	on s'en fout pas  ne pas oublier htmlsecialcaracter.
+	*/
+	
+ // les resultats temporaires
+$test = true;
+$test_mail = true;
+
+
+ $result[0]=test_input($_POST['nom'], 'nom', $bdd, $chart_name);
+ $result[1]=test_input($_POST['prenom'], 'prenom', $bdd, $chart_name);
+ $test_mail=test_input($_POST['mail'], 'mail', $bdd, $chart_name);	
+ 
+}
+else
+{ 
+include '../vue/user_signin_form.php'; 
+}
+if($result[0]==true AND $result[1]==true AND $result[2]==true AND $test_mail==true AND isset($test)) // on récupére que des 0, donc tout les éléments on était validées;
+{	
+	
+	//TODO SYSTHEME D4ECRITURE DANS LA BASE DE DONNES ici se fera l'écriture dans la base de donnée d'un nouvel utilisateut
+	
+	echo 'ok'; 
+}
+else
+{
+	include '../vue/user_signin_form.php';
+	echo '<div class="signin_warning"'
+	if($result[0]==false) echo'<p >Entrez un nom valide<p>';
+	if($result[1]==false) echo'<p  >Entrez un prénom valide<p>';
+	if($result[2]==false) echo'<p  >Entrez une adresse valide<p>';
+	if($test_mail==false) echo'<p  >Votre adresse mail est déjà utilisé!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>';
+	echo '</div>'
+}
+
+?>

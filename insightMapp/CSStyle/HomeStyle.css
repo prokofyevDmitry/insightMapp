@@ -327,20 +327,24 @@ border-radius: 16.512px;
 .login
 {
 	background-color:rgba(102,102,102,0.5);
-	
+	border: solid white 1px;
+	border-radius: 16.512px;
      display: inline-block;
-     position:fixed;
-     top:0px;
-     left:0px;
-     width:100%;
-     height:100%;
+     alignment-baseline: central;
+     position: absolute;
+     left: 30%;
+     top:18%;
+     width:500px;
+     height:300px;
 	 z-index:49 ;
+	 margin:15px 15px 15px 15px;
+	 
 	
 }
 form[class="login"] input 
 { position: relative;
-left:38%;
-top:30%;
+left:13%;
+top:10%;
 display:block;
 margin: 15px;    
   border:solid 1px rgba(255,255,255,1);
@@ -365,8 +369,8 @@ form[class="login"] input:active
 	color: white;
 	font-size: 17px;
 	position:relative;
-	left:39%;
-top:30%;
+	left:19%;
+top:10%;
     width: 400px;
 
     font-weight: bold;

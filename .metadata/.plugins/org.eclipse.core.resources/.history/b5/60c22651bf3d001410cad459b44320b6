@@ -1,0 +1,11 @@
+<?php
+
+
+// la fonction permet de récuperer un objet PDO qui contient le résultat d'une requette.
+
+
+champs_query($champ, $bd, $chart_name)
+{
+		$bd->query('SELECT'.$chart_name.' FROM '.$champ.'')
+}
+

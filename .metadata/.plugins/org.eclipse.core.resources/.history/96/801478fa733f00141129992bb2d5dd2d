@@ -1,0 +1,77 @@
+<?php // ici nous alons reboucler sur la meme page d'aceuille dans le cas ou certains données ne sont pas bonnes
+
+/* TODO Débuger la connexion à la base de donnée et verifier la bonne verification des mails
+ * 
+ * 
+ */
+
+session_start();
+ $result = array(0,0,0);
+$chart_name = 'users';
+$test_mail=0;
+ include '../control/test_Input.php';
+include '../control/cryptage.php';
+include '../model/bd_connexion.php';
+include '../model/champ_query.php';
+
+$bdd = db_connexion('insightmapp','root',''); // connexion base de données. 
+
+
+if(isset( $_POST['submit_signin'] ) )
+{
+	
+$test = true;
+$test_mail = true;
+$html_chars_off = array();
+foreach ($_POST as $value =>$key) // securisation contre l'injection
+{
+	$_POST[$value] = htmlspecialchars($key);
+}	
+
+ $result[0]=test_input($_POST['nom'], 'nom', $bdd, $chart_name); // nettoyage des html chars
+ $result[1]=test_input($_POST['prenom'], 'prenom', $bdd, $chart_name);
+ $test_mail=test_input($_POST['mail'], 'mail', $bdd, $chart_name);	
+ 
+}
+else
+{ 
+include '../vue/user_signin_form.php'; 
+}
+if($result[0]==true AND $result[1]==true AND $test_mail==true AND isset($test_mail)) // on récupére que des 0, donc tout les éléments on était validées;
+{	
+	
+	/*TODO SYSTHEME D4ECRITURE DANS LA BASE DE DONNES ici se fera l'écriture dans la base de donnée d'un nouvel utilisateut
+creat send mail with hashed password, then if the user enter the pasword you can check
+		
+			L'idée est très simple: une nouvelle colone dans users: "activé" si l'utilisateur entre dans le mail dans les 24
+			heures qui suivent alors on confirme sa présence, 
+			s'il ne vient pas,
+			a la prochaine connxion on lui reenvoie un mail
+			s'il ne se connecte pas pendant 1 semaines après avoir fait la préinscription, alors il est éliminé.
+			Un fois inscrit complétment, peut etre actif ou innactif, whatever.
+	
+	authentification mail:
+		on tire un nombre au hasard
+		on le hash
+		on stocke le nombre dans une base de données
+		on stocke le 
+	
+	*/
+	
+
+	
+	echo 'ok';
+	
+	
+}
+else
+{
+	include '../vue/user_signin_form.php';
+	echo '<div class="signin_warning"';
+	if($result[0]==false) echo'<p >Entrez un nom valide<p>';
+	if($result[1]==false) echo'<p  >Entrez un prénom valide<p>';
+	if($test_mail==false) echo'<p  >Votre adresse mail est déjà utilisé!</p>';
+	echo '</div>';
+}
+
+?>

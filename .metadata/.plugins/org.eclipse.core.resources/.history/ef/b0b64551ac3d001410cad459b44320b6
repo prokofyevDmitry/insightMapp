@@ -1,0 +1,23 @@
+/*
+ * tringle.c
+ *
+ *  Created on: Sep 16, 2014
+ *      Author: root
+ */
+
+
+int main(int argc, char** argv)
+{
+	char string[100];
+	int i;
+	if(argc== 2)
+	{
+
+		for(i=0; i<argc; i++)
+		{
+			string[i] = '*';
+			printf('%s\n',*string);
+		}
+	}
+
+}

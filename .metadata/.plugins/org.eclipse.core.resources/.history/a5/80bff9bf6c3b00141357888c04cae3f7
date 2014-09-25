@@ -1,0 +1,44 @@
+<?php
+
+
+// les types des entrées:
+// on suppose que tout les données reçus sont remplis, un script en javascript va s'occuper de tester la bonne présence des variables.
+/*nomchamp:alias
+ * Nom
+ * prenom
+ * mail : filter_var($mail, 'FILTER_VALIDATE_EMAIL');
+ * mdp
+ * repetition mdp
+ * 
+ */
+
+function test_input($test, $methode)
+{
+	$type_methode = array( 
+	'nom','prenom','mail','mdp','repetition_mdp'	
+	);
+	$test_result = array();
+	
+	// l'idée est de regrouper les differents champs par les tests qu'il faut effectuer:
+	
+	// On a reçu une array POST, on va la parcourir et faire la liste des tests à faires
+	foreach ($_POST as $key => $input)
+	{
+		switch(key)
+		{
+			case 0: 
+		}
+	}
+	
+	
+	// test nom et prénom: pas de digitales, pas de caractères spéciaux. 
+	function test_name($string)
+	{
+		
+	}
+	
+	
+	
+}
+
+

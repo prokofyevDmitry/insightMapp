@@ -1,0 +1,27 @@
+<?php
+
+
+// les types des entrées:
+
+/*nomchamp:alias
+ * Nom
+ * prenom
+ * mail : filter_var($mail, 'FILTER_VALIDATE_EMAIL');
+ * mdp
+ * repetition mdp
+ * 
+ */
+
+function test_input($test, $methode)
+{
+	$type_methode = array(
+	'nom','prenom','mail','mdp','repetition_mdp'	
+	);
+	
+	
+	
+	
+	
+}
+
+

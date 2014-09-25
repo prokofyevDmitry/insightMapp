@@ -1,0 +1,17 @@
+<?php
+
+// la mot de passe est trop petit 0
+// le mot de passe est pas le meme que la confiramtion 2
+// le mot de passe est trop long (peu probable mais bon) 3
+// tout est ok true
+
+function test_password()
+{
+	if(strlen($_POST['mdp'])<8)
+		return 0;
+	if($_POST['mdp'] != $_POST['confiramtion_mdp'])
+		return 2;
+	
+	if( !preg_match('#^[A-z0-9]*$#', $_POST['mdp']))
+		return 
+}

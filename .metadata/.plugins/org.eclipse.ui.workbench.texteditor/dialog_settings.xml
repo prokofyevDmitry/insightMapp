@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="285" key="DIALOG_WIDTH"/>
+		<item value="275" key="DIALOG_Y_ORIGIN"/>
+		<item value="820" key="DIALOG_X_ORIGIN"/>
+		<item value="413" key="DIALOG_HEIGHT"/>
+		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="$_POST" key="selection"/>
+		<list key="findhistory">
+			<item value="$_POST"/>
+			<item value="fopen"/>
+			<item value="com_lo"/>
+			<item value="comlo"/>
+			<item value="class="/>
+			<item value="post_id="/>
+			<item value="donnes"/>
+			<item value="d"/>
+		</list>
+		<list key="replacehistory">
+			<item value="$html_chars_off"/>
+			<item value="$"/>
+		</list>
+	</section>
+</section>

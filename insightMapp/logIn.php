@@ -7,6 +7,9 @@
 <meta charset='utf-8'/>   
 <link rel="stylesheet" href="CSStyle/leaf.css"/>
 <?php include ("parts/mapLeafInc.php");?>
+<?php 
+?>
+
 </head>
 
     

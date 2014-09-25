@@ -1,0 +1,25 @@
+<?php
+
+
+// les types des entrées:
+
+/*nomchamp:alias
+ * Nom
+ * prenom
+ * mail
+ * mdp
+ * repetition du mdp
+ * 
+ */
+
+function test_input($test, $methode)
+{
+	
+	
+	
+	
+	
+	
+}
+
+

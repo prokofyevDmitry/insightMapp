@@ -1,0 +1,15 @@
+<?php
+function cryptage($password)
+{
+	$hash =  password_hash($password, PASSWORD_BCRYPT);
+	
+	if(isset($hash))
+	{
+		return hash;
+	}
+	else 
+	{
+		echo 'ERROR 0001'; 
+	}
+}
+

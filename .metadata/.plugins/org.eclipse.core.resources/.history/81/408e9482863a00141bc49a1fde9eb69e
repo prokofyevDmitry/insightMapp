@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<link rel="stylesheet" href="../CSStyle/signIn.css"/>
+<meta charset="utf-8"/>
+</head>
+
+
+<body>
+
+<form action="signIn.php" method="post" class="signIn">
+<input type="text" placeholder="Nom" name="nom"/>
+<input type="text" placeholder="Prenom" name="prenom"/>
+<input type="email" placeholder="Adresse Mail" name="mail"/>
+<input type="password" placeholder="Mot de passe" name="mdp"/>
+<input type="password" placeholder="Répetez le mot de passe" name="confiramtion_mdp"/>
+<input type="submit" placeholder="GO" name="submit_signin" />
+</form>
+
+<?php // ici nous alons reboucler sur la meme page d'aceuille dans le cas ou certains données ne sont pas bonnes
+
+if(isset($_POST['submit_signin']))
+{
+	// verification de la validité des parametres passées en paramettre:
+	
+	//TODO creer une fonction qui 
+	// creer un systeme imprenable , ne pas oublier htmlsecialcaracter.
+	
+}
+
+?>
+
+
+
+
+</body>
+</html>

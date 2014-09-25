@@ -1,0 +1,58 @@
+<?php 
+
+// les types des entrées:
+/*nomchamp:alias
+ * nom
+ * prenom
+ * mail : filter_var($mail, 'FILTER_VALIDATE_EMAIL');
+ * mdp
+ * repetition mdp
+ * 
+ */
+
+function test_input($test, $methode,  $bdd, $chart_name)
+{$result = 0;
+	switch($methode) // l'ordre est défini par le POST
+		{
+			case 'nom': $result = test_name($test); break;
+			case 'prenom':$result = test_name($test); break;
+			case 'mail':break; 
+			default: echo 'ERROR 0002'; // echec de thes par la method
+		}
+		
+			if($methode=='mail')
+			{
+				$result=true;
+				$data=champ_query('mail', $bdd, $chart_name);
+				while ($donnee = $data->fetch())
+				{
+					if($donnee['mail'] == $test)
+						$result=false;
+				}
+			}
+			
+	
+	// test nom et prénom: pas de digitales, pas de caractères spéciaux. 
+		
+		
+		
+		// test "votre mail est déja utilisé"
+		//TODO
+		
+		
+		
+		
+return $result; 	
+}
+
+
+
+function test_name($string)
+{
+	$string = preg_replace('.-.', '', $string);
+	$string = preg_replace('. .', '', $string);
+	if(preg_match('#^[A-z]+$#',$string))
+		return true; // si on trouve quelque chose alors on va envoyer 0
+	else return false;
+}
+
