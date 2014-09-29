@@ -6,13 +6,12 @@
 <link rel="stylesheet" href="CSStyle/HomeStyle.css"/>
 <meta charset='utf-8'/>   
 <link rel="stylesheet" href="CSStyle/leaf.css"/>
-<?php include ("parts/mapLeafInc.php");?>
-<?php 
+<?php include ("parts/mapLeafInc.php");
+
 // on inclut ici les fonctions utilisées lors des tests. 
 
 include 'model/bd_connexion.php';
 include 'model/champ_query.php';
-
 
 ?>
 
