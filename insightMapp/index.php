@@ -8,14 +8,31 @@ ici se feront les validations.
  * 
  */
 
-if(!isset($_COOKIE['connected']))
+
+
+// techniques for redirection: 
+
+
+session_start();
+if(isset($_GET['loc']))
 {
-	include 'vue/homePage.php';
 	
+
+
+switch ($_GET['loc'])
+{
+	case "home_premiere_visite": include 'control/premiere_visite.php'; break;
+	
+	default:include 'vue/homePage.php';
+}
+
 }
 
 
-
+if(!isset($_GET['loc']))
+{
+	include 'vue/homePage.php';
+}
 
 ?>
 

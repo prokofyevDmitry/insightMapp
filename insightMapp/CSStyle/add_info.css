@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+
+@font-face{
+     font-family:'CaviarDreams';
+            src:url('../fonts/CaviarDreams.ttf');
+    
+}
+@font-face{
+        font-family:'QuicksideBook';
+            src:url('../fonts/Quicksand-Regular.otf');
+}
+
+@font-face{
+        font-family:'QuicksideBook';
+            src:url('../fonts/Quicksand-Regular.otf');
+}
+
+
+@font-face{
+ 
+    font-family:'Muli';
+    src:url('../fonts/Muli-Light.ttf');
+    
+}
+
+
+form input
+{
+	display:block;
+	
+}
+
+.homme
+{
+display: inline-block;
+}
+
+#status
+{
+font-family: Muli;
+}

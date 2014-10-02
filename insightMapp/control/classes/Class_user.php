@@ -1,6 +1,6 @@
 <?php
 
-Class user
+class user
 {
 	private $_login;
 	private $_pays;
@@ -8,16 +8,30 @@ Class user
 	private $_prenom;
 	private $_id;
 	
-	public function user_init($nom,$prenom,$mail,$id)
+	public function user_init($array)
 	{
-		this.$login = $mail; 
-		this.$nom = $nom;
-		this.$prenom = $prenom;
-		this.$id = 	$id;
-		
+		this.$login = $array['mail']; 
+		this.$nom = $array['nom'];
+		this.$prenom = $array['prenom'];
+		this.$id = 	$array['id'];
 		// id quering.
 		
 	}
 	
+	public function set_nom($nom)
+	{
+		$this->nom = $nom;
+	}
+	
+	
+	public function nom()
+	{
+		return $this->_nom;
+	}
+	
+	public function prenom()
+	{
+		return $this->_prenom;
+	}
 	
 }

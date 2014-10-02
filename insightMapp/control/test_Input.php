@@ -15,6 +15,8 @@ function test_input($test, $methode,  $bdd, $chart_name)
 	switch($methode) // l'ordre est défini par le POST
 		{
 			case 'nom': $result = test_name($test); break;
+			case 'pays':$result = test_name($test); break;
+			case 'city':$result = test_name($test); break;
 			case 'prenom':$result = test_name($test); break;
 			case 'mail':break;
 			
@@ -50,6 +52,16 @@ return $result;
 
 function test_name($string)
 {
+	$string = preg_replace('.-.', '', $string);
+	$string = preg_replace('. .', '', $string);
+	if(preg_match('#^[A-z]+$#',$string))
+		return true; // si on trouve quelque chose alors on va envoyer 0
+	else return false;
+}
+
+function test_city($string) // a modifier avec une requette vers google maps
+{
+	$string = preg_replace('.\'.', '', $string);
 	$string = preg_replace('.-.', '', $string);
 	$string = preg_replace('. .', '', $string);
 	if(preg_match('#^[A-z]+$#',$string))

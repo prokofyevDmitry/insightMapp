@@ -61,7 +61,7 @@ TODO:  Maintenant que nous nous sommes inscrit, il faut se loggue.
  
  	
  
- 	echo '<h2> You are logged in, Congrat :) <h2> <br> <a href="../homePage.php"> Get Home </a>';
+ 	echo '<h2> You are logged in, Congrat :) <h2> <br> <a href="../index.php?loc=home"> Get Home </a>';
  	
   
  
