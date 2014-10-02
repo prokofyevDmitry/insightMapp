@@ -1,3 +1,12 @@
+<?php 
+session_start();
+include '../control/classes/Class_user.php';
+
+include 'model/bd_connexion.php';
+include 'model/champ_query.php';
+include 'model/champ_search.php';
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -10,9 +19,6 @@
 
 // on inclut ici les fonctions utilisées lors des tests. 
 
-include 'model/bd_connexion.php';
-include 'model/champ_query.php';
-include 'model/champ_search.php';
 
 
 
@@ -39,45 +45,47 @@ include 'model/champ_search.php';
     
       	<?php 
 
+      	//connexion base de données:
       	$bdd=db_connexion('insightmapp', 'root', '');
       	
       	
       	if(isset($_POST['submit']) )
       	{
-      		//connexion base de données:
-      		
-      		
       		if(isset($_POST['login']) AND isset($_POST['password']))
       		{
       			foreach ($_POST as $value => $key) // eviter l'injection
       				$_POST[$value]=htmlspecialchars($key);
       		
       			// recherche de l'email dans la bbd
-      			
       			$donnee = champ_search($_POST['login'],'mail', $bdd, 'users');
       			if(isset($donnee))
       			$ligne = $donnee->fetch();
       			
       				
-      				
+      				// verification du mot de passe
       			if( password_verify($_POST['password'], $ligne['password']) )
       			{
-      				echo  'Welcome';
+      				
+      				// initaliser la classe utilisateur: 
+//					local_user = new user($_POST['nom'] );
+					//TODO verif la syntexe de "=new user" 
+      				
+      				
+      				// OK
       			}
       			else 
       			{
+      				//KO
       				$login_ou_password_not_matching=true;
 include("vue/user_login_form.php");
       			}
       			
       			}
-    		else 
-    		{	$none_password_ou_login= true;
-    			include("vue/user_login_form.php?");
-    		}
+    	
       		
       	}
       	else 
+      		// premiere connexion à la page
       	include("vue/user_login_form.php");
       	
       	

@@ -27,6 +27,57 @@
 
 
 .signIn
+{
+    background-color:rgba(102,102,102,0.5);
+    
+    border: solid white 1px;
+    
+   border-radius:  10.512px;
+     display: inline-block;
+     alignment-baseline: central;
+     position: absolute;
+     left: 30%;
+     top:18%;
+     width:500px;
+     padding: 15px 0px 15px 0px;
+     z-index:49 ;
+     margin:15px 15px 15px 15px;
+     border-top: none;
+     
+    
+}
+form[class="signIn"] input 
+{ 
+position: relative;
+left:13%;
+top:10%;
+display:block;
+margin: 15px;    
+  /*border:solid 1px rgba(255,255,255,1); */
+ border: solid 1px rgba(255,255,255,0.6);
+     border-radius:10.512px;
+     
+     height:26px;
+     width: 350px;
+     font-family:Muli;
+    padding: 3px;
+    text-align:center;
+    background-color:transparent;
+}
+
+form[class="signIn"] input:focus
+{
+background-color: rgba(255,255,255,0.2);
+
+}
+
+
+
+
+
+
+/*
+.signIn
  {
     
      display: inline-block;
@@ -38,6 +89,8 @@
      z-index:49 ;
     
  }
+ 
+ 
  
  form[class="signIn"] input
  {
@@ -63,7 +116,7 @@ background-color:rgba(102,102,102,0.5);
     border: none;
     outline: 0;
 }
-
+*/
 
 
 .signin_warning
@@ -72,4 +125,25 @@ font-family: Muli;
    position:absolute;
    top:70%;
    float
+}
+
+
+.submit
+{
+max-width: 40px;
+border-radius:0;
+/*visibility: hidden;*/
+}
+
+.submit:hover
+{
+background-color: rgba(255,255,255,0.2);
+border: outset white 1px;;
+}
+
+.submit:focus
+{
+
+border: inset 1px;
+outline: 0;
 }
