@@ -16,7 +16,7 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 *
 */
 
-include 'control/classes/Class_user.php';
+// include 'control/classes/Class_user.php';
 
 // echo ($_SESSION['hi']);
 
@@ -35,15 +35,30 @@ include 'control/classes/Class_user.php';
 	else
 	{
 		
-		if(isset($_GET['submit']))
+		
+		
+		
+		if(isset($_GET['submit']) AND isset($_POST['submit']))
 		{
 			// traitement des informations complementaires inserrées. 
 		/*TODO
 		 * TEST A FAIRE:
 		 * 
+		 * subm
+		 * 
+		 * iportation des fonctions de controle.
+		 * 
+		 * 
 		 * 
 		 */	
-		
+			include 'control/test_Input.php';
+			include 'control/test_fichier.php';
+			
+			
+			
+			
+			
+			
 			
 		}
 			

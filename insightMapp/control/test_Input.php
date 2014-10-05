@@ -23,6 +23,8 @@ function test_input($test, $methode,  $bdd, $chart_name)
 			default: echo 'ERROR 0002'; // echec de thes par la method
 		}
 		
+		
+		
 			if($methode=='mail')
 			{
 				$result=true;
@@ -43,8 +45,6 @@ function test_input($test, $methode,  $bdd, $chart_name)
 		//TODO
 		
 		
-		
-		
 return $result; 	
 }
 
@@ -52,19 +52,12 @@ return $result;
 
 function test_name($string)
 {
+	$regex_text = "/^([\p{L}a-zA-Z]*)$/ui";  
 	$string = preg_replace('.-.', '', $string);
 	$string = preg_replace('. .', '', $string);
-	if(preg_match('#^[A-z]+$#',$string))
-		return true; // si on trouve quelque chose alors on va envoyer 0
-	else return false;
-}
-
-function test_city($string) // a modifier avec une requette vers google maps
-{
 	$string = preg_replace('.\'.', '', $string);
-	$string = preg_replace('.-.', '', $string);
-	$string = preg_replace('. .', '', $string);
-	if(preg_match('#^[A-z]+$#',$string))
+// 	if(preg_match('#^[A-z]+$#',$string))
+	if(preg_match($regex_text,$string))
 		return true; // si on trouve quelque chose alors on va envoyer 0
 	else return false;
 }

@@ -8,8 +8,12 @@
 <link rel="stylesheet" href="CSStyle/add_info.css"/>
 <meta charset='utf-8'/>   
 
+
+
+
 <form class="addInfo" action="../index.php/?loc=home_premiere_visite&submit=true" method="post" encrypte="multipart/from-data">
 
+<h2 id="title2">We will be glad to learn more about you... Only if you want us to!</h2>
 <p id=image_de_profile>
 Update your profile picture
 
@@ -32,9 +36,9 @@ Update your profile picture
 </select>
 
 <input name="ville" placeholder="City" type="text"/>
-<input  type="submit" value="GO" placeholder="GO" class="submit" name="submit"/>
-
+<label class="mail_list" for="mail_list">Do you want to recieve our NewMail?</label><input type="checkbox"  class="mail_list" value="mail_list" name="mail_list">
 <textarea name="status" id="status" placeholder="Tell something about you, it's will be your 'official' presentation" /></textarea>
+<input  type="submit" value="GO" placeholder="GO" class="submit" name="submit"/>
 
 
 
