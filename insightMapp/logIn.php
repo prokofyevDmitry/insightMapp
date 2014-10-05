@@ -19,9 +19,8 @@ if(isset($_POST['submit']) )
 		// eviter l'injection
 		foreach ($_POST as $value => $key) 
 			$_POST[$value]=htmlspecialchars($key);
-
 		// recherche de l'email dans la bbd
-		$donnee = champ_search($_POST['login'],'mail', $bdd, 'users');
+		$donnee = champ_search(strtolower($_POST['login']),'mail', $bdd, 'users');
 		if(isset($donnee))
 			$ligne = $donnee->fetch();
 		 
@@ -44,10 +43,10 @@ if(isset($_POST['submit']) )
 			*/
 		
 			
-    		echo '<script>
-					window.location.replace("index.php?loc=home_premiere_visite")
-					exit(); 
-					</script>';
+     		echo '<script>
+ 					window.location.replace("index.php?loc=home_premiere_visite")
+ 					exit(); 
+ 					</script>';
 			// REMARQUE:le exit() PERMET D EVITER L EFFACEMENT DE LA SESSION
 			
 			
@@ -104,10 +103,10 @@ $premiere_connexion= true;
 
     
 <body>
-    <header>
+    <heaer>
             <?php include("parts/logo.php"); ?>
             <?php include("parts/search.php"); ?>
-    </header>
+    </heaer>
     <section>
     
       	<?php 

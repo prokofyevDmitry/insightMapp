@@ -8,11 +8,4 @@
 	</buildSpec>
 	<natures>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>.link1</name>
-			<type>2</type>
-			<location>/opt/lampp/htdocs/tests/.metadata/.plugins/org.eclipse.php.core/__language__/5aa96e4</location>
-		</link>
-	</linkedResources>
 </projectDescription>

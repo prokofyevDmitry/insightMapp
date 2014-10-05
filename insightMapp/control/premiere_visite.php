@@ -25,12 +25,14 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 // $user = unserialize($_SESSION['user']);
 
 	// securisation de connexion
-	if(!isset($_SESSION['user']) or !isset($_SESSION['connecte']) or isset($_SESSION['derniere_connexion']))
+	if(!isset($_SESSION['mail']) or !isset($_SESSION['connecte']) or isset($_SESSION['derniere_connexion']) )
 	{
-		echo '<script>
-			window.location.replace("index.php");
-				exit(); 
-			</script>';
+
+ 		echo '<script>
+ 			window.location.replace("index.php");
+ 				exit(); 
+		</script>';
+
 	}
 	else
 	{
@@ -40,22 +42,15 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		
 		if(isset($_GET['submit']) AND isset($_POST['submit']))
 		{
-			// traitement des informations complementaires inserrées. 
-		/*TODO
-		 * TEST A FAIRE:
-		 * 
-		 * subm
-		 * 
-		 * iportation des fonctions de controle.
-		 * 
-		 * 
-		 * 
-		 */	
 			include 'control/test_Input.php';
 			include 'control/test_fichier.php';
+			// traitement des informations complementaires inserrées. 
+		/*TODO
+		 * 
+		 */	
+			if(test_fichier('profile'))
 			
-			
-			
+						
 			
 			
 			

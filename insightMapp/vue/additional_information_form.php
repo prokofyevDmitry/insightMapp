@@ -11,13 +11,13 @@
 
 
 
-<form class="addInfo" action="../index.php/?loc=home_premiere_visite&submit=true" method="post" encrypte="multipart/from-data">
+<form class="addInfo" action="../index.php/?loc=home_premiere_visite&submit=true" method="post" enctype="multipart/form-data">
 
 <h2 id="title2">We will be glad to learn more about you... Only if you want us to!</h2>
 <p id=image_de_profile>
 Update your profile picture
 
-	<input type="file" name="profile_pic_.<?php echo '$_SESSION[\'id\']'?>" />
+	<input type="file" name=<?php echo 'profile_pic_'.$_SESSION['user_id'] ?> />
 </p>
 <!-- lors du submit, on renvoit les informations vers la page de "premiere visite", on utilisera un controleur interne pour la traiter -->
 
