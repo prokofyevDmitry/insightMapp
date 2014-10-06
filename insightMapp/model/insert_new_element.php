@@ -8,6 +8,8 @@
 function insert_new_element($bdd,$table,$nb_champs,$champ1,$val_champ1,$champ2=null,$val_champ2=null,$champ3=null,$val_champ3=null,$champ4=null,$val_champ4=null,$champ5=null,$val_champ5=null,$champ6=null,$val_champ6=null)
 {
 
+	
+	
 	//  $prep = 'INSERT INTO '.$table.'('.$champ1.','.$champ2.','.$champ3.','.$champ4.','.$champ5.','.$champ6.') VALUES ( :value1, :value2, :value3, :value4, :value5, :value6) ';
 
 	switch ($nb_champs)

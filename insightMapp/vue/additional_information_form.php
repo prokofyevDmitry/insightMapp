@@ -11,20 +11,20 @@
 
 
 
-<form class="addInfo" action="../index.php/?loc=home_premiere_visite&submit=true" method="post" enctype="multipart/form-data">
+<form class="addInfo" action="index.php/?loc=home_premiere_visite" method="post" enctype="multipart/form-data">
 
 <h2 id="title2">We will be glad to learn more about you... Only if you want us to!</h2>
 <p id=image_de_profile>
 Update your profile picture
 
-	<input type="file" name=<?php echo 'profile_pic_'.$_SESSION['user_id'] ?> />
+	<input type="file" name=profile_pic />
 </p>
 <!-- lors du submit, on renvoit les informations vers la page de "premiere visite", on utilisera un controleur interne pour la traiter -->
 
 
 <label for="sexe">Gender</label>
-<input type="radio" name="sexe" value="homme" class="homme"/>	<label for="homme">Mr.</label>
-<input type="radio" name="sexe" value="femme" class="homme"/>	<label for="femme">Mme.</label>
+<input type="radio" name="sexe" value="homme" class="homme"/>	<label for="homme">Male.</label>
+<input type="radio" name="sexe" value="femme" class="homme"/>	<label for="femme">Female</label>
 
 <p class="date-label">Birthdate</p>
 <?php include 'vue/listes/date_form.php'?>

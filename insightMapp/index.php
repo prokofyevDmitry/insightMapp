@@ -22,6 +22,7 @@ if(isset($_GET['loc']))
 switch ($_GET['loc'])
 {
 	case "home_premiere_visite": include 'control/premiere_visite.php'; break;
+
 	
 	default:include 'vue/homePage.php';
 }
