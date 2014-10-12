@@ -69,10 +69,12 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 			
 			
 			//test de la validité de fichier
-			if(isset($_POST['profile_pic']))
-			$fichier = (test_fichier($_POST['profile_pic'])) ? true : false;
+			if(isset($_FILES['profile_pic']))
+			$fichier = (test_fichier($_FILES['profile_pic'])) ? true : false;
 			else
 				$fichier=false;
+			
+			
 // 			if(test_fichier('profile_pic'))
 // 			{
 // 				$fichier = true;
@@ -150,8 +152,7 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		// on s'en branle de valider ou pas l'entrer.
 		// on se connecte à la base de donnes:
 		$bdd = db_connexion('insightmapp','root','');
-		
-		
+
 		
 		
 		if($fichier)
@@ -159,9 +160,15 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 			// on sauvgarde le fichier (on verifie que l'utilisateur est toujours connecté).
 			if(isset($_SESSION['user_id']))
 			{
-				$upload_folder = 	'upload/'.$_SESSION['user_id'].basename($_POST['profile_pic']['name']);
-			move_uploaded_file($_POST['profile_pic'],$upload_folder );
+				$upload_folder = 	'upload/'.$_SESSION['user_id'].$_FILES['profile_pic']['name'];
+			move_uploaded_file($_FILES['profile_pic']['tmp_name'],$upload_folder );
+			
+			
 			}
+			
+			
+			
+			
 			//on ecrit son adresse dans la base de données.
 			insert_new_champ_to_existing_line($bdd, 'users','profile_pic', $upload_folder,'id',$_SESSION['user_id']);
 		}
@@ -197,21 +204,28 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 			insert_new_champ_to_existing_line($bdd, 'users','mail_list',$_POST['mail_list'],'id',$_SESSION['user_id']);
 			
 		}
+		
+		
+		insert_new_champ_to_existing_line($bdd, 'users', 'last_activity', date(DATE_RSS), 'id', $_SESSION['user_id']);
+		
+		
+		 
 			
-			
-		echo '<h1> WELL DONE YOU ARE NOW FROM THE CLUB</h1>';
+		echo '<script>
+ 			window.location.replace("index.php?loc=co_home");
+ 				exit();
+		</script>';
+		
+		
+
 		
 		
 		
 			
 		}
 			
-		
-			
-			
-			
-		
-			
+		else 
+		{
 			
 // 		print_r ($_SESSION);
 		

@@ -11,20 +11,25 @@ function test_fichier($fichier) {
 	// le nom doit être sans espace et sans accents
 	// pas d'accents, pas d'espaces pas de anti slash.
 	// le début et la fin doivent etre en des lettre (le début du
+if(isset($fichier) and $fichier['error']==0)
+{
 	$nom = test_fichier_nom ( $fichier);
 	//test type du fichier;
 	$type = test_fichier_type($fichier);
 	// test taille fichier (<20mb);
 	$taille = test_fichier_taille($fichier);
 	
-// 	if($nom==false) echo 'wrong name<br>';
-// 	if($type==false) echo 'wrong type<br>';
-// 	if($taille==false) echo 'wrong taille<br>';
+	
+//  	if($nom==false) echo 'wrong name<br>';
+//  	if($type==false) echo 'wrong type<br>';
+//  	if($taille==false) echo 'wrong taille<br>';
 	
 	if($nom==false or $type==false or $taille==false)
 		return false;
 	else return true;
-	
+}
+else 
+	return false;
 }
 
 // fonction de test de la validité du nom du doccument
@@ -32,7 +37,7 @@ function test_fichier_nom($fichier) {
 	
 	
 	// Amélioration pour la 2.0: faire en sorte d'accepter tout les chars. 
-	$pas_de_signes_interdits = '#^[a-zA-Z0-9._]+$#';
+	$pas_de_signes_interdits = '#^[a-zA-Z0-9._-]+$#';
 	$pas_de_ponctuation_au_debut = '#^[a-zA-Z0-9]#';
 	$pas_de_ponctuation_a_la_fin = '#[a-zA-Z]$#';
 	
@@ -63,6 +68,8 @@ function test_fichier_type($file)
 			'jpg'
 	);
 	
+	
+	
 	$infosfichier = pathinfo($file['name']);
 	$extension_upload = $infosfichier['extension'];
 	
@@ -79,6 +86,6 @@ function test_fichier_type($file)
 
 function test_fichier_taille($file)
 {
-if($file['size']<500000)	return true;
+if($file['size']<5000000)	return true;
 else return false;
 }
