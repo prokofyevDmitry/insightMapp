@@ -207,26 +207,11 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		}
 			
 		
-			
-			
-			
+		else{	
 		
-			
-			
-// 		print_r ($_SESSION);
-		
-		// Affichage des informations auxiliaires:
-
 		include 'vue/additional_information_form.php';
-		
-		
 
-		
-		
-		
-		
-		
-		
+		}
 	}
 	
 	
