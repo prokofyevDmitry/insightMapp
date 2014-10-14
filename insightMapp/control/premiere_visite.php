@@ -232,17 +232,4 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		// Affichage des informations auxiliaires:
 
 		include 'vue/additional_information_form.php';
-		
-		
-
-		
-		
-		
-		
-		
-		
-	}
-	
-	
-	
-?>
+	}} ?> 
