@@ -4,9 +4,7 @@ include 'control/test_menu_deroulant.php';
 if (isset ( $_POST ['submit'] )) 
 
 {
-	if(isset($_POST['mail_list']))
-	echo ($_POST['mail_list'].'<br>');
-
+	
 }
 
 ?>

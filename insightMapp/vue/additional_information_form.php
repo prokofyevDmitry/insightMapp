@@ -19,6 +19,7 @@ A deeper look yielded what I was looking for: it’s been renamed from previous 
 
 Greyscale and desaturate colours in Inkscape 0.48
 
+<<<<<<< HEAD
 Note that the desaturate option in Inkscape also converts objects and paths to greyscale. You can get rid of the desaturation/greyscale effect by selecting the element(s) you want to change, and selecting Filters > Remove Filters (note: this will remove all filters applied, and not just the desaturation filter!).
 
 Inkscape should have both Desaturate and Greyscale options according to Inkscape’s effect reference guide, but as you can see from the screenshot above, there is no greyscale option! You can, of course, create your own saved effect in Inkscape for greyscale if it bothers you that much.  
@@ -36,10 +37,19 @@ Update your profile picture
 
     <label for="profile_pic"><img alt="undefined user" src="../CSStyle/drawing3.png"></label>
 	<input type="file" name=profile_pic />
+=======
+<body>
+<form class="addInfo" action="index.php/?loc=home_premiere_visite" method="post" enctype="multipart/form-data">
+
+<h2 id="title2">We will be glad to learn more about you... Only if you want us to!</h2>
+<p id=image_de_profile>
+Update your profile 
+>>>>>>> 7ae3befdbc1d06e9b5bc72db1ae1d19fe9ea6302
 </p>
+	
+	
+	<input type="file" name="profile_pic" />
 <!-- lors du submit, on renvoit les informations vers la page de "premiere visite", on utilisera un controleur interne pour la traiter -->
-
-
 <label for="sexe">Gender</label>
 <input type="radio" name="sexe" value="homme" class="homme"/>	<label for="homme">Male.</label>
 <input type="radio" name="sexe" value="femme" class="homme"/>	<label for="femme">Female</label>
@@ -65,6 +75,11 @@ Update your profile picture
 <?php if(isset($login_ou_password_not_matching) )  echo '<p class="linkSignup_warning"> Wrong login or password, please retry </p>';?>
 
 </form>
+<<<<<<< HEAD
 
 </nav>
+=======
+</body>
+
+>>>>>>> 7ae3befdbc1d06e9b5bc72db1ae1d19fe9ea6302
 <?php

@@ -21,8 +21,9 @@ if(isset($_GET['loc']))
 
 switch ($_GET['loc'])
 {
+	// la case acceuille, ou l'on se renseigne sur la personne qui vient de se connecter
 	case "home_premiere_visite": include 'control/premiere_visite.php'; break;
-
+	case "home_connecte" : include 'control/home_connecte.php'; break;
 	
 	default:include 'vue/homePage.php';
 }
