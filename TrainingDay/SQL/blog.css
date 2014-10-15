@@ -19,11 +19,12 @@ a
 
 nav
 {
-	margin: 0px 0px 10px 0px;
-	padding: 5px 5px 5px 5px;
-	width: 40%;
-	background-color:#4E5A66;
-	border-radius:5px;
+	 position: absolute;
+    left:40%;
+    background-color: rgba(42, 42, 42, 0.47);
+   border-radius: 15px;
+    padding: 3px 5px 5px 45px;
+    width:50%;
 	
 }
 

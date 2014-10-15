@@ -87,16 +87,7 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 			
 			$sexe = (isset($_POST['sexe']) AND (strcmp($_POST['sexe'],'femme') or strcmp($_POST['sexe'],'homme'))) ? true: false;
 			
-			//test de validité du sexe: l'utilisateur peut modifier le html encoyé au server, il est important de le verifier.
-
-// 			if(isset($_POST['sexe']) AND (strcmp($_POST['sexe'],'femme') or strcmp($_POST['sexe'],'homme')))
-// 			{
-// 				$sexe = true;
-// 			}
-// 			else 
-// 			{
-// 				$sexe = false;
-// 			}
+			
 			
 			
 			//test de la date;
@@ -154,7 +145,7 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		$bdd = db_connexion('insightmapp','root','');
 
 		
-		
+		}
 		if($fichier)
 		{
 			// on sauvgarde le fichier (on verifie que l'utilisateur est toujours connecté).
@@ -171,7 +162,7 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 			
 			//on ecrit son adresse dans la base de données.
 			insert_new_champ_to_existing_line($bdd, 'users','profile_pic', $upload_folder,'id',$_SESSION['user_id']);
-		}
+		
 		
 
 		if($sexe)
@@ -208,34 +199,34 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		
 		insert_new_champ_to_existing_line($bdd, 'users', 'last_activity', date(DATE_RSS), 'id', $_SESSION['user_id']);
 		
-		
-<<<<<<< HEAD
-		else{	
-=======
+		}
+
+		else {	
 		 
 			
 		echo '<script>
  			window.location.replace("index.php?loc=co_home");
  				exit();
 		</script>';
-		
-		
-
-		
-		
-		
-			
 		}
+	
+		
+		
+		
+	
+	
 			
 		else 
 		{
 			
 // 		print_r ($_SESSION);
->>>>>>> 7ae3befdbc1d06e9b5bc72db1ae1d19fe9ea6302
-		
+
 		include 'vue/additional_information_form.php';
 
 		}
+	
+	
+	
 	}
 	
 	
