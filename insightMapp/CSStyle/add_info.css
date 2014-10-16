@@ -37,9 +37,9 @@ body
 {
     width: 400px;
     float: left;
-    font-weight: 600;
+    font-weight: 300;
     padding: 30px;
-        background-color: rgba(255,255,255,0.25);
+        background-color: rgba(42, 42, 42, 0.47);
     border-radius: 15px;
 }
 h2
@@ -55,7 +55,7 @@ form
 {
     position: absolute;
     left:40%;
-    background-color: rgba(255,255,255,0.25);
+    background-color: rgba(42, 42, 42, 0.47);
    border-radius: 15px;
     padding: 3px 5px 5px 45px;
     width:50%;
@@ -91,4 +91,8 @@ font-family: Muli;
 .mail_list
 {
 display:inline-block;
+}
+
+#title2 {
+   width:inherit;
 }

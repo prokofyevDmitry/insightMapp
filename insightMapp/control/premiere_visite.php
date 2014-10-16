@@ -44,6 +44,7 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		
 		if(isset($_POST['submit']))
 		{
+			// inclusion des controleurs et des models, pour le controle interne et pour la communication avec les bases de données
 			include 'control/test_Input.php';
 			include 'control/test_fichier.php';
 			include 'control/test_menu_deroulant.php';
@@ -73,8 +74,6 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 			$fichier = (test_fichier($_FILES['profile_pic'])) ? true : false;
 			else
 				$fichier=false;
-			
-			
 // 			if(test_fichier('profile_pic'))
 // 			{
 // 				$fichier = true;
@@ -152,7 +151,8 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		// on s'en branle de valider ou pas l'entrer.
 		// on se connecte à la base de donnes:
 		$bdd = db_connexion('insightmapp','root','');
-
+		
+		
 		
 		
 		if($fichier)
@@ -162,13 +162,7 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 			{
 				$upload_folder = 	'upload/'.$_SESSION['user_id'].$_FILES['profile_pic']['name'];
 			move_uploaded_file($_FILES['profile_pic']['tmp_name'],$upload_folder );
-			
-			
 			}
-			
-			
-			
-			
 			//on ecrit son adresse dans la base de données.
 			insert_new_champ_to_existing_line($bdd, 'users','profile_pic', $upload_folder,'id',$_SESSION['user_id']);
 		}
@@ -208,31 +202,42 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		
 		insert_new_champ_to_existing_line($bdd, 'users', 'last_activity', date(DATE_RSS), 'id', $_SESSION['user_id']);
 		
+// 		echo '<script>
+//  			window.location.replace("index.php?loc=co_home");
+//  				exit();
+// 		</script>';
 		
 
+		
+		print_r ($_SESSION);
+		
+		
+
+		}
+		
 		else{	
 
-		 
-			
-		echo '<script>
- 			window.location.replace("index.php?loc=co_home");
- 				exit();
-		</script>';
-		
-		
 
+			
 		
 		
 		
 			
-		}
-			
-		else 
-		{
-			
-// 		print_r ($_SESSION);
+// 		
+		// Affichage des informations auxiliaires:
 
-		
 		include 'vue/additional_information_form.php';
+		}
+	}	
+		
+			
+			
+			
+		
+			
+			
 
-	}} ?> 
+	 ?> 
+		
+		
+

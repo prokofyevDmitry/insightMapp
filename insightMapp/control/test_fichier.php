@@ -20,9 +20,9 @@ if(isset($fichier) and $fichier['error']==0)
 	$taille = test_fichier_taille($fichier);
 	
 	
-//  	if($nom==false) echo 'wrong name<br>';
-//  	if($type==false) echo 'wrong type<br>';
-//  	if($taille==false) echo 'wrong taille<br>';
+  	if($nom==false) echo 'wrong name<br>';
+  	if($type==false) echo 'wrong type<br>';
+  	if($taille==false) echo 'wrong taille<br>';
 	
 	if($nom==false or $type==false or $taille==false)
 		return false;
@@ -49,7 +49,7 @@ function test_fichier_nom($fichier) {
 		$caracteres_specs = true;
 	}
 	
-	if (strlen ( $fichier['name'] ) > 40) {
+	if (strlen ( $fichier['name'] ) > 100) {
 		$trop_long = true;
 	}
 	
@@ -86,6 +86,6 @@ function test_fichier_type($file)
 
 function test_fichier_taille($file)
 {
-if($file['size']<5000000)	return true;
+if($file['size']<100000000)	return true;
 else return false;
 }
