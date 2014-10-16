@@ -50,6 +50,7 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 			include 'control/test_menu_deroulant.php';
 			include 'model/insert_new_champ_to_existing_line.php';
 			include 'model/bd_connexion.php';
+			include 'model/champ_search_precise.php';
 			// exclusion de la faille SSX
 			$post_transmis = array (
 					'profile_pic',
@@ -201,15 +202,16 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		
 		
 		insert_new_champ_to_existing_line($bdd, 'users', 'last_activity', date(DATE_RSS), 'id', $_SESSION['user_id']);
+		$_SESSION['derniere_connexion'] = champ_search_precise($_SESSION['user_id'],'id','last_activity',$bdd,'users');
 		
-// 		echo '<script>
-//  			window.location.replace("index.php?loc=co_home");
-//  				exit();
-// 		</script>';
+		
+		
+		'<script>
+ 			window.location.replace("index.php?loc=home_connecte");
+ 				exit();
+		</script>';
 		
 
-		
-		print_r ($_SESSION);
 		
 		
 

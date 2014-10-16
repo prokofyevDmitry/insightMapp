@@ -8,6 +8,10 @@
  *
  */
 function test_fichier($fichier) {
+	
+
+	
+	
 	// le nom doit être sans espace et sans accents
 	// pas d'accents, pas d'espaces pas de anti slash.
 	// le début et la fin doivent etre en des lettre (le début du

@@ -6,7 +6,7 @@
  */
 
 session_start();
- $result = array(0,0,0);
+ $result = array(0,0,0,0);
 $chart_name = 'users';
  include '../control/test_Input.php';
 include '../model/bd_connexion.php';
@@ -15,6 +15,8 @@ include '../control/test_password.php';
 include '../model/insert_new_element.php';
 
 $bdd = db_connexion('insightmapp','root',''); // connexion base de données. 
+
+
 
 
 if(isset( $_POST['submit_signin'] ) )
@@ -45,7 +47,7 @@ foreach ($_POST as $value =>$key) // securisation contre l'injection
  	$hash_mdp = password_hash($_POST['mdp'],PASSWORD_BCRYPT);
  	
  	if($hash_mdp!=false) // verifie que le hash s'est bien passé. 
- 	insert_new_element($bdd, 'users', 4, 'nom', $_POST['nom'], 'prenom', $_POST['prenom'], 'mail',strtolower($_POST['mail']),'password',$hash_mdp);
+ 	insert_new_element($bdd, 'users', 4, 'nom', $_POST['nom'], 'prenom', $_POST['prenom'], 'mail',$_POST['mail'],'password',$hash_mdp);
  	else 
  		echo 'ERROR 0003';
  	
