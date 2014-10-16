@@ -218,8 +218,14 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		// Affichage des informations auxiliaires:
 
 		include 'vue/additional_information_form.php';
+<<<<<<< HEAD
 		
 		
+=======
+<<<<<<< HEAD
+	}} ?> 
+=======
+>>>>>>> 8d3cb3513079e575d8a8b3c71e32d39c76a06f87
 
 		
 		
@@ -232,3 +238,4 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 	
 	
 ?>
+>>>>>>> 825f3a1fa60db89622333d3b8f43fb2d9f22f121
