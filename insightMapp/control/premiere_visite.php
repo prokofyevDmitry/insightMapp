@@ -209,9 +209,9 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		insert_new_champ_to_existing_line($bdd, 'users', 'last_activity', date(DATE_RSS), 'id', $_SESSION['user_id']);
 		
 		
-<<<<<<< HEAD
+
 		else{	
-=======
+
 		 
 			
 		echo '<script>
@@ -231,17 +231,8 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		{
 			
 // 		print_r ($_SESSION);
->>>>>>> 7ae3befdbc1d06e9b5bc72db1ae1d19fe9ea6302
+
 		
 		include 'vue/additional_information_form.php';
-<<<<<<< HEAD
-	}} ?> 
-=======
 
-		}
-	}
-	
-	
-	
-?>
->>>>>>> 825f3a1fa60db89622333d3b8f43fb2d9f22f121
+	}} ?> 
