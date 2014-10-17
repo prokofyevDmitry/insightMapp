@@ -27,14 +27,11 @@
       	<nav class="side">
         <?php include("parts/sideList.php"); ?>           
         </nav>
-        <?php include("parts/sideFooter.php") ;?> 
+        <?php include("parts/time_line.php") ;?> 
     </section>
-      
-        
-  <footer > 
+
+    <footer > 
     
-      
-      
     </footer>
  
     <?php include ('./parts/map.php');

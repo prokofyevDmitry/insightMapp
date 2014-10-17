@@ -160,8 +160,9 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		{
 			// on sauvgarde le fichier (on verifie que l'utilisateur est toujours connecté).
 			if(isset($_SESSION['user_id']))
-			{
-				$upload_folder = 	'upload/'.$_SESSION['user_id'].$_FILES['profile_pic']['name'];
+			{	
+				// creation fichier
+				$upload_folder = 	'upload/'.$_SESSION['user_id'].'/photos/profile_pic/ '.$_FILES['profile_pic']['name'];
 			move_uploaded_file($_FILES['profile_pic']['tmp_name'],$upload_folder );
 			}
 			//on ecrit son adresse dans la base de données.
@@ -206,10 +207,10 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		
 		
 		
-		'<script>
- 			window.location.replace("index.php?loc=home_connecte");
- 				exit();
-		</script>';
+// 		echo'<script>
+//  			window.location.replace("?loc=home_connecte");
+//  				exit();
+// 		</script>';
 		
 
 		

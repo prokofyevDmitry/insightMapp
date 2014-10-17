@@ -13,6 +13,9 @@ include '../model/bd_connexion.php';
 include '../model/champ_query.php';
 include '../control/test_password.php';
 include '../model/insert_new_element.php';
+include '../control/creat_user_foldersystem.php';
+include '../model/champ_search_precise.php';
+
 
 $bdd = db_connexion('insightmapp','root',''); // connexion base de données. 
 
@@ -52,6 +55,10 @@ foreach ($_POST as $value =>$key) // securisation contre l'injection
  		echo 'ERROR 0003';
  	
  	
+ 	
+ 	// ON CREE LE SYSTHEME DE FICHIER DE L'UTILISATEUR
+ 	
+ 	creat_user_foldersystem(champ_search_precise($_POST['mail'],'mail','id',$bdd,'users'));
  	
  	
  
