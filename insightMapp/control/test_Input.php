@@ -12,6 +12,12 @@
 
 function test_input($test, $methode,  $bdd, $chart_name)
 {$result = 0;
+
+if(strlen($test)==0)
+{	$result = false;
+return $result;
+}
+
 	switch($methode) // l'ordre est défini par le POST
 		{
 			case 'nom': $result = test_name($test); break;
@@ -28,23 +34,21 @@ function test_input($test, $methode,  $bdd, $chart_name)
 			if($methode=='mail')
 			{
 				$result=true;
+				
+				
 				$data=champ_query('mail', $bdd, $chart_name);
 				while ($donnee = $data->fetch())
 				{
+					// pour la recherche d'un email dans la liste: il faut utiliser la dichotomie.
 					if($donnee['mail'] == $test)
 						$result=false;
 				}
 			}
 			
 	
-	// test nom et prénom: pas de digitales, pas de caractères spéciaux. 
 		
 		
-		
-		// test "votre mail est déja utilisé"
-		//TODO
-		
-		
+			
 return $result; 	
 }
 
@@ -52,6 +56,8 @@ return $result;
 
 function test_name($string)
 {
+	if(strlen($string)==0)
+		return false;
 	$regex_text = "/^([\p{L}a-zA-Z]*)$/ui";  
 	$string = preg_replace('.-.', '', $string);
 	$string = preg_replace('. .', '', $string);

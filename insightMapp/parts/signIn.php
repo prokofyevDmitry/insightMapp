@@ -78,12 +78,14 @@ TODO:  Maintenant que nous nous sommes inscrit, il faut se loggue.
  else
  { 
  	
- 	
  	include '../vue/user_signin_form.php';
  	echo '<div class="signin_warning"';
+ 	
  	if($result[0]==false) echo'<p >Entrez un nom valide<p>';
- 	if($result[1]==false) echo'<p  >Entrez un prénom valide<p>';
- 	if($result[2]==false) echo'<p  >Votre adresse mail est déjà utilisé!</p>';
+ 	if($result[1]==false ) echo'<p  >Entrez un prénom valide<p>';
+ 	if($result[2]==false) echo'<p  >Adresse mail non valide (peut-être qu\'elle est déjà utilisé) </p>';
+ 	if($result[2]===2) {echo '<p> Entrez une adresse email<p>';}
+ 	
  	
  	switch ($result[3])
  	{
@@ -93,6 +95,7 @@ TODO:  Maintenant que nous nous sommes inscrit, il faut se loggue.
  		// le mot de passe n'est pas assez fort 4
  		// tout est ok true
  		case 0: echo '<p>Votre mot de passe est trop petit: 8 charactères au minimum</p>'; break;
+ 		case 1: break;
  		case 2: echo'<p>Votre mots de passe et sa confirmation ne correspondent pas</p>'; break;
  		case 3: echo '<p>Votre mot de passe est trop long, 40 charactères au maximum</p>'; break;
  		case 4: echo '<p>Votre mot de passe n\'est pas assez sécurisé<p>'; break; 	

@@ -14,27 +14,31 @@ function test_password()
 	 * Voir d'ou vient le problem.
 	 */
 
+	// est ce que le mot de passe est trop petit? 
 	if(strlen($_POST['mdp'])<8)
 		return 0;
 	else
 	{
 	
-	
+		// est ce que le mot de passe est trop long? 
 		if(strlen($_POST['mdp'])>40)
 			return 3;
 		else
 		{
-	
+				// le mot de passe ne correspond pas à sa confiramtion?  
 			if(strcmp($_POST['mdp'], $_POST['confiramtion_mdp'])==0)
 			{
+				
 				if( !preg_match('#[A-z]+#',$_POST['mdp']) || !preg_match('#[0-9]+#', $_POST['mdp']))
 				{	return 4;
 				
 				}
 				
+				
 				return true;
 			}
 			else
+				echo 'mais on est quand meme sortie du if';
 				return 2;
 	
 	
