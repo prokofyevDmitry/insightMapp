@@ -20,7 +20,7 @@ if(isset($_POST['submit']) )
 		foreach ($_POST as $value => $key) 
 			$_POST[$value]=htmlspecialchars($key);
 		// recherche de l'email dans la bbd
-		$donnee = champ_search(strtolower($_POST['login']),'mail', $bdd, 'users');
+		$donnee = champ_search($_POST['login'],'mail', $bdd, 'users');
 		if(isset($donnee))
 			$ligne = $donnee->fetch();
 		 
@@ -28,21 +28,10 @@ if(isset($_POST['submit']) )
 		// verification du mot de passe
 		if( password_verify($_POST['password'], $ligne['password']) )
 		{
-			//TODO verif la syntexe de "=new user"
-			
-			// on crée un nouveau utilisateur dans la classe
-			
 			initialisation_user_session($ligne);
 			$_SESSION['connecte'] = true;
 			
-				
 
-			/*  CETTE PARTIE EST LA CLASSE SERIALISEE, A DEVELOPPER PLUS TARD
-			$serialisation_class = serialize($user);
-			$_SESSION['user'] = $serialisation_class;
-			*/
-		
-			
      		echo '<script>
  					window.location.replace("index.php?loc=home_premiere_visite")
  					exit(); 
@@ -120,12 +109,13 @@ $premiere_connexion= true;
       	
       	
  
-
+<!--
       	<nav class="side">
-        <?php include("parts/sideList.php"); ?>
+        <?php // include("parts/sideList.php"); ?>
         </nav>
-        <?php include("parts/sideFooter.php") ;?>
-    </section>
+        <?php // include("parts/time_line.php") ;?>
+-->    
+</section>
       
         
   <footer > 

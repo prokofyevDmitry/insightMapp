@@ -17,8 +17,6 @@ function insert_new_champ_to_existing_line($bdd,$table,$champ1,$val_champ1,$cibl
 	 $rec = $bdd->prepare($prep);
 
 
-
-
 	$rec->execute($exec);
 }
 

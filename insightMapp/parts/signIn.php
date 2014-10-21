@@ -94,7 +94,7 @@ TODO:  Maintenant que nous nous sommes inscrit, il faut se loggue.
  		// le mot de passe est trop long (peu probable  mais bon) 3
  		// le mot de passe n'est pas assez fort 4
  		// tout est ok true
- 		case 0: echo '<p>Votre mot de passe est trop petit: 8 charactères au minimum</p>'; break;
+ 		case 0: echo '<p  >Votre mot de passe est trop petit: 8 charactères au minimum</p>'; break;
  		case 1: break;
  		case 2: echo'<p>Votre mots de passe et sa confirmation ne correspondent pas</p>'; break;
  		case 3: echo '<p>Votre mot de passe est trop long, 40 charactères au maximum</p>'; break;
