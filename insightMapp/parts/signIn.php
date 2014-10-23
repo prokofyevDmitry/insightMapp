@@ -111,7 +111,11 @@ TODO:  Maintenant que nous nous sommes inscrit, il faut se loggue.
 }
 else
 { 
+	$inclusion_user_signin_form = true;
 include '../vue/user_signin_form.php'; 
 }
-
 ?>
+
+
+
+

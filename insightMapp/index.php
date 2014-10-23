@@ -30,7 +30,6 @@ switch ($_GET['loc'])
 
 }
 
-
 if(!isset($_GET['loc']))
 {
 	include 'vue/homePage.php';
@@ -39,3 +38,4 @@ if(!isset($_GET['loc']))
 ?>
 
 
+w
