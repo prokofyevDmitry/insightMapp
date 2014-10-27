@@ -3,8 +3,8 @@
 //	l'argument $included_CSS_files est un tableau de string qui contrient le chemin absolu d'accees au fichier le CSS
 //	L'argument $section_containt contient le contenue principal à afficher dans la page
 
-
-function head_page_print($logo,$barre_de_recherche,$sidebar,$footer,$included_CSS_files,$section_containt)
+// on chrnge sensiblement l'arboressence: parts va contenit tout les fichiers php qui ne rentrent pas dans les autres categories.
+function head_page_print($logo,$barre_de_recherche,$map,$sidebar,$footer,$included_CSS_files,$section_containt)
 {
 	echo '
 	<!DOCTYPE html>
@@ -14,26 +14,27 @@ function head_page_print($logo,$barre_de_recherche,$sidebar,$footer,$included_CS
 	<!--  See the db structure in /Dropbox/Project1/insightmapp_dbstructure.txt -->
 	
 	<head>
-	<style>
-	.
+	<meta charset=\'utf-8\'/>
 	
-	</style>
-	'
-	
+			';
 	// inclusion de plusieurs fichiers CSS		
+	// par défaut il y a 
+	for($i=0; $i<count($included_CSS_files) ; $i++)
+	{	
+	echo '<link rel="stylesheet" href="CSStyle/'.$included_CSS_files[i].'"/>';
+	}
 	
-	for($i=0; $i=)
-	<link rel="stylesheet" href="CSStyle/HomeStyle.css"/>
-	<meta charset='utf-8'/>
-	<link rel="stylesheet" href="CSStyle/leaf.css"/>
 	
-	<?php include ("parts/mapLeafInc.php");?>
+	if($map==true) include ("parts/mapLeafInc.php"); 
+	
+	echo '
 	</head>
 	
 	    
 	<body>
 	    <header>
-	            <?php include("parts/logo.php"); ?>
+';
+			<?php include("parts/logo.php"); ?>
 	            <?php include("parts/search.php"); ?>
 	    </header>
 	    <section>

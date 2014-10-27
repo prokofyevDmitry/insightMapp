@@ -37,6 +37,5 @@
     <?php include ('./parts/map.php');
     include ("parts/scriptLeaf.php") ;?>
     
-</body>    
-
+</body>
 </html>

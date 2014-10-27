@@ -210,11 +210,11 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		
 		
 		
-		// passage à la page "home". 
-// 		echo'<script>
-//  			window.location.replace("?loc=home_connecte");
-//  				exit();
-// 		</script>';
+	
+		echo'<script>
+ 			window.location.replace("?loc=home_connecte");
+ 				exit();
+		</script>';
 		
 
 		
