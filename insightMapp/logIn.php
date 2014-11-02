@@ -68,7 +68,7 @@ $premiere_connexion= true;
 
 <head>
 <link rel="stylesheet" href="CSStyle/HomeStyle.css"/>
-<meta charset='utf-8'/>   
+<meta charset='utf-8'/>  p
 <link rel="stylesheet" href="CSStyle/leaf.css"/>
  <?php include ("parts/mapLeafInc.php");
 

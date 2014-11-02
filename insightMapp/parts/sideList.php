@@ -6,5 +6,7 @@
             <a href="#" class="Popular">Popular</a>    
             <a href="#" class="Followed"  >FollowIN</a>
             <a href="#"  >News Spots</a>
-            
+     </nav>       
+   
+   
    
