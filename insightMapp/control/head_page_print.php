@@ -7,7 +7,7 @@
 
 function head_page_print($logo,$barre_de_recherche,$map,$sidebar,$footer,$included_CSS_files,$section_containt=null)
 {
-	$adresse_composants = "../parts/";
+	$adresse_composants = "control/";
 	
 	
 	echo '
@@ -27,7 +27,7 @@ function head_page_print($logo,$barre_de_recherche,$map,$sidebar,$footer,$includ
 	{
 		for($i=0; $i<count($included_CSS_files) ; $i++)
 	{	
-	echo '<link rel="stylesheet" href="../CSStyle/'.$included_CSS_files[$i].'"/>';
+	echo '<link rel="stylesheet" href="CSStyle/'.$included_CSS_files[$i].'"/>';
 	}
 	}
 	
@@ -49,26 +49,31 @@ function head_page_print($logo,$barre_de_recherche,$map,$sidebar,$footer,$includ
 	    <section>' ;
 	    
 
-if($sidebar== true ){
-			include($adresse_composants."sideList.php");            
-	        
-	         include($adresse_composants."time_line.php") ;
-} 
-
+	   eval($section_containt);
 	// partie à remplacer pour utiliser la variable footer
 echo '
-	    </section>
-	
-	    <footer > 
-	    
-	    </footer>
-	 ';
+	    </section>';
+
+if($sidebar== true ){
+    echo '<nav class = side>';
+			include($adresse_composants."sideList.php");            
+	        
+	         include($adresse_composants."time_line.php");
+    echo '</nav>';
+} 
+		
+		
+		
+		
+	   
 		
 if($map==true){	     include ($adresse_composants."/map.php");
 	    include ($adresse_composants."scriptLeaf.php") ;}
 	    
 	    
 	 echo'    
+	 		<footer>
+	 		</footer>
 	</body>    
 	
 	</html>
@@ -82,12 +87,15 @@ if($map==true){	     include ($adresse_composants."/map.php");
 
 
 // TEST DU SCRIPT (A EFFACER DANS LA VERSION FINALE);
+/*
+$css =array(
+		 'HomeStyle.css',
+		'leaf.css'
+		
+);
 
-$css[0] = 'HomeStyle.css';
-$css[1] = 'hello c';
 
 
-head_page_print(true, true, true, true, true, true, $css );
-
-echo ($css[0]);
+head_page_print(true, true, true, true, true, $css, "hello" );
+*/
 

@@ -1,5 +1,5 @@
 <?php 
-session_start();
+
 include 'control/classes/Class_user.php';
 
 include 'model/bd_connexion.php';
@@ -14,7 +14,7 @@ $bdd=db_connexion('insightmapp', 'root', '');
  
 if(isset($_POST['submit']) )
 {
-	if(isset($_POST['login']) AND isset($_POST['password']))
+	if(isset($_POST['login']) AND isset($_POST['password']) AND $_POST['login']!=NULL)
 	{
 		// eviter l'injection
 		foreach ($_POST as $value => $key) 
@@ -28,14 +28,17 @@ if(isset($_POST['submit']) )
 		// verification du mot de passe
 		if( password_verify($_POST['password'], $ligne['password']) )
 		{
+			
+			
 			initialisation_user_session($ligne);
 			$_SESSION['connecte'] = true;
 			
-
-     		echo '<script>
- 					window.location.replace("index.php?loc=home_premiere_visite")
+			 
+				echo '<script>
+ 					window.location.replace("?loc=home_connecte")
  					exit(); 
  					</script>';
+			
 			// REMARQUE:le exit() PERMET D EVITER L EFFACEMENT DE LA SESSION
 			
 			
@@ -44,7 +47,7 @@ if(isset($_POST['submit']) )
 		else
 		{
 			// mauvais mot de passe
-			$login_ou_password_not_matching=true;
+			$_SESSION['login_ou_password_not_matching']=true;
 			
 		}
 		 
@@ -60,17 +63,7 @@ $premiere_connexion= true;
 
 
 
-?>
-
-<!DOCTYPE html>
-
-<html>
-
-<head>
-<link rel="stylesheet" href="CSStyle/HomeStyle.css"/>
-<meta charset='utf-8'/>  p
-<link rel="stylesheet" href="CSStyle/leaf.css"/>
- <?php include ("parts/mapLeafInc.php");
+ 
 
 // on inclut ici les fonctions utilisées lors des tests. 
 
@@ -86,47 +79,17 @@ $premiere_connexion= true;
  * 		si une des parties ne marche pas on recrache tout en disant: nom d'utilisateur ou mot de passe incorécte.
  */
 
-?>
 
-</head>
 
-    
-<body>
-    <heaer>
-            <?php include("parts/logo.php"); ?>
-            <?php include("parts/search.php"); ?>
-    </heaer>
-    <section>
-    
-      	<?php 
-// si on s'est tropmpé ou alors c'est la premiere fois qu'on arrive sur la page
-  if(isset($premiere_connexion) OR isset($login_ou_password_not_matching))
-  	include("vue/user_login_form.php");
-  	 
- 
-      	
-      	?>
-      	
-      	
- 
-<!--
-      	<nav class="side">
-        <?php // include("parts/sideList.php"); ?>
-        </nav>
-        <?php // include("parts/time_line.php") ;?>
--->    
-</section>
-      
-        
-  <footer > 
-    
-      
-      
-    </footer>
- 
-    <?php include ('./parts/map.php');
-    include ("parts/scriptLeaf.php") ;?>
-    
-</body>    
+$css =array (
+	'HomeStyle.css',
+		'leaf.css',
+);
+// si on s'est tropmpé ou alors c'est la premiere fois qu'on arrive sur la page d'avant, elle est inclue dans le corps de la head_page
 
-</html>
+if(isset($premiere_connexion) OR isset($_SESSION['login_ou_password_not_matching']))
+	$section = 'include("vue/user_login_form.php");';
+
+
+
+head_page_print(true, true, true, true, true, $css, $section);

@@ -26,9 +26,9 @@ if(isset( $_POST['submit_signin'] ) )
 {
 	
 
-foreach ($_POST as $value =>$key) // securisation contre l'injection
+foreach ($_POST as $key =>$value) // securisation contre l'injection
 {
-	$_POST[$value] = htmlspecialchars($key);
+	$_POST[$key] = htmlspecialchars($value);
 }	
 
  $result[0]=test_input($_POST['nom'], 'nom', $bdd, $chart_name); // nettoyage des html chars
@@ -114,6 +114,15 @@ else
 	$inclusion_user_signin_form = true;
 include '../vue/user_signin_form.php'; 
 }
+
+
+// on cherche à complétement reformer cette page pour qu'elle correspondent à un model appelé par le nouveau
+
+
+
+
+
+
 ?>
 
 
