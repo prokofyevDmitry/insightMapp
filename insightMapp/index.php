@@ -15,7 +15,8 @@ ici se feront les validations.
 
 session_start();
 // inclusion de la fonction d'impression de la page génarle
-include ("control/head_page_print.php");
+include 'control/head_page_print.php';
+include'control/css_array_fill_home_page.php';
 if(isset($_GET['loc']))
 {
 	 
@@ -25,21 +26,25 @@ switch ($_GET['loc'])
 {
 	// la case acceuille, ou l'on se renseigne sur la personne qui vient de se connecter
 	case "home_premiere_visite": include 'control/premiere_visite.php'; break;
+	// la page de connexion
 	case "signin": include 'control/logIn.php'; break;
 	// losqu'on est connectés.
 	case "home_connecte" : include 'control/home_connecte.php'; break;
-	
 	default:include 'vue/homePage.php';
+	case "signup": include 'control/signIn.php'; break;
 }
 
 }
 
 if(!isset($_GET['loc']))
 {
-	$css[0] = "HomeStyle.css";
-	$css[1] = "leaf.css";
+
+	// load of deffault page
+$css = css_array_fill_home_page(array(1,1,1,0));
+	// si le sujet est connecté le traitement se fera à l'interne dans les sous parties
 	head_page_print(true, true, true, true, true, $css);
 }
+
 
 ?>
 

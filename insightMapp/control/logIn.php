@@ -1,19 +1,25 @@
 <?php 
+$test = '../';
 
-include 'control/classes/Class_user.php';
+include $test.'control/classes/Class_user.php';
 
-include 'model/bd_connexion.php';
-include 'model/champ_query.php';
-include 'model/champ_search.php';
-include 'control/initialisation_user_session.php';
+include $test.'control/head_page_print.php';
 
+include $test.'model/bd_connexion.php';
 
+include $test.'model/champ_query.php';
+
+include $test.'model/champ_search.php';
+include $test.'control/initialisation_user_session.php';
 //connexion base de données:
 $bdd=db_connexion('insightmapp', 'root', '');
  
+ // si il y a eu un envoie de données, on va les traiter
  
-if(isset($_POST['submit']) )
+if(isset($_POST['submit_signin']))
 {
+	
+	// on verifie que la personne ai bien rempli les champs mot de passe et login
 	if(isset($_POST['login']) AND isset($_POST['password']) AND $_POST['login']!=NULL)
 	{
 		// eviter l'injection
@@ -40,9 +46,6 @@ if(isset($_POST['submit']) )
  					</script>';
 			
 			// REMARQUE:le exit() PERMET D EVITER L EFFACEMENT DE LA SESSION
-			
-			
-					// OK
 		}
 		else
 		{
@@ -57,13 +60,14 @@ if(isset($_POST['submit']) )
 }
  
  
-else
+
 	// premiere connexion a la page
 $premiere_connexion= true;
 
 
 
- 
+head_page_print(true, true, true, true, true, $css, $section);
+
 
 // on inclut ici les fonctions utilisées lors des tests. 
 
@@ -83,13 +87,13 @@ $premiere_connexion= true;
 
 $css =array (
 	'HomeStyle.css',
-		'leaf.css',
+		'leaf.css'
 );
-// si on s'est tropmpé ou alors c'est la premiere fois qu'on arrive sur la page d'avant, elle est inclue dans le corps de la head_page
-
-if(isset($premiere_connexion) OR isset($_SESSION['login_ou_password_not_matching']))
-	$section = 'include("vue/user_login_form.php");';
+//si on s'est tropmpé ou alors c'est la premiere fois qu'on arrive sur la page d'avant, elle est inclue dans le corps de la head_page
 
 
 
-head_page_print(true, true, true, true, true, $css, $section);
+// if(isset($premiere_connexion) OR isset($_SESSION['login_ou_password_not_matching']))
+// 	include("../vue/user_login_form.php");
+// else $section = null;
+

@@ -5,10 +5,7 @@
 <!--  See the db structure in /Dropbox/Project1/insightmapp_dbstructure.txt -->
 
 <head>
-<style>
-.
 
-</style>
 <link rel="stylesheet" href="CSStyle/HomeStyle.css"/>
 <meta charset='utf-8'/>   
 <link rel="stylesheet" href="CSStyle/leaf.css"/>

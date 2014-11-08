@@ -2,13 +2,24 @@
 
 //cette fonction est appelée pour remplir une array des path de fichier CSS. 
 
-function css_array_fill_home_page()
+//on passe en atribut un array de 1 ou 0, on inclura certain des fichiers CSS, ce qui evite le conflit!! 
+
+function css_array_fill_home_page($array2)
 {
+	
 	$array = array(
-			'CSStyle/HomeStyle.css',
-			'CSStyle/add_info.css',
-			'CSStyle/leaf.css',
-			'CSStyle/signIn.css'
+			'HomeStyle.css',
+			'signIn.css',
+			'leaf.css',
+			'add_info.css'
 	);
-	return $array;
+	
+	
+	for ($i= 0; $i<count($array); $i++ )
+	if($array2[$i]==1)  $array1[$i] = $array[$i];
+	else $array1[1]="empty.css";  
+	return $array1;
+
+
+
 }

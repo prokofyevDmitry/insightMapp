@@ -1,4 +1,4 @@
-<<?php
+<?php
 
 
 // la fonction permet de récuperer un objet PDO qui contient le résultat d'une requette.

@@ -5,45 +5,45 @@
  * 
  */
 
-session_start();
- $result = array(0,0,0,0);
+
+$result = array(0,0,0,0);
 $chart_name = 'users';
- include '../control/test_Input.php';
-include '../model/bd_connexion.php';
-include '../model/champ_query.php';
-include '../control/test_password.php';
-include '../model/insert_new_element.php';
-include '../control/creat_user_foldersystem.php';
-include '../model/champ_search_precise.php';
+$test= '../'; 
+include $test.'control/test_Input.php';
+
+include $test.'model/bd_connexion.php';
+
+include $test.'model/champ_query.php';
+
+include $test.'control/test_password.php';
+include $test.'model/insert_new_element.php';
+include $test.'control/creat_user_foldersystem.php';
+include $test.'model/champ_search_precise.php';
 
 
 $bdd = db_connexion('insightmapp','root',''); // connexion base de données. 
 
 
-
-
 if(isset( $_POST['submit_signin'] ) )
 {
-	
-
 foreach ($_POST as $key =>$value) // securisation contre l'injection
 {
 	$_POST[$key] = htmlspecialchars($value);
 }	
 
- $result[0]=test_input($_POST['nom'], 'nom', $bdd, $chart_name); // nettoyage des html chars
- $result[1]=test_input($_POST['prenom'], 'prenom', $bdd, $chart_name);
- $result[2]=test_input($_POST['mail'], 'mail', $bdd, $chart_name);	
- 
+ $_SESSION['$result[0]']=test_input($_POST['nom'], 'nom', $bdd, $chart_name); // nettoyage des html chars
+ $_SESSION['$result[1]']=test_input($_POST['prenom'], 'prenom', $bdd, $chart_name);
+ $_SESSION['$result[2]']=test_input($_POST['mail'], 'mail', $bdd, $chart_name);
+  
  //mot de passe 
  
- 	$result[3] = test_password();
+ $_SESSION['$result[3]']= test_password();
 
   // egalitées de mot de passe.
 
 
 
- if($result[0]==true AND $result[1]==true AND $result[2]==true AND $result[3]==true) // on récupére que des 0, donc tout les éléments on était validées;
+ if($_SESSION['$result[0]']==true AND $_SESSION['$result[1]']==true AND $_SESSION['$result[2]']==true AND $_SESSION['$result[3]']==true) // on récupére que des 0, donc tout les éléments on était validées;
  {
  
  	
@@ -66,53 +66,47 @@ foreach ($_POST as $key =>$value) // securisation contre l'injection
 TODO:  Maintenant que nous nous sommes inscrit, il faut se loggue.
 			Commencer la partie log. Utilisé les bout de code déja utilisées.
 */
- 
- 
- 	
- 
- 	echo '<h2> You are logged in, Congrat :) <h2> <br> <a href="../index.php?loc=home"> Get Home </a>';
- 	
-  
- 
+ 	echo '<h2> You are signed in, Congrat :) <h2> <br> <a href="../index.php?loc=home"> Get Home </a>'; 
  }
  else
  { 
  	
- 	include '../vue/user_signin_form.php';
- 	echo '<div class="signin_warning"';
+ 
  	
- 	if($result[0]==false) echo'<p >Entrez un nom valide<p>';
- 	if($result[1]==false ) echo'<p  >Entrez un prénom valide<p>';
- 	if($result[2]==false) echo'<p  >Adresse mail non valide (peut-être qu\'elle est déjà utilisé) </p>';
- 	if($result[2]===2) {echo '<p> Entrez une adresse email<p>';}
- 	
- 	
- 	switch ($result[3])
- 	{
- 		// la mot de passe est trop petit 0
- 		// le mot de passe est pas le meme que la confiramtion 2
- 		// le mot de passe est trop long (peu probable  mais bon) 3
- 		// le mot de passe n'est pas assez fort 4
- 		// tout est ok true
- 		case 0: echo '<p  >Votre mot de passe est trop petit: 8 charactères au minimum</p>'; break;
- 		case 1: break;
- 		case 2: echo'<p>Votre mots de passe et sa confirmation ne correspondent pas</p>'; break;
- 		case 3: echo '<p>Votre mot de passe est trop long, 40 charactères au maximum</p>'; break;
- 		case 4: echo '<p>Votre mot de passe n\'est pas assez sécurisé<p>'; break; 	
- 		default:echo'<p>failed to switch</p>'; break;	
- 	}
- 	
- 	
- 	
- 	
- 	echo '</div>';
+ 	// on instance l'utilisation de head_page_print.
+ 	$section_contain = 'include \'vue/user_signup_form.php\'';
+
+//  $css = css_array_fill_home_page(array(1,1,0,1));
+ $css = array (
+ 		'HomeStyle.css',
+ 		'leaf.css',
+ 		'signin.css'
+ 		
+ 		
+ );
+ 
+ head_page_print(true, true, true, true, true, $css, $section_contain);
+ 
  }
  
 }
 else
 { 
-	$inclusion_user_signin_form = true;
-include '../vue/user_signin_form.php'; 
+	$section_contain = "include 'vue/user_signup_form.php';";
+	
+	//$css = css_array_fill_home_page(array(1,1,0,1));
+	$css = array (
+			'HomeStyle.css',
+			'leaf.css',
+			'signin.css'
+ 	
+ 	
+	);
+	
+	head_page_print(true, true, true, true, true, $css, $section_contain);
+	
+
+
 }
 
 

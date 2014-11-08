@@ -7,22 +7,15 @@
 
 function head_page_print($logo,$barre_de_recherche,$map,$sidebar,$footer,$included_CSS_files,$section_containt=null)
 {
-	$adresse_composants = "control/";
+	// le path des composants à inclure (logo etc)
+	$adresse_composants = "../control/";
 	
 	
 	echo '
 	<!DOCTYPE html>
-	
 	<html>
-	
-	<!--  See the db structure in /Dropbox/Project1/insightmapp_dbstructure.txt -->
-	
-	<head>
-	<meta charset=\'utf-8\'/>
-	
-			';
+	<meta charset=\'utf-8\'/>' ;
 	// inclusion de plusieurs fichiers CSS		
-	// par défaut il y a 
 	if(isset($included_CSS_files))
 	{
 		for($i=0; $i<count($included_CSS_files) ; $i++)
@@ -33,10 +26,9 @@ function head_page_print($logo,$barre_de_recherche,$map,$sidebar,$footer,$includ
 	
 	if($map==true) include ($adresse_composants."mapLeafInc.php"); 
 	
-	echo '
-	</head>
-	
-	    
+	echo '</head>';
+			echo '
+			
 	<body>
 	    <header>
 ';
@@ -48,8 +40,9 @@ function head_page_print($logo,$barre_de_recherche,$map,$sidebar,$footer,$includ
 	    echo '</header>
 	    <section>' ;
 	    
-
-	   eval($section_containt);
+if($section_containt!=null)
+	eval($section_containt);
+	
 	// partie à remplacer pour utiliser la variable footer
 echo '
 	    </section>';
@@ -87,15 +80,25 @@ if($map==true){	     include ($adresse_composants."/map.php");
 
 
 // TEST DU SCRIPT (A EFFACER DANS LA VERSION FINALE);
-/*
-$css =array(
-		 'HomeStyle.css',
-		'leaf.css'
+
+// $css =array(
+// 		 'HomeStyle.css',
+// 		'leaf.css'
 		
-);
+// );
+// on essaye la technique de l'impression
+
+// la meuilleur solution est d'imprimer notre code à mette dans une fonction dans une string, puis de l'injecter dans la string.
 
 
+// $string1 = 'hi';
+// $string2 = 'nop';
+// $switch = 1;
+//  $string = '  <p class="logo" style="left:40%"> <p>';
 
-head_page_print(true, true, true, true, true, $css, "hello" );
-*/
+
+// // $string = "include '../test.php'";
+
+// head_page_print(true, true, true, true, true, $css, $string );
+
 
