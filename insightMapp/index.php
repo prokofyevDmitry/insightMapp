@@ -30,13 +30,15 @@ switch ($_GET['loc'])
 	case "signin": include 'control/logIn.php'; break;
 	// losqu'on est connectés.
 	case "home_connecte" : include 'control/home_connecte.php'; break;
-	default:include 'vue/homePage.php';
+	
 	case "signup": include 'control/signIn.php'; break;
+	default: $false_adresse = true ; break;
+	
 }
 
 }
 
-if(!isset($_GET['loc']))
+if(!isset($_GET['loc']) or isset($false_adresse))
 {
 
 	// load of deffault page

@@ -5,16 +5,13 @@
  * 
  */
 
-
+// l'array result permet de stocker les résultats des tests intermediaires pour els variables etc...
 $result = array(0,0,0,0);
 $chart_name = 'users';
-$test= '../'; 
+$test= null; 
 include $test.'control/test_Input.php';
-
 include $test.'model/bd_connexion.php';
-
 include $test.'model/champ_query.php';
-
 include $test.'control/test_password.php';
 include $test.'model/insert_new_element.php';
 include $test.'control/creat_user_foldersystem.php';
@@ -24,7 +21,7 @@ include $test.'model/champ_search_precise.php';
 $bdd = db_connexion('insightmapp','root',''); // connexion base de données. 
 
 
-if(isset( $_POST['submit_signin'] ) )
+if(isset( $_POST['submit_signin'] )  )
 {
 foreach ($_POST as $key =>$value) // securisation contre l'injection
 {
@@ -66,7 +63,7 @@ foreach ($_POST as $key =>$value) // securisation contre l'injection
 TODO:  Maintenant que nous nous sommes inscrit, il faut se loggue.
 			Commencer la partie log. Utilisé les bout de code déja utilisées.
 */
- 	echo '<h2> You are signed in, Congrat :) <h2> <br> <a href="../index.php?loc=home"> Get Home </a>'; 
+ 	echo '<h2> You are signed in, Congrat :) <h2> <br> <a href="../index.php?loc=home_connecte"> Get Home </a>'; 
  }
  else
  { 
@@ -74,13 +71,13 @@ TODO:  Maintenant que nous nous sommes inscrit, il faut se loggue.
  
  	
  	// on instance l'utilisation de head_page_print.
- 	$section_contain = 'include \'vue/user_signup_form.php\'';
+ 	$section_contain =  'vue/user_signup_form.php';
 
 //  $css = css_array_fill_home_page(array(1,1,0,1));
  $css = array (
  		'HomeStyle.css',
  		'leaf.css',
- 		'signin.css'
+ 		'signIn.css'
  		
  		
  );
@@ -91,30 +88,23 @@ TODO:  Maintenant que nous nous sommes inscrit, il faut se loggue.
  
 }
 else
-{ 
-	$section_contain = "include 'vue/user_signup_form.php';";
+{
+	
+	 
+	$section_contain = "vue/user_signup_form.php";
 	
 	//$css = css_array_fill_home_page(array(1,1,0,1));
 	$css = array (
 			'HomeStyle.css',
 			'leaf.css',
-			'signin.css'
- 	
- 	
-	);
+			'signIn.css'
+ 	);
 	
 	head_page_print(true, true, true, true, true, $css, $section_contain);
 	
 
 
 }
-
-
-// on cherche à complétement reformer cette page pour qu'elle correspondent à un model appelé par le nouveau
-
-
-
-
 
 
 ?>

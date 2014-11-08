@@ -3,26 +3,26 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="289" key="DIALOG_WIDTH"/>
 		<item value="308" key="DIALOG_Y_ORIGIN"/>
-		<item value="460" key="DIALOG_HEIGHT"/>
 		<item value="1203" key="DIALOG_X_ORIGIN"/>
+		<item value="488" key="DIALOG_HEIGHT"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="$adresse_composant" key="selection"/>
+		<item value="echo" key="selection"/>
 		<list key="findhistory">
+			<item value="echo"/>
+			<item value="die"/>
 			<item value="$adresse_composant"/>
 			<item value="&quot;parts/"/>
 			<item value="footer"/>
 			<item value="date"/>
 			<item value="$_POST"/>
 			<item value="fopen"/>
-			<item value="com_lo"/>
-			<item value="comlo"/>
 		</list>
 		<list key="replacehistory">
 			<item value="$adresse_composants"/>

@@ -8,7 +8,7 @@
 function head_page_print($logo,$barre_de_recherche,$map,$sidebar,$footer,$included_CSS_files,$section_containt=null)
 {
 	// le path des composants à inclure (logo etc)
-	$adresse_composants = "../control/";
+	$adresse_composants = "control/";
 	
 	
 	echo '
@@ -41,7 +41,7 @@ function head_page_print($logo,$barre_de_recherche,$map,$sidebar,$footer,$includ
 	    <section>' ;
 	    
 if($section_containt!=null)
-	eval($section_containt);
+	include $section_containt;
 	
 	// partie à remplacer pour utiliser la variable footer
 echo '

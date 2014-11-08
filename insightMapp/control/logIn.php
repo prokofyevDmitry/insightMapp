@@ -1,14 +1,9 @@
 <?php 
-$test = '../';
+$test = '';
 
 include $test.'control/classes/Class_user.php';
-
-include $test.'control/head_page_print.php';
-
 include $test.'model/bd_connexion.php';
-
 include $test.'model/champ_query.php';
-
 include $test.'model/champ_search.php';
 include $test.'control/initialisation_user_session.php';
 //connexion base de données:
@@ -16,7 +11,7 @@ $bdd=db_connexion('insightmapp', 'root', '');
  
  // si il y a eu un envoie de données, on va les traiter
  
-if(isset($_POST['submit_signin']))
+if(isset($_POST['submit']))
 {
 	
 	// on verifie que la personne ai bien rempli les champs mot de passe et login
@@ -39,7 +34,16 @@ if(isset($_POST['submit_signin']))
 			initialisation_user_session($ligne);
 			$_SESSION['connecte'] = true;
 			
-			 
+			
+			// ici on aiguille les premier utilisateurs à remplir leur page.
+			if($ligne['last_activity']==null) 
+				echo '<script>
+ 					window.location.replace("?loc=home_premiere_visite")
+ 					exit();
+ 					</script>';
+					
+				else 
+			
 				echo '<script>
  					window.location.replace("?loc=home_connecte")
  					exit(); 
@@ -50,6 +54,7 @@ if(isset($_POST['submit_signin']))
 		else
 		{
 			// mauvais mot de passe
+			
 			$_SESSION['login_ou_password_not_matching']=true;
 			
 		}
@@ -61,12 +66,12 @@ if(isset($_POST['submit_signin']))
  
  
 
-	// premiere connexion a la page
+	else // premiere connexion a la page
 $premiere_connexion= true;
 
 
 
-head_page_print(true, true, true, true, true, $css, $section);
+
 
 
 // on inclut ici les fonctions utilisées lors des tests. 
@@ -87,13 +92,14 @@ head_page_print(true, true, true, true, true, $css, $section);
 
 $css =array (
 	'HomeStyle.css',
-		'leaf.css'
+		'leaf.css',
+		
 );
 //si on s'est tropmpé ou alors c'est la premiere fois qu'on arrive sur la page d'avant, elle est inclue dans le corps de la head_page
 
 
+if(isset($premiere_connexion) OR isset($_SESSION['login_ou_password_not_matching']))
+	$section = 'vue/user_login_form.php' ;
+else $section = null;
 
-// if(isset($premiere_connexion) OR isset($_SESSION['login_ou_password_not_matching']))
-// 	include("../vue/user_login_form.php");
-// else $section = null;
-
+head_page_print(true, true, true, true, true, $css, $section);
