@@ -23,6 +23,10 @@ Greyscale and desaturate colours in Inkscape 0.48
 Note that the desaturate option in Inkscape also converts objects and paths to greyscale. You can get rid of the desaturation/greyscale effect by selecting the element(s) you want to change, and selecting Filters > Remove Filters (note: this will remove all filters applied, and not just the desaturation filter!).
 
 Inkscape should have both Desaturate and Greyscale options according to Inkscape’s effect reference guide, but as you can see from the screenshot above, there is no greyscale option! You can, of course, create your own saved effect in Inkscape for greyscale if it bothers you that much.  
+    <head>
+        <link rel="stylesheet" href="../CSStyle/add_info.css">
+        </head>
+    
     </p>
     
     </section>    
@@ -36,8 +40,8 @@ Inkscape should have both Desaturate and Greyscale options according to Inkscape
           <p id=image_de_profile> 
 Update your profile picture
 
-    <label for="profile_pic"><img alt="undefined user picture" src="CSStyle/drawing3.png"></label>
-	<input type="file" name=profile_pic />
+    <label for="profile_pic"><img alt="undefined user picture" src="../CSStyle/drawing3.png"></label>
+	<input type="file" name=profile_pic class="file"/>
 
 
 </p>
@@ -54,8 +58,8 @@ Update your profile picture
 
 
 
-<select name="pays" id="pays">
-<?php include 'vue/listes/country_list.php'?> <!--  liste de tout les pays avec la terminaison "<select>" -->
+<select class="list" name="pays" id="pays">
+<?php include 'listes/country_list.php'?> <!--  liste de tout les pays avec la terminaison "<select>" -->
 </select>
 
 <input name="ville" placeholder="City" type="text"/>

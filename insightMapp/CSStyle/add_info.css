@@ -46,19 +46,42 @@ h2
 {
     font-family: Muli;
     font-size: 25px;
+    text-align: center;
+    position: relative;
+    left: 28%;
     
-    
+}
+
+    nav
+{
+      background-color: rgba(255,255,255,0.4);
+    width: 50%;
+    float: left;
+    border-radius: 10px;
+    align-content: center;
+}
+
+
+
+.list select
+{
+border-radius: 15px;
 }
 
 
 form
 {
-    position: absolute;
-    left:40%;
-    background-color: rgba(42, 42, 42, 0.47);
+    position: relative;
+    left: 10%;
+    
+    
+    /*background-color: rgba(42, 42, 42, 0.47);*/
    border-radius: 15px;
     padding: 3px 5px 5px 45px;
-    width:50%;
+    width:75%;
+    font-weight: bold;
+    background-color: #23BCC1;
+    
 }
 
 img

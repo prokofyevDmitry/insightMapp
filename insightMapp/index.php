@@ -12,7 +12,6 @@ ici se feront les validations.
 
 // techniques for redirection: 
 
-
 session_start();
 // inclusion de la fonction d'impression de la page génarle
 include 'control/head_page_print.php';

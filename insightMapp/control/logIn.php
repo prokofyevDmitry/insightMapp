@@ -36,13 +36,6 @@ if(isset($_POST['submit']))
 			
 			
 			// ici on aiguille les premier utilisateurs à remplir leur page.
-			if($ligne['last_activity']==null) 
-				echo '<script>
- 					window.location.replace("?loc=home_premiere_visite")
- 					exit();
- 					</script>';
-					
-				else 
 			
 				echo '<script>
  					window.location.replace("?loc=home_connecte")

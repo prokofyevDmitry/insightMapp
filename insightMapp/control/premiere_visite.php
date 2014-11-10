@@ -27,6 +27,7 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 // $user = unserialize($_SESSION['user']);
 
 	// securisation de connexion
+	
 	if(!isset($_SESSION['mail']) or !isset($_SESSION['connecte']) or isset($_SESSION['derniere_connexion']) )
 	{
 

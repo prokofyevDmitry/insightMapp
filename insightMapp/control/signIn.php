@@ -16,8 +16,8 @@ include $test.'control/test_password.php';
 include $test.'model/insert_new_element.php';
 include $test.'control/creat_user_foldersystem.php';
 include $test.'model/champ_search_precise.php';
-
-
+include $test.'model/champ_search.php';
+include $test.'control/initialisation_user_session.php';
 $bdd = db_connexion('insightmapp','root',''); // connexion base de données. 
 
 
@@ -54,16 +54,24 @@ foreach ($_POST as $key =>$value) // securisation contre l'injection
  	
  	
  	// ON CREE LE SYSTHEME DE FICHIER DE L'UTILISATEUR
- 	
+ 	$_SESSION['connecte'] = true;
  	creat_user_foldersystem(champ_search_precise($_POST['mail'],'mail','id',$bdd,'users'));
- 	
- 	
+ 	$donnee = champ_search($_POST['mail'],'mail', $bdd, 'users');
+ 	if(isset($donnee))
+ 	{$ligne = $donnee->fetch();
+ 	// initialise les données session de l'utilisateur.
+ 	initialisation_user_session($ligne);}
  
  /*
 TODO:  Maintenant que nous nous sommes inscrit, il faut se loggue.
 			Commencer la partie log. Utilisé les bout de code déja utilisées.
 */
- 	echo '<h2> You are signed in, Congrat :) <h2> <br> <a href="../index.php?loc=home_connecte"> Get Home </a>'; 
+ 	
+ 	
+ 	echo '<script>
+ 					window.location.replace("?loc=home_premiere_visite")
+ 					exit();
+ 					</script>';
  }
  else
  { 
