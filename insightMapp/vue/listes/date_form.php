@@ -1,4 +1,4 @@
-    <select id="jour" class="list" name="jour">
+    <select id="jour" class="date" name="jour">
     <option value="null">Day</option>
     <option value="1">1</option>
     <option value="2">2</option>
@@ -33,7 +33,7 @@
     <option value="31">31</option>
     </select>
   
-    <select id="mois" class="list" name="mois">
+    <select id="mois" class="date" name="mois">
     <option value="null">Month</option>
     <option value="1">January</option>
     <option value="2">Febuary</option>
@@ -48,8 +48,8 @@
     <option value="11">November</option>
     <option value="12">December</option>
     </select>
-    <select id="annee" class="list" name="annee">
-    <select id="annee" class="list" name="annee">
+    
+    <select id="annee" class="date" name="annee">
     <option value="null">Year</option>
     <option value="2011">2011</option>
     <option value="2010">2010</option>
