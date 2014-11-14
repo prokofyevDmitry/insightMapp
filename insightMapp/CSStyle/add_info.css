@@ -26,14 +26,26 @@ font-family : Arimo, sans-serif;
 background-color : white;
 color : white;
 font-weight : 100;
+    background-color: rgb(240, 240, 240);
 }
 #presentation {
-width : 400px;
+width :50%;
+background-color: #2f2f2f;
+width: 30%;
+left: 10%;
+top:0;
+    color: #3fd1d7;
+height: auto;
+position: relative;
+font-size: 18px;
+text-align: justify;
+padding: 30px;
+top:5%;
 float : left;
 font-weight : 300;
 padding : 30px;
-background-color : rgba(42, 42, 42, 0.47);
 border-radius : 15px;
+    font-family: Muli;
 }
 h2 {
 font-family : Muli;
@@ -46,11 +58,13 @@ color : white;
 }
 nav {
 background-image : url("../test.png");
-width : 39.9%;
-height : 90.1%;
+width : autos;
+height : auto;
 position : absolute;
 left : 55%;
+    top:4.5%;
 float : left;
+    right: 4%;
 border-radius : 10px;
 align-content : center;
 }
@@ -73,9 +87,9 @@ height : 200px;
 form {
 position : relative;
 color : #484848;
-left : 8.9%;
+left : 8.4%;
 width : 34.1%;
-height : 71.7%;
+height : auto;
 border-radius : 15px;
 padding : 3px 5px 5px 45px;
 width : 75%;
@@ -86,14 +100,17 @@ background-color : #cff3f5;
 img {
 border : none;
 position : relative;
-left : -25%;
+left : -35%;
 margin : 0 0 15px 0;
 }
-form input {
-display : block;
+input file{
+display: block;
+
+
 }
 .homme {
 display : inline-block;
+
   
     
 }
@@ -105,11 +122,14 @@ display : inline-block;
     margin: 10px 0 10px 0 ;
 }
 #title2 {
-width : inherit;
+width : 90%;
+    position: relative;
+    left: 7%;
 }
 input[name="ville"] {
     display: inline;
     width: 30%;
+    text-align: center;
 border-radius : 6px;
 padding : 5px;
 background-color : white;
@@ -128,7 +148,7 @@ margin : 5px 0 0 0;
 }
 .file {
 position : relative;
-left : 27%;
+left : -3%;
 margin : 5px;
 }
 
@@ -152,9 +172,44 @@ margin : 5px;
     
 }
 
-.submit {
+#submit {
     border: solid  1px #3fd1d7;
-    color: #3fd1d7;
-    width: 80px;
-    border-radius: 8px;
+    background-color: #53D6DB;
+    border-radius: 2px;
+    height: 30px;
+    width: 40px;
+    
+    
+}
+
+#pays {
+    width: 130px;
+    text-align: center;
+    
+}
+
+#ss {
+    position: relative;
+    left: -4%;
+}
+
+#rounded_logo {
+    z-index: 10;
+    position: relative;
+    left: 1%;
+}
+
+#title {
+    color:white;
+    position: relative;
+    left: 8%;
+    top: -1.4em;
+    
+    
+}
+
+#insightmapp {
+    color: white;
+    position: relative;
+    left :30%;
 }

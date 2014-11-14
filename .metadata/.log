@@ -7655,3 +7655,982 @@ Binding(ALT+CTRL+H,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.php.ui.phpEditorScope,,,system)
+!SESSION 2014-11-12 19:08:11.754 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.7.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.php.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-11-12 19:08:18.030
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2014-11-12 19:08:43.482
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-12 19:08:43.487
+!MESSAGE A conflict occurred for CTRL+TAB:
+Binding(CTRL+TAB,
+	ParameterizedCommand(Command(com.aptana.editor.NextEditorCommand,Next Editor (Aptana),
+		,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@78164162,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+TAB,
+	ParameterizedCommand(Command(org.eclipse.ui.window.nextEditor,Next Editor,
+		Switch to the next editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7d1ec685,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-12 19:08:43.487
+!MESSAGE A conflict occurred for ALT+SHIFT+D H:
+Binding(ALT+SHIFT+D H,
+	ParameterizedCommand(Command(org2.eclipse.php.deubg.ui.phpexeShortcut.debug,Debug PHP Script,
+		Debug PHP Script,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f7b85ef,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+D H,
+	ParameterizedCommand(Command(org.eclipse.php.deubg.ui.phpexeShortcut.debug,Debug CLI Application,
+		Debug CLI Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@16964717,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-12 19:08:43.487
+!MESSAGE A conflict occurred for ALT+SHIFT+X H:
+Binding(ALT+SHIFT+X H,
+	ParameterizedCommand(Command(org2.eclipse.php.deubg.ui.phpexeShortcut.run,Run PHP Script,
+		Run PHP Script,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@64154296,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+X H,
+	ParameterizedCommand(Command(org.eclipse.php.deubg.ui.phpexeShortcut.run,Run CLI Application,
+		Run CLI Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2fc6b92f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-12 19:08:43.487
+!MESSAGE A conflict occurred for CTRL+SHIFT+TAB:
+Binding(CTRL+SHIFT+TAB,
+	ParameterizedCommand(Command(com.aptana.editor.PreviousEditorCommand,Previous Editor (Aptana),
+		,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1fa7d52a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+TAB,
+	ParameterizedCommand(Command(org.eclipse.ui.window.previousEditor,Previous Editor,
+		Switch to the previous editor,
+		Category(org.eclipse.ui.category.window,Window,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@439bc8a2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-11-12 19:08:43.487
+!MESSAGE A conflict occurred for CTRL+SHIFT+D:
+Binding(CTRL+SHIFT+D,
+	ParameterizedCommand(Command(com.aptana.ide.syncing.ui.commands.download,Download...,
+		,
+		Category(com.aptana.ide.syncing.ui.commands.category,File Transfer,File Transfer Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2891265b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+D,
+	ParameterizedCommand(Command(org.radrails.rails.ui.command.debug.server,Debug Server,
+		,
+		Category(org.radrails.rails.ui.category,Rails,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@516d352b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.aptana.scripting 4 0 2014-11-12 19:09:19.897
+!MESSAGE (Build 3.6.0) [ERROR]  Failed to load bundle /bin/eclipse/configuration/org.eclipse.osgi/383/0/.cp/bundles/php.ruble
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2002)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:1978)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.lazyLoad(BundleCacher.java:1110)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.getInvoke(BundleCacher.java:1040)
+	at com.aptana.scripting.model.CommandElement.printBody(CommandElement.java:665)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.BundleElement.printBody(BundleElement.java:811)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:407)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:395)
+	at com.aptana.scripting.model.AbstractElement.toString(AbstractElement.java:450)
+	at java.lang.String.valueOf(String.java:2847)
+	at java.lang.StringBuilder.append(StringBuilder.java:128)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:290)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.construct2ndStep(Constructor.java:191)
+	at com.aptana.scripting.model.BundleCacher$BundleElementsConstructor$ConstructBundleElement.construct(BundleCacher.java:816)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:181)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:140)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:126)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:296)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:290)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:328)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:286)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-12 19:09:20.237
+!MESSAGE An internal error occurred during: "Loading bundle: /bin/eclipse/configuration/org.eclipse.osgi/383/0/.cp/bundles/php.ruble".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:129)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.scripting 4 0 2014-11-12 19:09:24.351
+!MESSAGE (Build 3.6.0) [ERROR]  Failed to load bundle /bin/eclipse/configuration/org.eclipse.osgi/426/0/.cp/bundles/haml.ruble
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2002)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:1978)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.lazyLoad(BundleCacher.java:1110)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.getInvoke(BundleCacher.java:1040)
+	at com.aptana.scripting.model.CommandElement.printBody(CommandElement.java:665)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.BundleElement.printBody(BundleElement.java:811)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:407)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:395)
+	at com.aptana.scripting.model.AbstractElement.toString(AbstractElement.java:450)
+	at java.lang.String.valueOf(String.java:2847)
+	at java.lang.StringBuilder.append(StringBuilder.java:128)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:290)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.construct2ndStep(Constructor.java:191)
+	at com.aptana.scripting.model.BundleCacher$BundleElementsConstructor$ConstructBundleElement.construct(BundleCacher.java:816)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:181)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:140)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:126)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:296)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:290)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:328)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:286)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-12 19:09:24.483
+!MESSAGE An internal error occurred during: "Loading bundle: /bin/eclipse/configuration/org.eclipse.osgi/426/0/.cp/bundles/haml.ruble".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:129)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.scripting 4 0 2014-11-12 19:09:24.652
+!MESSAGE (Build 3.6.0) [ERROR]  Failed to load bundle /bin/eclipse/configuration/org.eclipse.osgi/426/0/.cp/bundles/cucumber.ruble
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2002)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:1978)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.lazyLoad(BundleCacher.java:1110)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.getInvoke(BundleCacher.java:1040)
+	at com.aptana.scripting.model.CommandElement.printBody(CommandElement.java:665)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.BundleElement.printBody(BundleElement.java:811)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:407)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:395)
+	at com.aptana.scripting.model.AbstractElement.toString(AbstractElement.java:450)
+	at java.lang.String.valueOf(String.java:2847)
+	at java.lang.StringBuilder.append(StringBuilder.java:128)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:290)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.construct2ndStep(Constructor.java:191)
+	at com.aptana.scripting.model.BundleCacher$BundleElementsConstructor$ConstructBundleElement.construct(BundleCacher.java:816)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:181)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:140)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:126)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:296)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:290)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:328)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:286)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-12 19:09:24.827
+!MESSAGE An internal error occurred during: "Loading bundle: /bin/eclipse/configuration/org.eclipse.osgi/426/0/.cp/bundles/cucumber.ruble".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:129)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.scripting 4 0 2014-11-12 19:09:25.809
+!MESSAGE (Build 3.6.0) [ERROR]  Failed to load bundle /bin/eclipse/configuration/org.eclipse.osgi/426/0/.cp/bundles/ruby.ruble
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2002)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:1978)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.lazyLoad(BundleCacher.java:1110)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.getInvoke(BundleCacher.java:1040)
+	at com.aptana.scripting.model.CommandElement.printBody(CommandElement.java:665)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.BundleElement.printBody(BundleElement.java:811)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:407)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:395)
+	at com.aptana.scripting.model.AbstractElement.toString(AbstractElement.java:450)
+	at java.lang.String.valueOf(String.java:2847)
+	at java.lang.StringBuilder.append(StringBuilder.java:128)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:290)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.construct2ndStep(Constructor.java:191)
+	at com.aptana.scripting.model.BundleCacher$BundleElementsConstructor$ConstructBundleElement.construct(BundleCacher.java:816)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:181)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:140)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:126)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:296)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:290)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:328)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:286)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-12 19:09:25.950
+!MESSAGE An internal error occurred during: "Loading bundle: /bin/eclipse/configuration/org.eclipse.osgi/426/0/.cp/bundles/ruby.ruble".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:129)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.scripting 4 0 2014-11-12 19:09:26.100
+!MESSAGE (Build 3.6.0) [ERROR]  Failed to load bundle /bin/eclipse/configuration/org.eclipse.osgi/434/0/.cp/bundles/xml.ruble
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2002)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:1978)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.lazyLoad(BundleCacher.java:1110)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.getInvoke(BundleCacher.java:1040)
+	at com.aptana.scripting.model.CommandElement.printBody(CommandElement.java:665)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.BundleElement.printBody(BundleElement.java:811)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:407)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:395)
+	at com.aptana.scripting.model.AbstractElement.toString(AbstractElement.java:450)
+	at java.lang.String.valueOf(String.java:2847)
+	at java.lang.StringBuilder.append(StringBuilder.java:128)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:290)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.construct2ndStep(Constructor.java:191)
+	at com.aptana.scripting.model.BundleCacher$BundleElementsConstructor$ConstructBundleElement.construct(BundleCacher.java:816)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:181)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:140)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:126)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:296)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:290)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:328)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:286)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-12 19:09:26.188
+!MESSAGE An internal error occurred during: "Loading bundle: /bin/eclipse/configuration/org.eclipse.osgi/434/0/.cp/bundles/xml.ruble".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:129)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.scripting 4 0 2014-11-12 19:09:26.622
+!MESSAGE (Build 3.6.0) [ERROR]  Failed to load bundle /bin/eclipse/configuration/org.eclipse.osgi/426/0/.cp/bundles/sass.ruble
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2002)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:1978)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.lazyLoad(BundleCacher.java:1110)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.getInvoke(BundleCacher.java:1040)
+	at com.aptana.scripting.model.CommandElement.printBody(CommandElement.java:665)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.BundleElement.printBody(BundleElement.java:811)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:407)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:395)
+	at com.aptana.scripting.model.AbstractElement.toString(AbstractElement.java:450)
+	at java.lang.String.valueOf(String.java:2847)
+	at java.lang.StringBuilder.append(StringBuilder.java:128)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:290)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.construct2ndStep(Constructor.java:191)
+	at com.aptana.scripting.model.BundleCacher$BundleElementsConstructor$ConstructBundleElement.construct(BundleCacher.java:816)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:181)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:140)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:126)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:296)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:290)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:328)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:286)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-12 19:09:26.727
+!MESSAGE An internal error occurred during: "Loading bundle: /bin/eclipse/configuration/org.eclipse.osgi/426/0/.cp/bundles/sass.ruble".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:129)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.scripting 4 0 2014-11-12 19:09:27.057
+!MESSAGE (Build 3.6.0) [ERROR]  Failed to load bundle /bin/eclipse/configuration/org.eclipse.osgi/434/0/.cp/bundles/html.ruble
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2002)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:1978)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.lazyLoad(BundleCacher.java:1110)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.getInvoke(BundleCacher.java:1040)
+	at com.aptana.scripting.model.CommandElement.printBody(CommandElement.java:665)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.BundleElement.printBody(BundleElement.java:811)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:407)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:395)
+	at com.aptana.scripting.model.AbstractElement.toString(AbstractElement.java:450)
+	at java.lang.String.valueOf(String.java:2847)
+	at java.lang.StringBuilder.append(StringBuilder.java:128)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:290)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.construct2ndStep(Constructor.java:191)
+	at com.aptana.scripting.model.BundleCacher$BundleElementsConstructor$ConstructBundleElement.construct(BundleCacher.java:816)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:181)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:140)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:126)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:296)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:290)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:328)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:286)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-12 19:09:27.209
+!MESSAGE An internal error occurred during: "Loading bundle: /bin/eclipse/configuration/org.eclipse.osgi/434/0/.cp/bundles/html.ruble".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:129)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.scripting 4 0 2014-11-12 19:09:27.388
+!MESSAGE (Build 3.6.0) [ERROR]  Failed to load bundle /bin/eclipse/configuration/org.eclipse.osgi/434/0/.cp/bundles/js.ruble
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2002)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:1978)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.lazyLoad(BundleCacher.java:1110)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.getInvoke(BundleCacher.java:1040)
+	at com.aptana.scripting.model.CommandElement.printBody(CommandElement.java:665)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.BundleElement.printBody(BundleElement.java:811)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:407)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:395)
+	at com.aptana.scripting.model.AbstractElement.toString(AbstractElement.java:450)
+	at java.lang.String.valueOf(String.java:2847)
+	at java.lang.StringBuilder.append(StringBuilder.java:128)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:290)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.construct2ndStep(Constructor.java:191)
+	at com.aptana.scripting.model.BundleCacher$BundleElementsConstructor$ConstructBundleElement.construct(BundleCacher.java:816)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:181)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:140)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:126)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:296)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:290)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:328)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:286)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-12 19:09:27.491
+!MESSAGE An internal error occurred during: "Loading bundle: /bin/eclipse/configuration/org.eclipse.osgi/434/0/.cp/bundles/js.ruble".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:129)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.scripting 4 0 2014-11-12 19:09:27.561
+!MESSAGE (Build 3.6.0) [ERROR]  Failed to load bundle /bin/eclipse/configuration/org.eclipse.osgi/434/0/.cp/bundles/css.ruble
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2002)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:1978)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.lazyLoad(BundleCacher.java:1110)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.getInvoke(BundleCacher.java:1040)
+	at com.aptana.scripting.model.CommandElement.printBody(CommandElement.java:665)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.BundleElement.printBody(BundleElement.java:811)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:407)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:395)
+	at com.aptana.scripting.model.AbstractElement.toString(AbstractElement.java:450)
+	at java.lang.String.valueOf(String.java:2847)
+	at java.lang.StringBuilder.append(StringBuilder.java:128)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:290)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.construct2ndStep(Constructor.java:191)
+	at com.aptana.scripting.model.BundleCacher$BundleElementsConstructor$ConstructBundleElement.construct(BundleCacher.java:816)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:181)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:140)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:126)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:296)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:290)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:328)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:286)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-12 19:09:27.633
+!MESSAGE An internal error occurred during: "Loading bundle: /bin/eclipse/configuration/org.eclipse.osgi/434/0/.cp/bundles/css.ruble".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:129)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.scripting 4 0 2014-11-12 19:09:27.705
+!MESSAGE (Build 3.6.0) [ERROR]  Failed to load bundle /bin/eclipse/configuration/org.eclipse.osgi/434/0/.cp/bundles/coffeescript.ruble
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2002)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:1978)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.lazyLoad(BundleCacher.java:1110)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.getInvoke(BundleCacher.java:1040)
+	at com.aptana.scripting.model.CommandElement.printBody(CommandElement.java:665)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.BundleElement.printBody(BundleElement.java:811)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:407)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:395)
+	at com.aptana.scripting.model.AbstractElement.toString(AbstractElement.java:450)
+	at java.lang.String.valueOf(String.java:2847)
+	at java.lang.StringBuilder.append(StringBuilder.java:128)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:290)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.construct2ndStep(Constructor.java:191)
+	at com.aptana.scripting.model.BundleCacher$BundleElementsConstructor$ConstructBundleElement.construct(BundleCacher.java:816)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:181)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:140)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:126)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:296)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:290)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:328)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:286)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-12 19:09:27.822
+!MESSAGE An internal error occurred during: "Loading bundle: /bin/eclipse/configuration/org.eclipse.osgi/434/0/.cp/bundles/coffeescript.ruble".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:129)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.scripting 4 0 2014-11-12 19:09:27.869
+!MESSAGE (Build 3.6.0) [ERROR]  Failed to load bundle /bin/eclipse/configuration/org.eclipse.osgi/436/0/.cp/bundles/yaml.ruble
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2002)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:1978)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.lazyLoad(BundleCacher.java:1110)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.getInvoke(BundleCacher.java:1040)
+	at com.aptana.scripting.model.CommandElement.printBody(CommandElement.java:665)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.BundleElement.printBody(BundleElement.java:811)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:407)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:395)
+	at com.aptana.scripting.model.AbstractElement.toString(AbstractElement.java:450)
+	at java.lang.String.valueOf(String.java:2847)
+	at java.lang.StringBuilder.append(StringBuilder.java:128)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:290)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.construct2ndStep(Constructor.java:191)
+	at com.aptana.scripting.model.BundleCacher$BundleElementsConstructor$ConstructBundleElement.construct(BundleCacher.java:816)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:181)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:140)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:126)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:296)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:290)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:328)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:286)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-12 19:09:27.929
+!MESSAGE An internal error occurred during: "Loading bundle: /bin/eclipse/configuration/org.eclipse.osgi/436/0/.cp/bundles/yaml.ruble".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:129)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.scripting 4 0 2014-11-12 19:09:28.025
+!MESSAGE (Build 3.6.0) [ERROR]  Failed to load bundle /bin/eclipse/configuration/org.eclipse.osgi/434/0/.cp/bundles/shell-script.ruble
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2002)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:1978)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.lazyLoad(BundleCacher.java:1110)
+	at com.aptana.scripting.model.BundleCacher$LazyCommandElement.getInvoke(BundleCacher.java:1040)
+	at com.aptana.scripting.model.CommandElement.printBody(CommandElement.java:665)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.BundleElement.printBody(BundleElement.java:811)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:424)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:407)
+	at com.aptana.scripting.model.AbstractElement.toSource(AbstractElement.java:395)
+	at com.aptana.scripting.model.AbstractElement.toString(AbstractElement.java:450)
+	at java.lang.String.valueOf(String.java:2847)
+	at java.lang.StringBuilder.append(StringBuilder.java:128)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:290)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.construct2ndStep(Constructor.java:191)
+	at com.aptana.scripting.model.BundleCacher$BundleElementsConstructor$ConstructBundleElement.construct(BundleCacher.java:816)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:181)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:140)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:126)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:296)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:290)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:328)
+	at com.aptana.scripting.model.BundleCacher.load(BundleCacher.java:286)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:110)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-11-12 19:09:28.107
+!MESSAGE An internal error occurred during: "Loading bundle: /bin/eclipse/configuration/org.eclipse.osgi/434/0/.cp/bundles/shell-script.ruble".
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.jruby.util.OSEnvironment.getAsMapOfRubyStrings(OSEnvironment.java:90)
+	at org.jruby.util.OSEnvironment.getSystemPropertiesMap(OSEnvironment.java:75)
+	at org.jruby.RubyGlobal.defineGlobalEnvConstants(RubyGlobal.java:393)
+	at org.jruby.RubyGlobal.createGlobals(RubyGlobal.java:358)
+	at org.jruby.Ruby.init(Ruby.java:1078)
+	at org.jruby.Ruby.newInstance(Ruby.java:186)
+	at org.jruby.embed.internal.SingletonLocalContextProvider.getRuntime(SingletonLocalContextProvider.java:95)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.runParser(EmbedRubyRuntimeAdapterImpl.java:166)
+	at org.jruby.embed.internal.EmbedRubyRuntimeAdapterImpl.parse(EmbedRubyRuntimeAdapterImpl.java:93)
+	at org.jruby.embed.ScriptingContainer.parse(ScriptingContainer.java:1163)
+	at org.jruby.embed.ScriptingContainer.runScriptlet(ScriptingContainer.java:1223)
+	at com.aptana.scripting.ScriptingEngine.getInitializedScriptingContainer(ScriptingEngine.java:292)
+	at com.aptana.scripting.model.ScriptLoadJob.run(ScriptLoadJob.java:76)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:144)
+	at com.aptana.scripting.model.AbstractScriptRunner.run(AbstractScriptRunner.java:180)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:274)
+	at com.aptana.scripting.ScriptingEngine.runScript(ScriptingEngine.java:243)
+	at com.aptana.scripting.model.BundleManager.loadScript(BundleManager.java:2032)
+	at com.aptana.scripting.model.BundleManager$BundleLoadJob.run(BundleManager.java:129)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

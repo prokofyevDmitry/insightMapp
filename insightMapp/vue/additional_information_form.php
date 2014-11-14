@@ -11,8 +11,11 @@
 
 </head>
 <body>
-<section>
+<section>   
     <p id=presentation>
+    <img id="rounded_logo" alt="rounded insightmapp logo" src="../CSStyle/pics/addform/rounded_logo.png">   <strong id="title">Écrire une présentation du site<br></strong>
+        
+        
   Earlier today, I was working on a project and needed to convert images in a design to greyscale in Inkscape (I’m using version 0.48 on Windows Vista. Update: this is still the case and works in Inkscape 0.48 on Windows 7), and a quick flick across the menus didn’t prove fruitful.
 
 A deeper look yielded what I was looking for: it’s been renamed from previous versions (I think) to Desaturate, and can be found under the Filters > Colours > Desaturate option.
@@ -24,6 +27,8 @@ Note that the desaturate option in Inkscape also converts objects and paths to g
 
 Inkscape should have both Desaturate and Greyscale options according to Inkscape’s effect reference guide, but as you can see from the screenshot above, there is no greyscale option! You can, of course, create your own saved effect in Inkscape for greyscale if it bothers you that much.  
 
+        
+           <strong id="insightmapp"> InsightTeam FR</strong>
     
     </p>
     
@@ -57,17 +62,18 @@ Update your profile picture
 <?php include 'listes/date_form.php'?>
 <br>
 <p id=where>
-<label class dir="" for="pays">Where are you from?</label>
+<label  for="pays">Where are you from?</label>
 <select class="list" name="pays" id="pays">
 <?php include 'listes/country_list.php'?> <!--  liste de tout les pays avec la terminaison "<select>" -->
 </select>
 
 <input name="ville" placeholder="City" type="text"/>
-<label class="mail_list" for="mail_list">Do you want to recieve our NewMail?</label>
+          </p>
+    <label class="mail_list" for="mail_list">Do you want to recieve our NewMail?</label>
 
     <input type="checkbox"  class="mail_list" value="mail_list" name="mail_list">
 <textarea name="status" id="status" placeholder="Tell something about you, it's will be your 'official' presentation" /></textarea>
-<input  type="submit" value="GO" placeholder="GO" class="submit" name="submit"/>
+<input  type="submit" value="GO" placeholder="GO" id="submit" name="submit"/>
 
 
 
