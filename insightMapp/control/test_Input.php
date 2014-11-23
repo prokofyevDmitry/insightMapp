@@ -58,6 +58,7 @@ function test_name($string)
 {
 	if(strlen($string)==0)
 		return false;
+	// le string qui contient les conditions du regex.
 	$regex_text = "/^([\p{L}a-zA-Z]*)$/ui";  
 	$string = preg_replace('.-.', '', $string);
 	$string = preg_replace('. .', '', $string);

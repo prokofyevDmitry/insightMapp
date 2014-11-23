@@ -38,7 +38,7 @@ function test_password()
 				return true;
 			}
 			else
-				echo 'mais on est quand meme sortie du if';
+				
 				return 2;
 	
 	

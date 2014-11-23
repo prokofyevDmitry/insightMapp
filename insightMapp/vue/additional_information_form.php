@@ -5,7 +5,8 @@
 <html>
 
 <head>
-<link rel="stylesheet" href="../CSStyle/add_info.css"/>
+
+<link rel="stylesheet" href="CSStyle/add_info.css"/>
 <meta charset='utf-8'/>   
 <link href='http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
@@ -13,7 +14,7 @@
 <body>
 <section>   
     <p id=presentation>
-    <img id="rounded_logo" alt="rounded insightmapp logo" src="../CSStyle/pics/addform/rounded_logo.png">   <strong id="title">Écrire une présentation du site<br></strong>
+    <img id="rounded_logo" alt="rounded insightmapp logo" src="CSStyle/pics/addform/rounded_logo.png">   <strong id="title">Écrire une présentation du site<br></strong>
         
         
   Earlier today, I was working on a project and needed to convert images in a design to greyscale in Inkscape (I’m using version 0.48 on Windows Vista. Update: this is still the case and works in Inkscape 0.48 on Windows 7), and a quick flick across the menus didn’t prove fruitful.
@@ -43,7 +44,7 @@ Inkscape should have both Desaturate and Greyscale options according to Inkscape
           <p id=image_de_profile> 
 Update your profile picture
 
-    <label for="profile_pic"><img alt="undefined user picture" src="../CSStyle/pics/addform/deffault-profile-pic.png"></label>
+    <label for="profile_pic"><img alt="undefined user picture" src="CSStyle/pics/addform/deffault-profile-pic.png"></label>
    
 	<input type="file" id="realinput" name=profile_pic class="file" />
     

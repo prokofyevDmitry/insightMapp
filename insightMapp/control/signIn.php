@@ -6,6 +6,13 @@
  */
 
 // l'array result permet de stocker les résultats des tests intermediaires pour els variables etc...
+
+// on vérifie que l'utilisateur n'est pas déja connecté:
+	if(isset($_SESSION['connecte']))
+	{
+		// si oui on redirige le mec 
+	}
+
 $result = array(0,0,0,0);
 $chart_name = 'users';
 $test= null; 
@@ -17,7 +24,10 @@ include $test.'model/insert_new_element.php';
 include $test.'control/creat_user_foldersystem.php';
 include $test.'model/champ_search_precise.php';
 include $test.'model/champ_search.php';
-include $test.'control/initialisation_user_session.php';
+include $test.'control/initialisation_user_session.php'; 
+
+
+
 $bdd = db_connexion('insightmapp','root',''); // connexion base de données. 
 
 
@@ -66,8 +76,6 @@ foreach ($_POST as $key =>$value) // securisation contre l'injection
 TODO:  Maintenant que nous nous sommes inscrit, il faut se loggue.
 			Commencer la partie log. Utilisé les bout de code déja utilisées.
 */
- 	
- 	
  	echo '<script>
  					window.location.replace("?loc=home_premiere_visite")
  					exit();
@@ -75,43 +83,27 @@ TODO:  Maintenant que nous nous sommes inscrit, il faut se loggue.
  }
  else
  { 
- 	
- 
- 	
  	// on instance l'utilisation de head_page_print.
  	$section_contain =  'vue/user_signup_form.php';
-
 //  $css = css_array_fill_home_page(array(1,1,0,1));
  $css = array (
  		'HomeStyle.css',
  		'leaf.css',
  		'signIn.css'
- 		
- 		
- );
- 
+				 );
  head_page_print(true, true, true, true, true, $css, $section_contain);
- 
  }
- 
 }
 else
 {
-	
-	 
 	$section_contain = "vue/user_signup_form.php";
-	
 	//$css = css_array_fill_home_page(array(1,1,0,1));
 	$css = array (
 			'HomeStyle.css',
 			'leaf.css',
 			'signIn.css'
  	);
-	
 	head_page_print(true, true, true, true, true, $css, $section_contain);
-	
-
-
 }
 
 

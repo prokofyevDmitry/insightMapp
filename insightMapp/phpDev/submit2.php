@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+sec_session_start();
 
 if(isset($_SESSION['submitted_form_values'])){extract($_SESSION['submitted_form_values']);}
 

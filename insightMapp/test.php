@@ -1,1 +1,9 @@
- <p class="logo" style="left:40%">heeeeeellllloooooooo <p>';
+ 
+ <?php 
+ // edition de l'image avec BG
+ 
+ 
+ 
+ 
+ 
+ ?>
