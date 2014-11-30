@@ -76,71 +76,25 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 			$fichier = (test_fichier($_FILES['profile_pic'])) ? true : false;
 			else
 				$fichier=false;
-// 			if(test_fichier('profile_pic'))
-// 			{
-// 				$fichier = true;
-// 			}	
-// 			else 
-// 			{
-// 				$fichier=false;
-// 			}
-			
+
 			
 			$sexe = (isset($_POST['sexe']) AND (strcmp($_POST['sexe'],'femme') or strcmp($_POST['sexe'],'homme'))) ? true: false;
 			
-			//test de validité du sexe: l'utilisateur peut modifier le html encoyé au server, il est important de le verifier.
 
-// 			if(isset($_POST['sexe']) AND (strcmp($_POST['sexe'],'femme') or strcmp($_POST['sexe'],'homme')))
-// 			{
-// 				$sexe = true;
-// 			}
-// 			else 
-// 			{
-// 				$sexe = false;
-// 			}
 			
-			
-			//test de la date;
+			// TODO test de la date;
 			// ecrire le test de la validation d'une date 
 			if(isset($_POST['mois']) AND isset($_POST['jour']) AND isset($_POST['annee']))
 			$date = (checkdate(intval($_POST['mois']), intval($_POST['jour']), intval($_POST['annee']))) ? true : false;
 			else $date = false;
-// 			if(checkdate($_POST['mois'], $_POST['jour'], $_POST['annee']))
-// 			{
-// 				$date = true;
-// 			}
-// 			else
-// 			{
-// 				$date = false;
-// 			}
-						
-			
-			// verification du pays:
 			$pays = (test_menu_deroulant($_POST['pays'],'vue/listes/country_list.php')) ? true:false;
-			
-// 			if(test_menu_deroulant($_POST['pays'],'vue/listes/country_list.php'))
-// 			{
-// 				$pays = true;
-// 			}
-// 			else {
-// 			$pays = false;
-// 			}
+
 			
 			
 			// verification du nom de ville: 
 			$ville = (test_input($_POST['ville'], 'city', 0, 0)) ? true : false;
+		
 			
-// 			if(test_input($_POST['ville'], 'city', 0, 0))
-// 			{
-// 				$ville = true;
-// 			}
-// 			else
-// 			{
-// 				$ville = false;
-// 			}
-			
-			
-		// verification de l'abbonnement à la new mail.
 		if(isset($_POST['mail_list']))
 		$mail_list = (strcmp($_POST['mail_list'],'mail_list')==0   ) ? true : false;
 			else $mail_list = false;
@@ -157,14 +111,26 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		
 		
 		
+		
 		if($fichier)
 		{
+			
 			// on sauvgarde le fichier (on verifie que l'utilisateur est toujours connecté).
 			if(isset($_SESSION['user_id']))
 			{	
 				// creation fichier
-				$upload_folder = 	'upload/'.$_SESSION['user_id'].'/photos/profile_pic/ '.$_FILES['profile_pic']['name'];
-			move_uploaded_file($_FILES['profile_pic']['tmp_name'],$upload_folder );
+				$upload_folder = 	'upload/'.$_SESSION['user_id'].'/photos/originals/profile_pic/'.$_SESSION['user_id'].$_FILES['profile_pic']['name'];
+			
+				
+				if(!move_uploaded_file($_FILES['profile_pic']['tmp_name'],$upload_folder ))
+				{
+					die();
+				}
+			
+				// on réduit la taille de l'image:
+				
+				
+				
 			}
 			//on ecrit son adresse dans la base de données.
 			insert_new_champ_to_existing_line($bdd, 'users','profile_pic', $upload_folder,'id',$_SESSION['user_id']);
@@ -207,45 +173,22 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		$_SESSION['derniere_connexion'] = champ_search_precise($_SESSION['user_id'],'id','last_activity',$bdd,'users');
 		
 		
+			
 		
 		
-		
-		
+		//TODO changer la redirection (jquery);
 	
 		echo'<script>
- 			window.location.replace("?loc=home_connecte");
+ 			window.location.replace("../index.php");
  				exit();
 		</script>';
-		
+}
 
-		
-		
-
-		}
-		
 		else{	
-
-
-			
-		
-		
-		
-			
-// 		
-		// Affichage des informations auxiliaires:
-
 		include 'vue/additional_information_form.php';
 		}
-	}	
-		
-			
-			
-			
-		
-			
-			
+}	
 
-	 ?> 
 		
 		
 

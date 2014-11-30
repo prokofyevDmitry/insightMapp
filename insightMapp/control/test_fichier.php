@@ -41,7 +41,7 @@ function test_fichier_nom($fichier) {
 	
 	
 	// Amélioration pour la 2.0: faire en sorte d'accepter tout les chars. 
-	$pas_de_signes_interdits = '#^[a-zA-Z0-9._-]+$#';
+	$pas_de_signes_interdits = '#^[a-zA-Z0-9 ._-]+$#';
 	$pas_de_ponctuation_au_debut = '#^[a-zA-Z0-9]#';
 	$pas_de_ponctuation_a_la_fin = '#[a-zA-Z]$#';
 	

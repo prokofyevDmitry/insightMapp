@@ -1,9 +1,6 @@
 <?php // ici nous alons reboucler sur la meme page d'aceuille dans le cas ou certains données ne sont pas bonnes
 
-/* TODO Débuger la connexion à la base de donnée et verifier la bonne verification des mails
- * 
- * 
- */
+
 
 // l'array result permet de stocker les résultats des tests intermediaires pour els variables etc...
 

@@ -7,7 +7,7 @@
 <?php 
 
 // verification de la déffinition de SESSION, 
-if($_POST['submit_signin']) $ok_session = true;
+if(isset($_POST['submit_signin'])) $ok_session = true;
 else $ok_session = false;
 
 ?>

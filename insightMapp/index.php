@@ -33,6 +33,8 @@ switch ($_GET['loc'])
 	case "home_connecte" : include 'control/home_connecte.php'; break;
 	// page d'enregistrement
 	case "signup": include 'control/signIn.php'; break;
+	// la déconexion
+	case "signout":include 'control/sign_out.php'; break;
 	// si on est pas d'un un cas prévu, on se délogue et on pointe sur la page d'accuille
 	default: $false_adresse = true ; break;
 }
@@ -54,7 +56,7 @@ $css = css_array_fill_home_page(array(1,1,1,0));
 }
 
 //test de la longueur de GET:
-if(count($_GET)>=$size_of_get and !isset($_GET['loc']))
+if(count($_GET)>=$GLOBALS['size_of_get'] and !isset($_GET['loc']))
 {
 	// on déclare l'adresse comme invalide
 	$false_adresse=true;
@@ -63,7 +65,7 @@ if(count($_GET)>=$size_of_get and !isset($_GET['loc']))
 
 if(isset($false_adresse)) // si l'utilisateur modifie la valeur de GET
 {session_destroy();
-	
+
 	echo '<script>
  					window.location.replace("index.php");
  					exit();
