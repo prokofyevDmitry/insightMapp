@@ -1,9 +1,17 @@
+<?php
+// test de gestion des erreures dans un programme:
+function rapport_erreur($code_erreur, $text_erreur)
+{
+	echo 'ERROR n'.$code_erreur.'<br> '.$text_erreur;
+	echo "<br>Script Stopped";
+	die();
+}
+// reglage de la prise en chage de l'erreur:
+// callback de rapport_erreur
+set_error_handler("rapport_erreur");
+// on provoque l'erreur
+echo($test);
+?>
+
  
- <?php 
- // edition de l'image avec BG
- 
- 
- 
- 
- 
- ?>
+

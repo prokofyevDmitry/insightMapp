@@ -15,7 +15,8 @@
   {
   	
   	
-  	// il y a toujours qu'une seule photo dans le fichier donc son nom dans une seule variable
+  // la photo de profile est prise dans profile_pic_path, elle est soit ajoutée par resize_picture lors de l'ajout de la premier 
+  // soit dans "initialisation_ser_session.php"
   	if(isset($_SESSION['profile_pic_path']) and $_SESSION['profile_pic_path']!=null )
   	echo ' <img alt="profileimage" src="'.$_SESSION['profile_pic_path'].'" class="IMlogo" /> ';
   	else

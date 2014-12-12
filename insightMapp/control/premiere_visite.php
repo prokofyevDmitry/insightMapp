@@ -52,6 +52,7 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 			include 'model/insert_new_champ_to_existing_line.php';
 			include 'model/bd_connexion.php';
 			include 'model/champ_search_precise.php';
+			include 'control/resize_picture.php';
 			// exclusion de la faille SSX
 			$post_transmis = array (
 					'profile_pic',
@@ -119,16 +120,17 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 			if(isset($_SESSION['user_id']))
 			{	
 				// creation fichier
-				$upload_folder = 	'upload/'.$_SESSION['user_id'].'/photos/originals/profile_pic/'.$_SESSION['user_id'].$_FILES['profile_pic']['name'];
+				$upload_folder = 	'upload/'.$_SESSION['user_id'].'/photos/originals/profile_pic/'.$_FILES['profile_pic']['name'];
 			
 				
 				if(!move_uploaded_file($_FILES['profile_pic']['tmp_name'],$upload_folder ))
 				{
+					// TODO AJOUTER LA GESTION D'ERREUR 
 					die();
 				}
 			
 				// on réduit la taille de l'image:
-				
+				resize_picture($upload_folder, "hommescreen");
 				
 				
 			}

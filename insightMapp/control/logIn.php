@@ -30,7 +30,7 @@ if(isset($_POST['submit']))
 		if( password_verify($_POST['password'], $ligne['password']) )
 		{
 			
-			
+			// dans les nouveal
 			initialisation_user_session($ligne);
 			$_SESSION['connecte'] = true;
 			
