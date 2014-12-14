@@ -5,9 +5,13 @@
 // lit le fichier: 
 
 $source_path = 'upload/137/photos/profile_pic/homescreen/dima_diam.jpg';
-
+$dest_path = 'upload/137/photos/profile_pic/homescreen/test.jpg';
 $source = imagecreatefromjpeg($source_path);
 
+
+
+
+// hardcoding: code couleur principale du site : cyan 
 $couleur = imagecolorallocate($source, 69, 209, 215);
 
 
@@ -25,45 +29,19 @@ $cote = imagesy($source);
 
 
 
-$R = pow($cote,2);
-
-for($i = 1; $i<$cote;$i++)
+$centre = $cote/2;
+$R = pow($centre,2);
+for($i = 0; $i<=$cote;$i++)
 {
-		for($j =1; $j<$cote;$j++)
+		for($j =0; $j<=$cote;$j++)
 		{
-			$result = pow($i,2)+pow($j,2);
-			if($result>$R-5*$cote and $result<=$R+5*$cote)
+			$result = pow($centre-$i,2)+pow($centre-$j,2);
+			
+			if($result>$R)
 				imagesetpixel($source, $i, $j, $couleur);
 		}	
 }
 
-
-
-
-        header("Content-type: image/jpg");     
-		imagejpeg($source);
-
-/*
- * 
-  for(i=x-r;i<=x+r;i++)
-{
-  for(j=y-r;j<=y+r;j++)
-{
-  true1= 0;
-  int result = pow(i-x,2)+pow(j-y,2);
-if(R==result)
-{
-setPixel(i,j,0xFFFF);
-true1 = 1;
-}
-
-if(result<R+r && result>R-r )
-{
-
-  setPixel(i,j,0xFFFF);
-  true1 = 1;
- * 
- */
 		
 		
 		
