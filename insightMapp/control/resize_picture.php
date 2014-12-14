@@ -13,6 +13,11 @@ session_start();
 // dans ce cas la size prend la valeur 0
 function resize_picture($picture_path, $size,$x=null,$y=null)
 {
+
+// cas où le paramettre passé est mauvais:
+	
+
+
 	
 	// la variable permet de deceler le cas ou l'image passée en argument est un carrée parfait , au quel cas tout le traitement est superflu. 
 	$min_var_zero=null;
@@ -24,7 +29,7 @@ function resize_picture($picture_path, $size,$x=null,$y=null)
 	if(strpos($picture_path, ".jpg") or strpos($picture_path, ".jpeg"))
 	{	
 		//cas ou le fichier est un jpeg
-		echo 'jpg';
+		#echo 'jpg';
 		$source = imagecreatefromjpeg($picture_path);
 		$jpeg=true;
 	}
@@ -32,7 +37,7 @@ function resize_picture($picture_path, $size,$x=null,$y=null)
 		if(strpos($picture_path, ".png"))
 		{
 			// cas ou le fichier est un .png
-			echo 'png';
+			#echo 'png';
 			$source = imagecreatefrompng($picture_path);
 		$jpeg=false;
 	

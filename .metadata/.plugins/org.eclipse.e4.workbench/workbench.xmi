@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_CxfnAHi_EeSijtt31S-DKA" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_CxfnAXi_EeSijtt31S-DKA" bindingContexts="_CxjSGHi_EeSijtt31S-DKA">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;logo.php&quot; tooltip=&quot;insightMapp/control/logo.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/logo.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;premiere_visite.php&quot; tooltip=&quot;insightMapp/control/premiere_visite.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/premiere_visite.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;ko.html&quot; tooltip=&quot;insightMapp/ko.html&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/ko.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;resize_picture.php&quot; tooltip=&quot;insightMapp/control/resize_picture.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/resize_picture.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;open_image.php&quot; tooltip=&quot;insightMapp/control/open_image.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/open_image.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;open_image.php&quot; tooltip=&quot;insightMapp/open_image.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/open_image.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;test_Input.php&quot; tooltip=&quot;insightMapp/control/test_Input.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/test_Input.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;test.php&quot; tooltip=&quot;insightMapp/test.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/test.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;index.php&quot; tooltip=&quot;insightMapp/index.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/index.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;param.php&quot; tooltip=&quot;insightMapp/control/ini/param.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/ini/param.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;param.php&quot; tooltip=&quot;insightMapp/control/param.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/param.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;logIn.php&quot; tooltip=&quot;insightMapp/control/logIn.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/logIn.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;test_password.php&quot; tooltip=&quot;insightMapp/control/test_password.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/test_password.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;head_page_print.php&quot; tooltip=&quot;insightMapp/control/head_page_print.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/head_page_print.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;submit2.php&quot; tooltip=&quot;insightMapp/phpDev/submit2.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/phpDev/submit2.php&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;test.php&quot; tooltip=&quot;insightMapp/test.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/test.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;insert_new_champ_to_existing_line.php&quot; tooltip=&quot;insightMapp/model/insert_new_champ_to_existing_line.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/model/insert_new_champ_to_existing_line.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;param.php&quot; tooltip=&quot;insightMapp/control/ini/param.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/ini/param.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;initialisation_user_session.php&quot; tooltip=&quot;insightMapp/control/initialisation_user_session.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/initialisation_user_session.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;index.php&quot; tooltip=&quot;insightMapp/index.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/index.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;logo.php&quot; tooltip=&quot;insightMapp/control/logo.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/logo.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;premiere_visite.php&quot; tooltip=&quot;insightMapp/control/premiere_visite.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/premiere_visite.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;ko.html&quot; tooltip=&quot;insightMapp/ko.html&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/ko.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;resize_picture.php&quot; tooltip=&quot;insightMapp/control/resize_picture.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/resize_picture.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;open_image.php&quot; tooltip=&quot;insightMapp/control/open_image.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/open_image.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;open_image.php&quot; tooltip=&quot;insightMapp/open_image.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/open_image.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;test_Input.php&quot; tooltip=&quot;insightMapp/control/test_Input.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/test_Input.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;param.php&quot; tooltip=&quot;insightMapp/control/param.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/param.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;logIn.php&quot; tooltip=&quot;insightMapp/control/logIn.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/logIn.php&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.php.editor&quot; name=&quot;test_password.php&quot; tooltip=&quot;insightMapp/control/test_password.php&quot;>&#xA;&lt;persistable path=&quot;/insightMapp/control/test_password.php&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_CxfnAXi_EeSijtt31S-DKA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_CxfnAni_EeSijtt31S-DKA" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1920" height="1080">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_CxfnAXi_EeSijtt31S-DKA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_CxfnAni_EeSijtt31S-DKA" label="%trimmedwindow.label.eclipseSDK" x="41" y="-3" width="1325" height="771">
     <persistedState key="coolBarVisible" value="false"/>
     <persistedState key="perspectiveBarVisible" value="false"/>
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workingSets/>"/>
@@ -58,14 +58,12 @@
           <tags>persp.actionSet:org.eclipse.rse.core.search.searchActionSet</tags>
           <tags>persp.actionSet:cn.pande.eclipsex.fullscreen.actionSet</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_CxfnBXi_EeSijtt31S-DKA" selectedElement="_CxfnBni_EeSijtt31S-DKA">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_CxfnBni_EeSijtt31S-DKA" containerData="6700" selectedElement="_CxfnB3i_EeSijtt31S-DKA" horizontal="true">
-              <children xsi:type="basic:PartStack" xmi:id="_CxfnB3i_EeSijtt31S-DKA" elementId="topLeft" containerData="1439" selectedElement="_CxfnCHi_EeSijtt31S-DKA">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_CxfnBni_EeSijtt31S-DKA" containerData="6700" selectedElement="_CxfnCXi_EeSijtt31S-DKA" horizontal="true">
+              <children xsi:type="basic:PartStack" xmi:id="_CxfnB3i_EeSijtt31S-DKA" elementId="topLeft" containerData="2342" selectedElement="_CxfnCHi_EeSijtt31S-DKA">
                 <tags>newtablook</tags>
-                <tags>active</tags>
-                <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_CxfnCHi_EeSijtt31S-DKA" elementId="org.eclipse.php.ui.explorer" ref="_Cxg1jni_EeSijtt31S-DKA"/>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_CxfnCXi_EeSijtt31S-DKA" containerData="8561" selectedElement="_CxfnCni_EeSijtt31S-DKA">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_CxfnCXi_EeSijtt31S-DKA" containerData="7658" selectedElement="_CxfnCni_EeSijtt31S-DKA">
                 <children xsi:type="advanced:Placeholder" xmi:id="_CxfnCni_EeSijtt31S-DKA" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_Cxg1Sni_EeSijtt31S-DKA"/>
                 <children xsi:type="basic:PartStack" xmi:id="_CxfnC3i_EeSijtt31S-DKA" elementId="bottom" visible="false" containerData="2500" selectedElement="_CxfnDHi_EeSijtt31S-DKA">
                   <tags>newtablook</tags>
@@ -214,165 +212,14 @@
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_Cxg1Sni_EeSijtt31S-DKA" elementId="org.eclipse.ui.editorss" selectedElement="_9-XtgIJGEeSqdqY0m6bVpQ">
       <children xsi:type="basic:PartSashContainer" xmi:id="_9-XtgIJGEeSqdqY0m6bVpQ" selectedElement="_Cxg1S3i_EeSijtt31S-DKA" horizontal="true">
-        <children xsi:type="basic:PartSashContainer" xmi:id="_Cxg1S3i_EeSijtt31S-DKA" containerData="5030" selectedElement="_Cxg1THi_EeSijtt31S-DKA">
-          <children xsi:type="basic:PartStack" xmi:id="_Cxg1THi_EeSijtt31S-DKA" elementId="org.eclipse.e4.primaryDataStack" containerData="6700" selectedElement="_Cxg1g3i_EeSijtt31S-DKA">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_Cxg1S3i_EeSijtt31S-DKA" containerData="7263" selectedElement="_Cxg1THi_EeSijtt31S-DKA">
+          <children xsi:type="basic:PartStack" xmi:id="_Cxg1THi_EeSijtt31S-DKA" elementId="org.eclipse.e4.primaryDataStack" containerData="6700" selectedElement="_ObX24IPFEeS9db73JxKmCw">
             <tags>newtablook</tags>
             <tags>org.eclipse.e4.primaryDataStack</tags>
             <tags>EditorStack</tags>
-            <children xsi:type="basic:Part" xmi:id="_Cxg1TXi_EeSijtt31S-DKA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="home_connecte.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.gif" closeable="true">
-              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;home_connecte.php&quot; partName=&quot;home_connecte.php&quot; title=&quot;home_connecte.php&quot; tooltip=&quot;insightMapp/control/home_connecte.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/insightMapp/control/home_connecte.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-              <tags>Editor</tags>
-              <tags>org.eclipse.php.editor</tags>
-              <tags>removeOnHide</tags>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1Tni_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-                <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-                <tags>popup:#AbstractTextEditorContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1T3i_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-                <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-                <tags>popup:#AbstractTextEditorRulerContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1UHi_EeSijtt31S-DKA" elementId="#OverviewRulerContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:#OverviewRulerContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1UXi_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-                <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-                <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1Uni_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-                <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-                <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1U3i_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-                <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-                <tags>popup:#AbstractTextEditorContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1VHi_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-                <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-                <tags>popup:#AbstractTextEditorRulerContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1VXi_EeSijtt31S-DKA" elementId="#OverviewRulerContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:#OverviewRulerContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1Vni_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-                <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-                <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1V3i_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-                <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-                <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-              </menus>
-            </children>
-            <children xsi:type="basic:Part" xmi:id="_Cxg1WHi_EeSijtt31S-DKA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="logIn.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.gif" closeable="true">
-              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;logIn.php&quot; partName=&quot;logIn.php&quot; title=&quot;logIn.php&quot; tooltip=&quot;insightMapp/control/logIn.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/insightMapp/control/logIn.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;969&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-              <tags>Editor</tags>
-              <tags>org.eclipse.php.editor</tags>
-              <tags>removeOnHide</tags>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1WXi_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-                <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-                <tags>popup:#AbstractTextEditorContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1Wni_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-                <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-                <tags>popup:#AbstractTextEditorRulerContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1W3i_EeSijtt31S-DKA" elementId="#OverviewRulerContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:#OverviewRulerContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1XHi_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-                <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-                <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1XXi_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-                <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-                <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1Xni_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-                <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-                <tags>popup:#AbstractTextEditorContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1X3i_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-                <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-                <tags>popup:#AbstractTextEditorRulerContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1YHi_EeSijtt31S-DKA" elementId="#OverviewRulerContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:#OverviewRulerContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1YXi_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-                <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-                <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1Yni_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-                <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-                <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1Y3i_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-                <tags>popup:org.eclipse.php.editor.EditorContext</tags>
-                <tags>popup:#AbstractTextEditorContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1ZHi_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-                <tags>popup:org.eclipse.php.editor.RulerContext</tags>
-                <tags>popup:#AbstractTextEditorRulerContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1ZXi_EeSijtt31S-DKA" elementId="#OverviewRulerContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:#OverviewRulerContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1Zni_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.EditorContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.EditorContext</tags>
-                <tags>popup:org.eclipse.php.editor.source.EditorContext</tags>
-                <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-              </menus>
-              <menus xsi:type="menu:PopupMenu" xmi:id="_Cxg1Z3i_EeSijtt31S-DKA" elementId="org.eclipse.php.core.phpsource.source.RulerContext">
-                <tags>menuContribution:popup</tags>
-                <tags>popup:org.eclipse.php.core.phpsource.source.RulerContext</tags>
-                <tags>popup:org.eclipse.php.editor.source.RulerContext</tags>
-                <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-              </menus>
-            </children>
+            <tags>active</tags>
             <children xsi:type="basic:Part" xmi:id="_Cxg1aHi_EeSijtt31S-DKA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="param.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.gif" closeable="true">
-              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;param.php&quot; partName=&quot;param.php&quot; title=&quot;param.php&quot; tooltip=&quot;insightMapp/control/ini/param.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/insightMapp/control/ini/param.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;368&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;param.php&quot; partName=&quot;param.php&quot; title=&quot;param.php&quot; tooltip=&quot;insightMapp/control/ini/param.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/insightMapp/control/ini/param.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;371&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
               <tags>Editor</tags>
               <tags>org.eclipse.php.editor</tags>
               <tags>removeOnHide</tags>
@@ -434,7 +281,7 @@
               </menus>
             </children>
             <children xsi:type="basic:Part" xmi:id="_Cxg1g3i_EeSijtt31S-DKA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="resize_picture.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.gif" closeable="true">
-              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;resize_picture.php&quot; partName=&quot;resize_picture.php&quot; title=&quot;resize_picture.php&quot; tooltip=&quot;insightMapp/control/resize_picture.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/insightMapp/control/resize_picture.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;828&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;resize_picture.php&quot; partName=&quot;resize_picture.php&quot; title=&quot;resize_picture.php&quot; tooltip=&quot;insightMapp/control/resize_picture.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/insightMapp/control/resize_picture.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;190&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
               <tags>Editor</tags>
               <tags>org.eclipse.php.editor</tags>
               <tags>removeOnHide</tags>
@@ -467,6 +314,32 @@
                 <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
               </menus>
             </children>
+            <children xsi:type="basic:Part" xmi:id="_C-BZ8ILtEeS9db73JxKmCw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="index.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.gif" closeable="true">
+              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;index.php&quot; partName=&quot;index.php&quot; title=&quot;index.php&quot; tooltip=&quot;insightMapp/index.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/insightMapp/index.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;624&quot; selectionTopPixel=&quot;68&quot;/>&#xA;&lt;/editor>"/>
+              <tags>Editor</tags>
+              <tags>org.eclipse.php.editor</tags>
+              <tags>removeOnHide</tags>
+            </children>
+            <children xsi:type="basic:Part" xmi:id="_Yu8Q4IOjEeS9db73JxKmCw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="initialisation_user_session.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.gif" closeable="true">
+              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;initialisation_user_session.php&quot; partName=&quot;initialisation_user_session.php&quot; title=&quot;initialisation_user_session.php&quot; tooltip=&quot;insightMapp/control/initialisation_user_session.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/insightMapp/control/initialisation_user_session.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;893&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+              <tags>Editor</tags>
+              <tags>org.eclipse.php.editor</tags>
+              <tags>removeOnHide</tags>
+            </children>
+            <children xsi:type="basic:Part" xmi:id="_ObX24IPFEeS9db73JxKmCw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="test.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.gif" closeable="true">
+              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;test.php&quot; partName=&quot;test.php&quot; title=&quot;test.php&quot; tooltip=&quot;insightMapp/test.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/insightMapp/test.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;625&quot; selectionTopPixel=&quot;4&quot;/>&#xA;&lt;/editor>"/>
+              <tags>Editor</tags>
+              <tags>org.eclipse.php.editor</tags>
+              <tags>removeOnHide</tags>
+              <tags>active</tags>
+              <tags>activeOnClose</tags>
+            </children>
+            <children xsi:type="basic:Part" xmi:id="_W8yB0IPGEeS9db73JxKmCw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="insert_new_champ_to_existing_line.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.gif" closeable="true">
+              <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;insert_new_champ_to_existing_line.php&quot; partName=&quot;insert_new_champ_to_existing_line.php&quot; title=&quot;insert_new_champ_to_existing_line.php&quot; tooltip=&quot;insightMapp/model/insert_new_champ_to_existing_line.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/insightMapp/model/insert_new_champ_to_existing_line.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;18&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;10&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+              <tags>Editor</tags>
+              <tags>org.eclipse.php.editor</tags>
+              <tags>removeOnHide</tags>
+            </children>
           </children>
           <children xsi:type="basic:PartStack" xmi:id="_Cxg1iXi_EeSijtt31S-DKA" elementId="right" toBeRendered="false" containerData="3300">
             <tags>newtablook</tags>
@@ -476,15 +349,15 @@
             <children xsi:type="advanced:Placeholder" xmi:id="_Cxg1jXi_EeSijtt31S-DKA" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" toBeRendered="false" ref="_CxhcmXi_EeSijtt31S-DKA"/>
           </children>
         </children>
-        <children xsi:type="basic:PartStack" xmi:id="_9-XtgYJGEeSqdqY0m6bVpQ" elementId="PartStack@217be3d" containerData="4970" selectedElement="_9kqNAIJGEeSqdqY0m6bVpQ">
+        <children xsi:type="basic:PartStack" xmi:id="_9-XtgYJGEeSqdqY0m6bVpQ" elementId="PartStack@217be3d" containerData="2737" selectedElement="_9kqNAIJGEeSqdqY0m6bVpQ">
           <children xsi:type="basic:Part" xmi:id="_9kqNAIJGEeSqdqY0m6bVpQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="premiere_visite.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;premiere_visite.php&quot; partName=&quot;premiere_visite.php&quot; title=&quot;premiere_visite.php&quot; tooltip=&quot;insightMapp/control/premiere_visite.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/insightMapp/control/premiere_visite.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1208&quot; selectionTopPixel=&quot;1027&quot;/>&#xA;&lt;/editor>"/>
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;premiere_visite.php&quot; partName=&quot;premiere_visite.php&quot; title=&quot;premiere_visite.php&quot; tooltip=&quot;insightMapp/control/premiere_visite.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/insightMapp/control/premiere_visite.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;4794&quot; selectionTopPixel=&quot;1986&quot;/>&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>org.eclipse.php.editor</tags>
             <tags>removeOnHide</tags>
           </children>
           <children xsi:type="basic:Part" xmi:id="_fHK6YIJHEeSqdqY0m6bVpQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="logo.php" iconURI="platform:/plugin/org.eclipse.php.ui/icons/full/obj16/phpfile.gif" closeable="true">
-            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;logo.php&quot; partName=&quot;logo.php&quot; title=&quot;logo.php&quot; tooltip=&quot;insightMapp/control/logo.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/insightMapp/control/logo.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;14&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;423&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+            <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.php.editor&quot; name=&quot;logo.php&quot; partName=&quot;logo.php&quot; title=&quot;logo.php&quot; tooltip=&quot;insightMapp/control/logo.php&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/insightMapp/control/logo.php&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;423&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
             <tags>Editor</tags>
             <tags>org.eclipse.php.editor</tags>
             <tags>removeOnHide</tags>
@@ -496,8 +369,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view group_libraries=&quot;1&quot; isWindowWorkingSet=&quot;true&quot; layout=&quot;1&quot; linkWithEditor=&quot;0&quot; rootMode=&quot;1&quot; workingSetName=&quot;&quot;>&#xA;&lt;customFilters userDefinedPatternsEnabled=&quot;false&quot;>&#xA;&lt;xmlDefinedFilters>&#xA;&lt;child filterId=&quot;org.eclipse.php.ui.explorer.EmptyInnerPackageFilter&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;child filterId=&quot;org.eclipse.php.ui.explorer.PHPHTMLFilter&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;child filterId=&quot;org.eclipse.php.ui.explorer.NonScriptElementFilter&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;child filterId=&quot;org.eclipse.php.ui.explorer.NonPublicFilter&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;child filterId=&quot;org.eclipse.php.ui.explorer.NonScriptProjectsFilter&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;child filterId=&quot;org.eclipse.php.ui.explorer.RSEProjectFilter&quot; isEnabled=&quot;true&quot;/>&#xA;&lt;child filterId=&quot;org.eclipse.php.ui.explorer.FieldsFilter&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;child filterId=&quot;org.eclipse.php.ui.explorer.EmptyPackageFilter&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;child filterId=&quot;org.eclipse.php.ui.explorer.UseStatementFilter&quot; isEnabled=&quot;true&quot;/>&#xA;&lt;child filterId=&quot;org.eclipse.php.ui.explorer.ContainMembersFilter&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;child filterId=&quot;org.eclipse.php.ui.explorer.LibraryFilter&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;child filterId=&quot;org.eclipse.php.ui.explorer.SMFileFilter&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;child filterId=&quot;org.eclipse.php.ui.explorer.NonSharedProjectsFilter&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;child filterId=&quot;org.eclipse.php.ui.explorer.DotFilesFilter&quot; isEnabled=&quot;true&quot;/>&#xA;&lt;child filterId=&quot;org.eclipse.php.ui.explorer.ContainedLibraryFilter&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;child filterId=&quot;org.eclipse.php.ui.explorer.ClosedProjectsFilter&quot; isEnabled=&quot;false&quot;/>&#xA;&lt;/xmlDefinedFilters>&#xA;&lt;/customFilters>&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:PHP Tools</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_Cxg1j3i_EeSijtt31S-DKA" elementId="org.eclipse.php.ui.explorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -1338,18 +1209,30 @@
       </menus>
       <toolbar xmi:id="_Cxhc1ni_EeSijtt31S-DKA" elementId="org.eclipse.search.ui.views.SearchView" visible="false"/>
     </sharedElements>
-    <trimBars xmi:id="_Cxhc13i_EeSijtt31S-DKA" elementId="org.eclipse.ui.main.toolbar" visible="false">
+    <trimBars xmi:id="_Cxhc13i_EeSijtt31S-DKA" elementId="org.eclipse.ui.main.toolbar">
       <children xsi:type="menu:ToolBar" xmi:id="_Cxhc2Hi_EeSijtt31S-DKA" elementId="group.file" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_Cxhc2Xi_EeSijtt31S-DKA" elementId="group.file" toBeRendered="false"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Cxhc2ni_EeSijtt31S-DKA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_ZzaEQIJTEeSeA9IgbYWLag" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_Cxm8Fni_EeSijtt31S-DKA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_cpbTEILrEeS9db73JxKmCw" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_Cxm8Fni_EeSijtt31S-DKA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_CxiDR3i_EeSijtt31S-DKA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_CxiDSHi_EeSijtt31S-DKA" elementId="additions" toBeRendered="false"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_GjEFQIKxEeS2N5B4Y5QlPA" elementId="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" visible="false">
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_Gjb4sIKxEeS2N5B4Y5QlPA" elementId="org.eclipse.wst.xml.ui.design.DesignToolBar" visible="false">
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_Gjwo0IKxEeS2N5B4Y5QlPA" elementId="org.eclipse.debug.ui.launch.toolbar" visible="false">
+        <tags>Draggable</tags>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_Gj2vcIKxEeS2N5B4Y5QlPA" elementId="org.eclipse.debug.ui.main.toolbar">
+        <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_CxiDZni_EeSijtt31S-DKA" elementId="org.eclipse.cdt.ui.CElementCreationActionSet" visible="false">
         <tags>Draggable</tags>
@@ -1432,7 +1315,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_CxiDjXi_EeSijtt31S-DKA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_ZzjOMIJTEeSeA9IgbYWLag" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_CxmUx3i_EeSijtt31S-DKA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_cqRAkILrEeS9db73JxKmCw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_CxmUx3i_EeSijtt31S-DKA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_CxiDl3i_EeSijtt31S-DKA" elementId="com.aptana.editor.css" visible="false">
         <tags>Draggable</tags>
@@ -1459,6 +1342,9 @@
         <tags>Draggable</tags>
         <tags>HIDEABLE</tags>
         <tags>SHOW_RESTORE_MENU</tags>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_GkXFwIKxEeS2N5B4Y5QlPA" elementId="org.eclipse.mylyn.tasks.ui.trim.container" visible="false">
+        <tags>Draggable</tags>
       </children>
     </trimBars>
     <trimBars xmi:id="_CxiDrHi_EeSijtt31S-DKA" elementId="org.eclipse.ui.trim.status" side="Bottom">
@@ -1665,8 +1551,8 @@
     <bindings xmi:id="_Cxiqyni_EeSijtt31S-DKA" keySequence="CTRL+#" command="_Cxm7yXi_EeSijtt31S-DKA"/>
     <bindings xmi:id="_Cxiqy3i_EeSijtt31S-DKA" keySequence="ALT+SHIFT+H" command="_Cxm8yni_EeSijtt31S-DKA"/>
     <bindings xmi:id="_CxiqzHi_EeSijtt31S-DKA" keySequence="ALT+CTRL+SHIFT+ARROW_DOWN" command="_Cxm8lXi_EeSijtt31S-DKA"/>
-    <bindings xmi:id="_Y3IpQIJTEeSeA9IgbYWLag" keySequence="ESC" command="_Y0jPUIJTEeSeA9IgbYWLag"/>
-    <bindings xmi:id="_Y3JQUIJTEeSeA9IgbYWLag" keySequence="ALT+CTRL+Z" command="_Y0jPUYJTEeSeA9IgbYWLag"/>
+    <bindings xmi:id="_EvufYIKxEeS2N5B4Y5QlPA" keySequence="F9" command="_CxoKtni_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvvGcIKxEeS2N5B4Y5QlPA" keySequence="SHIFT+F9" command="_CxoKmHi_EeSijtt31S-DKA"/>
   </bindingTables>
   <bindingTables xmi:id="_CxiqzXi_EeSijtt31S-DKA" elementId="org.eclipse.dltk.ui.scriptEditorScope" bindingContext="_CxjSQni_EeSijtt31S-DKA">
     <bindings xmi:id="_Cxiqzni_EeSijtt31S-DKA" keySequence="CTRL+I" command="_Cxm8vXi_EeSijtt31S-DKA"/>
@@ -1944,13 +1830,80 @@
   <bindingTables xmi:id="_CxjR_ni_EeSijtt31S-DKA" bindingContext="_Cxj4mni_EeSijtt31S-DKA"/>
   <bindingTables xmi:id="_CxjR_3i_EeSijtt31S-DKA" bindingContext="_Cxj4m3i_EeSijtt31S-DKA"/>
   <bindingTables xmi:id="_CxjSAHi_EeSijtt31S-DKA" bindingContext="_Cxj4nHi_EeSijtt31S-DKA"/>
-  <bindingTables xmi:id="_CxjSAXi_EeSijtt31S-DKA" elementId="org.eclipse.cdt.ui.cEditorScope" bindingContext="_CxjSSHi_EeSijtt31S-DKA"/>
-  <bindingTables xmi:id="_CxjSAni_EeSijtt31S-DKA" elementId="org.eclipse.cdt.ui.macroExpansionHoverScope" bindingContext="_CxjSU3i_EeSijtt31S-DKA"/>
-  <bindingTables xmi:id="_CxjSA3i_EeSijtt31S-DKA" elementId="org.eclipse.cdt.ui.cViewScope" bindingContext="_CxjSUHi_EeSijtt31S-DKA"/>
-  <bindingTables xmi:id="_CxjSBHi_EeSijtt31S-DKA" elementId="org.eclipse.cdt.debug.ui.debugging" bindingContext="_CxjSKXi_EeSijtt31S-DKA"/>
-  <bindingTables xmi:id="_CxjSBXi_EeSijtt31S-DKA" elementId="org.eclipse.cdt.dsf.debug.ui.disassembly.context" bindingContext="_CxjSKHi_EeSijtt31S-DKA"/>
-  <bindingTables xmi:id="_CxjSBni_EeSijtt31S-DKA" elementId="org.eclipse.cdt.autotools.ui.editor.scope" bindingContext="_CxjSR3i_EeSijtt31S-DKA"/>
-  <bindingTables xmi:id="_CxjSB3i_EeSijtt31S-DKA" elementId="org.eclipse.cdt.make.ui.makefileEditorScope" bindingContext="_CxjSRni_EeSijtt31S-DKA"/>
+  <bindingTables xmi:id="_CxjSAXi_EeSijtt31S-DKA" elementId="org.eclipse.cdt.ui.cEditorScope" bindingContext="_CxjSSHi_EeSijtt31S-DKA">
+    <bindings xmi:id="_Eu_fkIKxEeS2N5B4Y5QlPA" keySequence="CTRL+TAB" command="_CxoKoHi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvBUwIKxEeS2N5B4Y5QlPA" keySequence="CTRL+I" command="_CxoKd3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvEYEIKxEeS2N5B4Y5QlPA" keySequence="ALT+C" command="_CxoKb3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvG0UIKxEeS2N5B4Y5QlPA" keySequence="CTRL+SHIFT+F" command="_CxoKm3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvHbYIKxEeS2N5B4Y5QlPA" keySequence="ALT+CTRL+I" command="_CxoKo3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvKesIKxEeS2N5B4Y5QlPA" keySequence="ALT+SHIFT+ARROW_UP" command="_CxoK0Hi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvQlUIKxEeS2N5B4Y5QlPA" keySequence="ALT+SHIFT+R" command="_CxoKoXi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvSagIKxEeS2N5B4Y5QlPA" keySequence="ALT+SHIFT+T" command="_CxoKs3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvTooIKxEeS2N5B4Y5QlPA" keySequence="CTRL+T" command="_CxoKa3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvX6EIKxEeS2N5B4Y5QlPA" keySequence="CTRL+O" command="_CxoKlHi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvaWUIKxEeS2N5B4Y5QlPA" keySequence="F4" command="_CxoKxXi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvdZoIKxEeS2N5B4Y5QlPA" keySequence="CTRL+/" command="_CxoKl3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvfO0IKxEeS2N5B4Y5QlPA" keySequence="ALT+SHIFT+S" command="_CxoKx3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EviSIIKxEeS2N5B4Y5QlPA" keySequence="F3" command="_CxoKini_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvkuYIKxEeS2N5B4Y5QlPA" keySequence="CTRL+SHIFT+T" command="_CxoKj3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvmjkIKxEeS2N5B4Y5QlPA" keySequence="CTRL+SHIFT+P" command="_CxoKuni_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvqN8IKxEeS2N5B4Y5QlPA" keySequence="ALT+SHIFT+L" command="_CxoKbXi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_Evq1AIKxEeS2N5B4Y5QlPA" keySequence="ALT+SHIFT+M" command="_CxoKc3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvrcEIKxEeS2N5B4Y5QlPA" keySequence="ALT+CTRL+S" command="_CxoKhHi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvsqMIKxEeS2N5B4Y5QlPA" keySequence="CTRL+SHIFT+N" command="_CxoKqHi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvtRQIKxEeS2N5B4Y5QlPA" keySequence="CTRL+SHIFT+O" command="_CxoKsXi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_Evt4UIKxEeS2N5B4Y5QlPA" keySequence="ALT+SHIFT+Z" command="_CxoKyXi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvzX4IKxEeS2N5B4Y5QlPA" keySequence="CTRL+SHIFT+/" command="_CxoKg3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwCBYIKxEeS2N5B4Y5QlPA" keySequence="ALT+SHIFT+O" command="_CxoKwni_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwD2kYKxEeS2N5B4Y5QlPA" keySequence="CTRL+G" command="_CxoKkXi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwGS0IKxEeS2N5B4Y5QlPA" keySequence="ALT+SHIFT+ARROW_DOWN" command="_CxoKmni_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwG54IKxEeS2N5B4Y5QlPA" keySequence="CTRL+SHIFT+ARROW_UP" command="_CxoKyni_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwHg8IKxEeS2N5B4Y5QlPA" keySequence="SHIFT+TAB" command="_Cxm8pni_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwKkQIKxEeS2N5B4Y5QlPA" keySequence="ALT+SHIFT+ARROW_RIGHT" command="_CxoKvXi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwLyYIKxEeS2N5B4Y5QlPA" keySequence="CTRL+SHIFT+H" command="_CxoKe3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwNAgIKxEeS2N5B4Y5QlPA" keySequence="CTRL+SHIFT+\" command="_CxoKxni_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwNnkIKxEeS2N5B4Y5QlPA" keySequence="CTRL+=" command="_CxoKrHi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwWxgIKxEeS2N5B4Y5QlPA" keySequence="ALT+SHIFT+ARROW_LEFT" command="_CxoKf3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwXYkIKxEeS2N5B4Y5QlPA" keySequence="CTRL+SHIFT+ARROW_DOWN" command="_CxoKiXi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_Ewc4IIKxEeS2N5B4Y5QlPA" keySequence="CTRL+#" command="_CxoKrHi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwdfMIKxEeS2N5B4Y5QlPA" keySequence="CTRL+SHIFT+G" command="_CxoKi3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwfUYIKxEeS2N5B4Y5QlPA" keySequence="ALT+CTRL+H" command="_CxoKlXi_EeSijtt31S-DKA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_CxjSAni_EeSijtt31S-DKA" elementId="org.eclipse.cdt.ui.macroExpansionHoverScope" bindingContext="_CxjSU3i_EeSijtt31S-DKA">
+    <bindings xmi:id="_EvE_IIKxEeS2N5B4Y5QlPA" keySequence="ALT+ARROW_LEFT" command="_CxoKbni_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvLs0IKxEeS2N5B4Y5QlPA" keySequence="ALT+ARROW_RIGHT" command="_CxoKjHi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_Evi5MYKxEeS2N5B4Y5QlPA" keySequence="F3" command="_CxoKini_EeSijtt31S-DKA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_CxjSA3i_EeSijtt31S-DKA" elementId="org.eclipse.cdt.ui.cViewScope" bindingContext="_CxjSUHi_EeSijtt31S-DKA">
+    <bindings xmi:id="_EvHbYYKxEeS2N5B4Y5QlPA" keySequence="ALT+CTRL+I" command="_CxoKo3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvRMYIKxEeS2N5B4Y5QlPA" keySequence="ALT+SHIFT+R" command="_CxoKoXi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_Eva9YIKxEeS2N5B4Y5QlPA" keySequence="F4" command="_CxoKxXi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_Evi5MIKxEeS2N5B4Y5QlPA" keySequence="F3" command="_CxoKini_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvlVcIKxEeS2N5B4Y5QlPA" keySequence="CTRL+SHIFT+T" command="_CxoKj3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwEdoIKxEeS2N5B4Y5QlPA" keySequence="CTRL+G" command="_CxoKkXi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwLyYYKxEeS2N5B4Y5QlPA" keySequence="CTRL+SHIFT+H" command="_CxoKe3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwdfMYKxEeS2N5B4Y5QlPA" keySequence="CTRL+SHIFT+G" command="_CxoKi3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_Ewf7cIKxEeS2N5B4Y5QlPA" keySequence="ALT+CTRL+H" command="_CxoKlXi_EeSijtt31S-DKA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_CxjSBHi_EeSijtt31S-DKA" elementId="org.eclipse.cdt.debug.ui.debugging" bindingContext="_CxjSKXi_EeSijtt31S-DKA">
+    <bindings xmi:id="_EvwUkYKxEeS2N5B4Y5QlPA" keySequence="CTRL+F5" command="_CxoKkHi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_Evw7oIKxEeS2N5B4Y5QlPA" keySequence="SHIFT+F7" command="_CxoKeXi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvxisIKxEeS2N5B4Y5QlPA" keySequence="SHIFT+F6" command="_CxoKgHi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvyJwIKxEeS2N5B4Y5QlPA" keySequence="SHIFT+F5" command="_CxoKdHi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_Evyw0IKxEeS2N5B4Y5QlPA" keySequence="SHIFT+F8" command="_CxoKxHi_EeSijtt31S-DKA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_CxjSBXi_EeSijtt31S-DKA" elementId="org.eclipse.cdt.dsf.debug.ui.disassembly.context" bindingContext="_CxjSKHi_EeSijtt31S-DKA">
+    <bindings xmi:id="_EvwUkIKxEeS2N5B4Y5QlPA" keySequence="HOME" command="_CxoKeHi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwD2kIKxEeS2N5B4Y5QlPA" keySequence="CTRL+G" command="_CxoKani_EeSijtt31S-DKA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_CxjSBni_EeSijtt31S-DKA" elementId="org.eclipse.cdt.autotools.ui.editor.scope" bindingContext="_CxjSR3i_EeSijtt31S-DKA">
+    <bindings xmi:id="_Ev1NEIKxEeS2N5B4Y5QlPA" keySequence="F2" command="_CxoKn3i_EeSijtt31S-DKA"/>
+  </bindingTables>
+  <bindingTables xmi:id="_CxjSB3i_EeSijtt31S-DKA" elementId="org.eclipse.cdt.make.ui.makefileEditorScope" bindingContext="_CxjSRni_EeSijtt31S-DKA">
+    <bindings xmi:id="_EvcykIKxEeS2N5B4Y5QlPA" keySequence="CTRL+/" command="_CxoKz3i_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EvhrEIKxEeS2N5B4Y5QlPA" keySequence="F3" command="_CxoKpHi_EeSijtt31S-DKA"/>
+    <bindings xmi:id="_EwIvEIKxEeS2N5B4Y5QlPA" keySequence="CTRL+\" command="_CxoKu3i_EeSijtt31S-DKA"/>
+  </bindingTables>
   <bindingTables xmi:id="_CxjSCHi_EeSijtt31S-DKA" bindingContext="_Cxj4nXi_EeSijtt31S-DKA"/>
   <bindingTables xmi:id="_CxjSCXi_EeSijtt31S-DKA" bindingContext="_Cxj4nni_EeSijtt31S-DKA"/>
   <bindingTables xmi:id="_CxjSCni_EeSijtt31S-DKA" bindingContext="_Cxj4n3i_EeSijtt31S-DKA"/>

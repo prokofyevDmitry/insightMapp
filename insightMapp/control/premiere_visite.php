@@ -130,7 +130,7 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 				}
 			
 				// on réduit la taille de l'image:
-				resize_picture($upload_folder, "hommescreen");
+				resize_picture($upload_folder, "homescreen");
 				
 				
 			}
@@ -179,7 +179,6 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		
 		
 		//TODO changer la redirection (jquery);
-	
 		echo'<script>
  			window.location.replace("../index.php");
  				exit();
