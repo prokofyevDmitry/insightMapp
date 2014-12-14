@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-# TODO GESTION D ERREUR 
+# TODO GESTION D ERREUR + REMPLACER LES TESTS DE TYPE PAR LA FONCTION exif_imagetype() : http://php.net/manual/en/function.exif-imagetype.php
 
 // VARIABLES DE TEST
 // $_SESSION['user_id'] = 131;

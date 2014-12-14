@@ -25,7 +25,7 @@ include $test.'control/initialisation_user_session.php';
 
 
 
-$bdd = db_connexion('insightmapp','root',''); // connexion base de données. 
+$bdd = db_connexion('insightmapp',$GLOBALS['insightmapp_user_name'],$GLOBALS['insightmapp_password'] =''); // connexion base de données. 
 
 
 if(isset( $_POST['submit_signin'] )  )

@@ -7,7 +7,7 @@ include $test.'model/champ_query.php';
 include $test.'model/champ_search.php';
 include $test.'control/initialisation_user_session.php';
 //connexion base de données:
-$bdd=db_connexion('insightmapp', 'root', '');
+$bdd = db_connexion('insightmapp',$GLOBALS['insightmapp_user_name'],$GLOBALS['insightmapp_password'] ='');
  
  // si il y a eu un envoie de données, on va les traiter
  

@@ -3,22 +3,37 @@
 
 # ici on essaye de rendre automatiquement l'image de profile ronde
 // lit le fichier: 
+function rapport_erreur($error_code,$error_text)
+{
+	echo '<br>ERROR N '.$error_code.'<br> '.$error_text;
 
-$source_path = 'upload/137/photos/profile_pic/homescreen/dima_diam.jpg';
-$dest_path = 'upload/137/photos/profile_pic/homescreen/test.jpg';
-$source = imagecreatefromjpeg($source_path);
+	if(!strpos($error_text, "session_start"))
+		die();
 
+}
 
+set_error_handler("rapport_erreur");
 
+$source_path = 'upload/137/photos/profile_pic/homescreen/test.jpg';
+
+$type = exif_imagetype($source_path);
+
+if($type ===2 )
+{
+	$source_tmp_jpeg = imagecreatefromjpeg($source_path);
+	$source_path2 = 'upload/137/photos/profile_pic/homescreen/tmp.png';
+	$source_path3 = 'upload/137/photos/profile_pic/homescreen/test.png';
+	
+	imagepng($source_tmp_jpeg,$source_path2,0);
+	$source = imagecreatefrompng($source_path2);
+}
+else
+{
+	$source = imagecreatefrompng($source_path); 
+}
 
 // hardcoding: code couleur principale du site : cyan 
 $couleur = imagecolorallocate($source, 69, 209, 215);
-
-
-
-// for($i=0;$i<=40;$i=$i+0.1)
-// imageellipse($source, 42, 42,84+$i,84+$i, $couleur);
-
 
 // on applique la formule du cercle pour tracer point par point tout les cercles jusqu'a obtenir un cdre colorée
 
@@ -42,9 +57,14 @@ for($i = 0; $i<=$cote;$i++)
 		}	
 }
 
-		
-		
-		
+imagecolortransparent($source,$couleur);
+
+
+
+// header('Content-Type: image/png');
+
+ imagepng($source,$source_path3,0);
+		echo 'ok'
 		
 
 

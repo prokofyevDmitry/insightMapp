@@ -21,7 +21,6 @@ include'control/css_array_fill_home_page.php';
 include 'control/ini/param.php';
 
 # réglage des erreurs
-
 function rapport_erreur($error_code,$error_text)
 {
 	echo '<br>ERROR N '.$error_code.'<br> '.$error_text;

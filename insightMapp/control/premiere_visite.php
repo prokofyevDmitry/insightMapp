@@ -107,7 +107,7 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 
 		// on s'en branle de valider ou pas l'entrer.
 		// on se connecte à la base de donnes:
-		$bdd = db_connexion('insightmapp','root','');
+		$bdd = db_connexion('insightmapp',$GLOBALS['insightmapp_user_name'],$GLOBALS['insightmapp_password'] ='');
 		
 		
 		

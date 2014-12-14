@@ -18,7 +18,7 @@
   // la photo de profile est prise dans profile_pic_path, elle est soit ajoutée par resize_picture lors de l'ajout de la premier 
   // soit dans "initialisation_ser_session.php"
   	if(isset($_SESSION['profile_pic_path']) and $_SESSION['profile_pic_path']!=null )
-  	echo ' <img alt="profileimage" src="'.$_SESSION['profile_pic_path'].'" class="IMlogo" /> ';
+  	echo ' <img alt="profileimage" src="'.$_SESSION['profile_pic_path'].'" id="homescreen_profile_pic" /> ';
   	else
   	echo '<img alt="inSightMapplogo" src="parts/svgImages/IMLogo.svg" class="IMlogo" />';
   
