@@ -1,12 +1,22 @@
-<?php
+ <?php
 session_start();
 
-# TODO GESTION D ERREUR + REMPLACER LES TESTS DE TYPE PAR LA FONCTION exif_imagetype() : http://php.net/manual/en/function.exif-imagetype.php
+#La fonction permet de passer d'une image de taille indéfini à l'image de taillle défini et ronde dans le cas ou c'est une homescreen
+
+# TTODO GESTION DES ERREURES
 
 // VARIABLES DE TEST
-// $_SESSION['user_id'] = 131;
-// $_SESSION['nom'] = "test";
-// $_SESSION['prenom'] = "test";
+ $_SESSION['user_id'] = 131;
+ $_SESSION['nom'] = "test";
+ $_SESSION['prenom'] = "test";
+
+ 	$fichier_principal = "../upload/".$_SESSION['user_id']."";
+	$picture_path=$fichier_principal.'/photos/originals/profile_pic/1312014-09-25 12.34.16.png';
+
+
+
+
+
 // ######################
 
 // les deux coordonnées x et y sont la pour pouvoir utiliser la fonction en mode custom
@@ -14,48 +24,35 @@ session_start();
 function resize_picture($picture_path, $size,$x=null,$y=null)
 {
 
-// cas où le paramettre passé est mauvais:
-	
-
-
-	
 	// la variable permet de deceler le cas ou l'image passée en argument est un carrée parfait , au quel cas tout le traitement est superflu. 
-	$min_var_zero=null;
+	$crop_situation=null;
+	// intialisation des parametres 
 	include 'ini/param.php';
-	
-	
-	// verif du type de fichier:
-	$longueure = strlen($picture_path);
-	if(strpos($picture_path, ".jpg") or strpos($picture_path, ".jpeg"))
+	$verification_type=getimagesize($picture_path);
+	/* verif du type de fichier:
+		 la fonction getimagesize retourne le type de l'image dans la troisième case de l'array
+	*/
+	if($verification_type[2]===2)
 	{	
 		//cas ou le fichier est un jpeg
-		#echo 'jpg';
 		$source = imagecreatefromjpeg($picture_path);
-		$jpeg=true;
 	}
 	
-		if(strpos($picture_path, ".png"))
+		if($verification_type[2]==3)
 		{
 			// cas ou le fichier est un .png
-			#echo 'png';
 			$source = imagecreatefrompng($picture_path);
-		$jpeg=false;
-	
-		}	
+		}
 
-		
-		
-		
-		
-		
 	switch($size)
 	{
 		// resize pour le homescreen, LES VARIABLES GLOBALS SONT INSTANCIÉES DANS LE PARAM.PHP	
-	
+	# write dir contient l'adresse finale de l'écriture du fichier 
 		case "homescreen": $dest_x=$GLOBALS['HOME_IMAGE_SIZE_X'];$dest_y=$GLOBALS['HOME_IMAGE_SIZE_Y'];
-						$write_dir = 'upload/'.$_SESSION['user_id'].'/photos/profile_pic/homescreen/'.$_SESSION['nom'].'_'.$_SESSION['prenom'];break;
+		// On écrit la photo dans un nouveau dossier, appelé tmp il va servir de sas pour la modification de toutes les images liées à ce profil, le nom par déffaut: tmp_homescreen
+						$write_dir = 'upload/'.$_SESSION['user_id'].'/photos/tmp/tmp_homescreen';break;
 		// case "0": taille de la valeur custom
-		default:break;
+		default: break;
 	}
 	
 	
@@ -67,63 +64,86 @@ function resize_picture($picture_path, $size,$x=null,$y=null)
 	// la base du carée est la largeure de l'image source
 	if($hauteure_source>$largeur_source)
 	{
-		$min_var_zero = 1;
+		$crop_situation = 1;
 		$base = $largeur_source;
 		$grande_arrete = $hauteure_source;
 	}
 	
 	if($hauteure_source<$largeur_source)
 	{
-		$min_var_zero = 2;
+		$crop_situation = 2;
 		$base = $hauteure_source;
 		$grande_arrete = $largeur_source;
 	}
 	
-	
-	
-	
 	// création de l'image vide  	
 	$destination = imagecreatetruecolor($dest_x, $dest_y);
-	// on évite le cas ou l'image est carées, si la valeur $min_var_zero n'a pas été initialisé, c'est que c'est le cas
-	if(isset($min_var_zero))
+	// on évite le cas ou l'image est carées, si la valeur $crop_situation n'a pas été initialisé, par contre si elle l'est 
+	if(isset($crop_situation))
 	{
 		// calcul de la taille de la marge
 		$marge = ($grande_arrete-$base)*0.5;
-	
 		// dans le cas ou la petite arrete est bien x
-		if($min_var_zero===1)
+		if($crop_situation===1)
 			imagecopyresampled($destination, $source, 0, 0, 0, $marge, $dest_x, $dest_y, $largeur_source, $hauteure_source-2*$marge);
 		else
 			imagecopyresampled($destination, $source, 0, 0, $marge, 0, $dest_x, $dest_y, $largeur_source-2*$marge, $hauteure_source);
 			
 	}
-	
 	// si l'image donnée est un carée alors on applique la façon classique
-	if(!isset($min_var_zero))
+	if(!isset($crop_situation))
 	imagecopyresampled($destination, $source, 0, 0, 0, 0, $dest_x, $dest_y, $largeur_source,$hauteure_source);
-	
-	// le cas ou l'image dépasserais sur les x aprées la redéfinition des y
-	
+	// integration solution image ronde
+# ici on rend automatiquement l'image de profile ronde
+
+// 
 	
 
-	// ecriture finale de l'image crée dans le fichier $write_dir construit dans le case
-	if($jpeg)
+	$source_path_finale = '../upload/'.$_SESSION['user_id'].'/photos/profile_pic/homescreen/profile.pic'.$_SESSION['nom'].date("Y-m-d-h-i-s").'.png'; 
+
+
+
+# DANS LE CAS OU L'IMAGE DOIT ETRE RONDIFIE: ON APPLIQUE DIRRECTEMENT LE FILTRE NECESSAIRE
+# CELA ARRIVE DANS LE CAS OU L'IMAGE EST DESTINEE A LA PHOTO DE PROFIL
+# SINON ON PROCEDE DIRECT A L ECRITURE
+	if(strcmp($size,"homescreen")===0)
 	{
-		imagejpeg($destination,  $write_dir.'.jpg');
-		
-		// le path dans session pour logo.php:
-		$_SESSION['profile_pic_path'] = $write_dir.'.jpg';
-	}
-	else 
-	{
-	imagepng($destination,$write_dir.'.png');
-	$_SESSION['profile_pic_path'] = $write_dir.'.png';
-	}
-	
+
+// hardcoding: code couleur principale du site : cyan 
+$couleur = imagecolorallocate($source, 69, 209, 215);
+
+// on applique la formule du cercle pour tracer point par point tout les cercles jusqu'a obtenir un cdre colorée
+
+
+
+// l'image d'origine est carée il est donc aisé davoir la composante:
+$cote = imagesy($destination);
+
+
+
+$centre = $cote/2;
+$R = pow($centre,2);
+for($i = 0; $i<=$cote;$i++)
+{
+		for($j =0; $j<=$cote;$j++)
+		{
+			$result = pow($centre-$i,2)+pow($centre-$j,2);
+			
+			if($result>$R)
+				imagesetpixel($destination, $i, $j, $couleur);
+		}	
+}
+
+imagecolortransparent($destination,$couleur);
+
 }
 
 
-#	APPEL DE DEBUGGAGE
-//resize_picture("../upload/131/photos/originals/profile_pic/1312014-09-25 12.34.16.png","homescreen");
 
+// header('Content-Type: image/png');
 
+ imagepng($destination,$source_path_finale,0);
+}
+resize_picture($picture_path,"homescreen");
+
+?>

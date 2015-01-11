@@ -1,6 +1,9 @@
   <?php 
   
-  
+
+if(isset($_SESSION['profile_pic_path']) and $_SESSION['profile_pic_path']!=null )
+    echo '<div class="logo_conected">'; 
+  else
   echo '<div class="logo">'; 
             
   

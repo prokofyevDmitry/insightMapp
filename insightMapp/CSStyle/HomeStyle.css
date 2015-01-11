@@ -40,10 +40,12 @@ body
 
 header
 {   
+    
     font-family: sans-serif;
     z-index: 6;
     position: fixed;
     top:15px;
+    
 }
 
 
@@ -51,13 +53,26 @@ header
 
 
 
+/* link upload et sign In quand déconectée*/
+div[class="logo"] a 
+{ position: relative;
+    top:15px;
+    display:block; 
+ background-color: rgba(255,255,255,0.75);
+ width:90px;
+ margin-top:6px;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 7px;
+    top:-87px;
+    left: 90px;
 
-div[class="logo"] a
-{
+}
 
-    
-    
-    position: relative;
+/*quand conecté*/
+div[class="logo_conected"] a 
+{ position: relative;
     top:15px;
     display:block; 
  background-color: rgba(255,255,255,0.75);
@@ -71,6 +86,10 @@ div[class="logo"] a
     left: 90px;
 
 }
+
+
+
+
 
 .allSubmit
 {
@@ -112,11 +131,6 @@ form[class="submitForm"] input
     color:#4d4d4d;
 }
 
-
-
-
-
-
 .Upload { /* Lien upload Partie Logo*/
     color:#20c0c9;
 }
@@ -143,7 +157,8 @@ left:0.5px;
 }
 
 
-.logo
+.logo_conected  /*les bords de l'ensemble logo si utilisateur connectée*/
+
 {
     align-content: center;
     left:84px;
@@ -156,6 +171,19 @@ left:0.5px;
     
 }
 
+.logo
+{
+    
+    align-content: center;
+    left:84px;
+    width: 200px;
+    height: 92px;
+    border-radius: 11px 11px 11px 11px / 13px 13px 13px 13px;
+    background-color: #3fd1d7;
+    border:solid rgba(255,255,255,0.71); 
+    
+    
+}
 
 
 
@@ -198,7 +226,7 @@ left:0.5px;
 
 
 
-header,nav[class="side"] /*color officiel*/ 
+nav[class="side"] /*color officiel*/ 
 {
     background-color:rgba(236,252,255,0.9);
         opacity: 246;
