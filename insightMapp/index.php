@@ -21,9 +21,9 @@ include'control/css_array_fill_home_page.php';
 include 'control/ini/param.php';
 
 # réglage des erreurs
-function rapport_erreur($error_code,$error_text)
+function rapport_erreur($error_code,$error_text,$error_file,$error_line)
 {
-	echo '<br>ERROR N '.$error_code.'<br> '.$error_text;
+	echo '<br>ERROR N '.$error_code.'<br> '.$error_text.'<br> Arrivée dans le doccument'.$error_file.' à la ligne '.$error_line;
 	
 	if(!strpos($error_text, "session_start"))
 	die();
@@ -100,4 +100,3 @@ if(isset($false_adresse)) // si l'utilisateur modifie la valeur de GET
 ?>
 
 
-w

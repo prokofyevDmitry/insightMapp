@@ -130,7 +130,7 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 				}
 			
 				// on réduit la taille de l'image:
-				resize_picture($upload_folder, "homescreen");
+				$_SESSION['profile_pic_path'] = resize_picture($upload_folder, "homescreen");
 				
 				
 			}
@@ -168,9 +168,7 @@ Il n'est pas oubligé de la donnée, on lui laisse le choix bien evidament.
 		{
 			insert_new_champ_to_existing_line($bdd, 'users','mail_list',$_POST['mail_list'],'id',$_SESSION['user_id']);
 			
-		}
-		
-		
+		}		
 		insert_new_champ_to_existing_line($bdd, 'users', 'last_activity', date(DATE_RSS), 'id', $_SESSION['user_id']);
 		$_SESSION['derniere_connexion'] = champ_search_precise($_SESSION['user_id'],'id','last_activity',$bdd,'users');
 		

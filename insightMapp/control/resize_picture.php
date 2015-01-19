@@ -6,17 +6,12 @@ session_start();
 # TTODO GESTION DES ERREURES
 
 // VARIABLES DE TEST
- $_SESSION['user_id'] = 131;
- $_SESSION['nom'] = "test";
- $_SESSION['prenom'] = "test";
+ // $_SESSION['user_id'] = 131;
+ // $_SESSION['nom'] = "test";
+ // $_SESSION['prenom'] = "test";
 
- 	$fichier_principal = "../upload/".$_SESSION['user_id']."";
-	$picture_path=$fichier_principal.'/photos/originals/profile_pic/1312014-09-25 12.34.16.png';
-
-
-
-
-
+ // 	$fichier_principal = "../upload/".$_SESSION['user_id']."";
+	// $picture_path=$fichier_principal.'/photos/originals/profile_pic/1312014-09-25 12.34.16.png';
 // ######################
 
 // les deux coordonnées x et y sont la pour pouvoir utiliser la fonction en mode custom
@@ -99,7 +94,7 @@ function resize_picture($picture_path, $size,$x=null,$y=null)
 // 
 	
 
-	$source_path_finale = '../upload/'.$_SESSION['user_id'].'/photos/profile_pic/homescreen/profile.pic'.$_SESSION['nom'].date("Y-m-d-h-i-s").'.png'; 
+	$source_path_finale = 'upload/'.$_SESSION['user_id'].'/photos/profile_pic/homescreen/profile.pic'.$_SESSION['nom'].date("Y-m-d-h-i-s").'.png'; 
 
 
 
@@ -143,7 +138,11 @@ imagecolortransparent($destination,$couleur);
 // header('Content-Type: image/png');
 
  imagepng($destination,$source_path_finale,0);
+return $source_path_finale;
+
 }
-resize_picture($picture_path,"homescreen");
+
+
+# Debug call resize_picture($picture_path,"homescreen");
 
 ?>
